@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41B5677F168D3157005D5130 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B5677E168D3157005D5130 /* UIKit.framework */; };
+		41B56781168D3157005D5130 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B56780168D3157005D5130 /* Foundation.framework */; };
+		41B56783168D3157005D5130 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B56782168D3157005D5130 /* CoreGraphics.framework */; };
+		41B56789168D3157005D5130 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41B56787168D3157005D5130 /* InfoPlist.strings */; };
+		41B5678B168D3157005D5130 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B5678A168D3157005D5130 /* main.m */; };
+		41B5678F168D3157005D5130 /* HLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B5678E168D3157005D5130 /* HLAppDelegate.m */; };
+		41B56791168D3157005D5130 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 41B56790168D3157005D5130 /* Default.png */; };
+		41B56793168D3157005D5130 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41B56792168D3157005D5130 /* Default@2x.png */; };
+		41B56795168D3157005D5130 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41B56794168D3157005D5130 /* Default-568h@2x.png */; };
+		41B56798168D3157005D5130 /* HLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B56797168D3157005D5130 /* HLViewController.m */; };
+		41B5679B168D3157005D5130 /* HLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B56799168D3157005D5130 /* HLViewController.xib */; };
+		41B567A9168D31AD005D5130 /* MOLabelFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B567A2168D31AD005D5130 /* MOLabelFieldCell.m */; };
+		41B567AA168D31AD005D5130 /* MOModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B567A4168D31AD005D5130 /* MOModalViewController.m */; };
+		41B567AB168D31AD005D5130 /* NavBarDefaultBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 41B567A5168D31AD005D5130 /* NavBarDefaultBack.png */; };
+		41B567AC168D31AD005D5130 /* NavBarDefaultBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41B567A6168D31AD005D5130 /* NavBarDefaultBack@2x.png */; };
+		41B567AD168D31AD005D5130 /* NavBarDefaultBackPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 41B567A7168D31AD005D5130 /* NavBarDefaultBackPressed.png */; };
+		41B567AE168D31AD005D5130 /* NavBarDefaultBackPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41B567A8168D31AD005D5130 /* NavBarDefaultBackPressed@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		41B5677A168D3157005D5130 /* LabelTextFieldCellDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LabelTextFieldCellDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B5677E168D3157005D5130 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		41B56780168D3157005D5130 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		41B56782168D3157005D5130 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		41B56786168D3157005D5130 /* LabelTextFieldCellDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LabelTextFieldCellDemo-Info.plist"; sourceTree = "<group>"; };
+		41B56788168D3157005D5130 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		41B5678A168D3157005D5130 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		41B5678C168D3157005D5130 /* LabelTextFieldCellDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LabelTextFieldCellDemo-Prefix.pch"; sourceTree = "<group>"; };
+		41B5678D168D3157005D5130 /* HLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLAppDelegate.h; sourceTree = "<group>"; };
+		41B5678E168D3157005D5130 /* HLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLAppDelegate.m; sourceTree = "<group>"; };
+		41B56790168D3157005D5130 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		41B56792168D3157005D5130 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		41B56794168D3157005D5130 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		41B56796168D3157005D5130 /* HLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLViewController.h; sourceTree = "<group>"; };
+		41B56797168D3157005D5130 /* HLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLViewController.m; sourceTree = "<group>"; };
+		41B5679A168D3157005D5130 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HLViewController.xib; sourceTree = "<group>"; };
+		41B567A1168D31AD005D5130 /* MOLabelFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOLabelFieldCell.h; sourceTree = "<group>"; };
+		41B567A2168D31AD005D5130 /* MOLabelFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOLabelFieldCell.m; sourceTree = "<group>"; };
+		41B567A3168D31AD005D5130 /* MOModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOModalViewController.h; sourceTree = "<group>"; };
+		41B567A4168D31AD005D5130 /* MOModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOModalViewController.m; sourceTree = "<group>"; };
+		41B567A5168D31AD005D5130 /* NavBarDefaultBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarDefaultBack.png; sourceTree = "<group>"; };
+		41B567A6168D31AD005D5130 /* NavBarDefaultBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarDefaultBack@2x.png"; sourceTree = "<group>"; };
+		41B567A7168D31AD005D5130 /* NavBarDefaultBackPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarDefaultBackPressed.png; sourceTree = "<group>"; };
+		41B567A8168D31AD005D5130 /* NavBarDefaultBackPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarDefaultBackPressed@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41B56777168D3157005D5130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B5677F168D3157005D5130 /* UIKit.framework in Frameworks */,
+				41B56781168D3157005D5130 /* Foundation.framework in Frameworks */,
+				41B56783168D3157005D5130 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41B5676F168D3157005D5130 = {
+			isa = PBXGroup;
+			children = (
+				41B56784168D3157005D5130 /* LabelTextFieldCellDemo */,
+				41B5677D168D3157005D5130 /* Frameworks */,
+				41B5677B168D3157005D5130 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41B5677B168D3157005D5130 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41B5677A168D3157005D5130 /* LabelTextFieldCellDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41B5677D168D3157005D5130 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41B5677E168D3157005D5130 /* UIKit.framework */,
+				41B56780168D3157005D5130 /* Foundation.framework */,
+				41B56782168D3157005D5130 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41B56784168D3157005D5130 /* LabelTextFieldCellDemo */ = {
+			isa = PBXGroup;
+			children = (
+				41B567A1168D31AD005D5130 /* MOLabelFieldCell.h */,
+				41B567A2168D31AD005D5130 /* MOLabelFieldCell.m */,
+				41B567A3168D31AD005D5130 /* MOModalViewController.h */,
+				41B567A4168D31AD005D5130 /* MOModalViewController.m */,
+				41B5678D168D3157005D5130 /* HLAppDelegate.h */,
+				41B5678E168D3157005D5130 /* HLAppDelegate.m */,
+				41B56796168D3157005D5130 /* HLViewController.h */,
+				41B56797168D3157005D5130 /* HLViewController.m */,
+				41B56799168D3157005D5130 /* HLViewController.xib */,
+				41B56785168D3157005D5130 /* Supporting Files */,
+			);
+			path = LabelTextFieldCellDemo;
+			sourceTree = "<group>";
+		};
+		41B56785168D3157005D5130 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41B567A5168D31AD005D5130 /* NavBarDefaultBack.png */,
+				41B567A6168D31AD005D5130 /* NavBarDefaultBack@2x.png */,
+				41B567A7168D31AD005D5130 /* NavBarDefaultBackPressed.png */,
+				41B567A8168D31AD005D5130 /* NavBarDefaultBackPressed@2x.png */,
+				41B56786168D3157005D5130 /* LabelTextFieldCellDemo-Info.plist */,
+				41B56787168D3157005D5130 /* InfoPlist.strings */,
+				41B5678A168D3157005D5130 /* main.m */,
+				41B5678C168D3157005D5130 /* LabelTextFieldCellDemo-Prefix.pch */,
+				41B56790168D3157005D5130 /* Default.png */,
+				41B56792168D3157005D5130 /* Default@2x.png */,
+				41B56794168D3157005D5130 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41B56779168D3157005D5130 /* LabelTextFieldCellDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41B5679E168D3157005D5130 /* Build configuration list for PBXNativeTarget "LabelTextFieldCellDemo" */;
+			buildPhases = (
+				41B56776168D3157005D5130 /* Sources */,
+				41B56777168D3157005D5130 /* Frameworks */,
+				41B56778168D3157005D5130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LabelTextFieldCellDemo;
+			productName = LabelTextFieldCellDemo;
+			productReference = 41B5677A168D3157005D5130 /* LabelTextFieldCellDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41B56771168D3157005D5130 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HL;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = HailinAn;
+			};
+			buildConfigurationList = 41B56774168D3157005D5130 /* Build configuration list for PBXProject "LabelTextFieldCellDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 41B5676F168D3157005D5130;
+			productRefGroup = 41B5677B168D3157005D5130 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41B56779168D3157005D5130 /* LabelTextFieldCellDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41B56778168D3157005D5130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B56789168D3157005D5130 /* InfoPlist.strings in Resources */,
+				41B56791168D3157005D5130 /* Default.png in Resources */,
+				41B56793168D3157005D5130 /* Default@2x.png in Resources */,
+				41B56795168D3157005D5130 /* Default-568h@2x.png in Resources */,
+				41B5679B168D3157005D5130 /* HLViewController.xib in Resources */,
+				41B567AB168D31AD005D5130 /* NavBarDefaultBack.png in Resources */,
+				41B567AC168D31AD005D5130 /* NavBarDefaultBack@2x.png in Resources */,
+				41B567AD168D31AD005D5130 /* NavBarDefaultBackPressed.png in Resources */,
+				41B567AE168D31AD005D5130 /* NavBarDefaultBackPressed@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41B56776168D3157005D5130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B5678B168D3157005D5130 /* main.m in Sources */,
+				41B5678F168D3157005D5130 /* HLAppDelegate.m in Sources */,
+				41B56798168D3157005D5130 /* HLViewController.m in Sources */,
+				41B567A9168D31AD005D5130 /* MOLabelFieldCell.m in Sources */,
+				41B567AA168D31AD005D5130 /* MOModalViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		41B56787168D3157005D5130 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41B56788168D3157005D5130 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		41B56799168D3157005D5130 /* HLViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41B5679A168D3157005D5130 /* en */,
+			);
+			name = HLViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41B5679C168D3157005D5130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		41B5679D168D3157005D5130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41B5679F168D3157005D5130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LabelTextFieldCellDemo/LabelTextFieldCellDemo-Prefix.pch";
+				INFOPLIST_FILE = "LabelTextFieldCellDemo/LabelTextFieldCellDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		41B567A0168D3157005D5130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LabelTextFieldCellDemo/LabelTextFieldCellDemo-Prefix.pch";
+				INFOPLIST_FILE = "LabelTextFieldCellDemo/LabelTextFieldCellDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41B56774168D3157005D5130 /* Build configuration list for PBXProject "LabelTextFieldCellDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41B5679C168D3157005D5130 /* Debug */,
+				41B5679D168D3157005D5130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41B5679E168D3157005D5130 /* Build configuration list for PBXNativeTarget "LabelTextFieldCellDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41B5679F168D3157005D5130 /* Debug */,
+				41B567A0168D3157005D5130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41B56771168D3157005D5130 /* Project object */;
+}
