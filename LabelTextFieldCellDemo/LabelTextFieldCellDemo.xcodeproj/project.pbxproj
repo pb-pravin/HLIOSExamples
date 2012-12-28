@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41AB24FE168D9F8E00F7A2DB /* SearchBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 41AB24FC168D9F8E00F7A2DB /* SearchBarBackground.png */; };
+		41AB24FF168D9F8E00F7A2DB /* SearchBarBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41AB24FD168D9F8E00F7A2DB /* SearchBarBackground@2x.png */; };
+		41AB250B168DB92600F7A2DB /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AB2509168DB92600F7A2DB /* AddressBook.framework */; };
+		41AB250C168DB92600F7A2DB /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AB250A168DB92600F7A2DB /* AddressBookUI.framework */; };
 		41B5677F168D3157005D5130 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B5677E168D3157005D5130 /* UIKit.framework */; };
 		41B56781168D3157005D5130 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B56780168D3157005D5130 /* Foundation.framework */; };
 		41B56783168D3157005D5130 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B56782168D3157005D5130 /* CoreGraphics.framework */; };
@@ -27,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41AB24FC168D9F8E00F7A2DB /* SearchBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SearchBarBackground.png; sourceTree = "<group>"; };
+		41AB24FD168D9F8E00F7A2DB /* SearchBarBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SearchBarBackground@2x.png"; sourceTree = "<group>"; };
+		41AB2509168DB92600F7A2DB /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		41AB250A168DB92600F7A2DB /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		41B5677A168D3157005D5130 /* LabelTextFieldCellDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LabelTextFieldCellDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B5677E168D3157005D5130 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		41B56780168D3157005D5130 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AB250B168DB92600F7A2DB /* AddressBook.framework in Frameworks */,
+				41AB250C168DB92600F7A2DB /* AddressBookUI.framework in Frameworks */,
 				41B5677F168D3157005D5130 /* UIKit.framework in Frameworks */,
 				41B56781168D3157005D5130 /* Foundation.framework in Frameworks */,
 				41B56783168D3157005D5130 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +97,8 @@
 		41B5677D168D3157005D5130 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41AB2509168DB92600F7A2DB /* AddressBook.framework */,
+				41AB250A168DB92600F7A2DB /* AddressBookUI.framework */,
 				41B5677E168D3157005D5130 /* UIKit.framework */,
 				41B56780168D3157005D5130 /* Foundation.framework */,
 				41B56782168D3157005D5130 /* CoreGraphics.framework */,
@@ -114,6 +126,8 @@
 		41B56785168D3157005D5130 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				41AB24FC168D9F8E00F7A2DB /* SearchBarBackground.png */,
+				41AB24FD168D9F8E00F7A2DB /* SearchBarBackground@2x.png */,
 				41B567A5168D31AD005D5130 /* NavBarDefaultBack.png */,
 				41B567A6168D31AD005D5130 /* NavBarDefaultBack@2x.png */,
 				41B567A7168D31AD005D5130 /* NavBarDefaultBackPressed.png */,
@@ -190,6 +204,8 @@
 				41B567AC168D31AD005D5130 /* NavBarDefaultBack@2x.png in Resources */,
 				41B567AD168D31AD005D5130 /* NavBarDefaultBackPressed.png in Resources */,
 				41B567AE168D31AD005D5130 /* NavBarDefaultBackPressed@2x.png in Resources */,
+				41AB24FE168D9F8E00F7A2DB /* SearchBarBackground.png in Resources */,
+				41AB24FF168D9F8E00F7A2DB /* SearchBarBackground@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +337,7 @@
 				41B567A0168D3157005D5130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

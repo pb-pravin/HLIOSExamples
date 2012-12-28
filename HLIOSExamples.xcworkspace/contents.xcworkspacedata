@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:QuickContacts/QuickContacts.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:LabelTextFieldCellDemo/LabelTextFieldCellDemo.xcodeproj">
    </FileRef>
    <FileRef

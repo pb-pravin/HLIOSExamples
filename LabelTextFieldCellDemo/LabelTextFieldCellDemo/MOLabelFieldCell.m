@@ -28,7 +28,6 @@
         _rowLabel.font = [UIFont boldSystemFontOfSize:14];
         _rowLabel.adjustsFontSizeToFitWidth = YES;
         [self.contentView addSubview:_rowLabel];
-        [_rowLabel release];
         
         CGFloat labelTextFieldSpace = 5;
         CGFloat textFieldHeight = 24;
@@ -41,7 +40,6 @@
         _rowTextField.backgroundColor = [UIColor clearColor];
         _rowTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         [self.contentView addSubview:_rowTextField];
-        [_rowTextField release];
         
     }
     return self;
