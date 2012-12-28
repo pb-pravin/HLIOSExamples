@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Page-BasedApp/Page-BasedApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OpenGLGameApp/OpenGLGameApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Master-DetailApp/Master-DetailApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TabbedApp/TabbedApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UtilityApp/UtilityApp.xcodeproj">
+   </FileRef>
+</Workspace>
