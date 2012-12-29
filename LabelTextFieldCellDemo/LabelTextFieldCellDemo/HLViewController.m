@@ -60,13 +60,27 @@
     //[contacts release];
 }
 
+- (void)loadView
+{
+    [super loadView];
+    NSLog(@"loadView");
+}
 
++ (void)initialize
+{
+    NSLog(@"initialize");
+}
+
++ (void)load
+{
+    NSLog(@"load");
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
+    NSLog(@"viewDidLoad");
     
     [self.view addSubview:[self buttonWithTitle:@"Hello helasdfja;sdjfkl;a"]];
     
