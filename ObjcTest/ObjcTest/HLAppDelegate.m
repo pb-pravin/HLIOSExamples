@@ -30,6 +30,17 @@
     
     ClassA *a = [[ClassA alloc] init];
     ClassB *b = [[ClassB alloc] init];
+    ClassA *a1 = [ClassA alloc];
+    id a2 = [a1 init];
+    
+    [a release];
+    [a1 release];
+    BOOL canJoin = [ClassA conformsToProtocol:@protocol(NSObject)];
+    //[a2 release];
+    
+    NSArray *array = @[@"hell", @"world"];
+    
+    
     
     return YES;
 }

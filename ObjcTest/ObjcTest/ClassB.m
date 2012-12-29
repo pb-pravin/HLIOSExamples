@@ -20,4 +20,9 @@
     NSLog(@"ClassB load");
 }
 
++ (NSString *)description
+{
+    return @"ClassB ya";
+}
+
 @end

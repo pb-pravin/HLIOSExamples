@@ -20,4 +20,10 @@
     NSLog(@"ClassA load");
 }
 
+- (void)dealloc
+{
+    NSLog(@"ClassA dealloc");
+    [super dealloc];
+}
+
 @end
