@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4151EADE16913462002DBAAE /* TabIconSocial.png in Resources */ = {isa = PBXBuildFile; fileRef = 4151EADC16913462002DBAAE /* TabIconSocial.png */; };
+		4151EADF16913462002DBAAE /* TabIconSocial@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4151EADD16913462002DBAAE /* TabIconSocial@2x.png */; };
 		41AB24FE168D9F8E00F7A2DB /* SearchBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 41AB24FC168D9F8E00F7A2DB /* SearchBarBackground.png */; };
 		41AB24FF168D9F8E00F7A2DB /* SearchBarBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41AB24FD168D9F8E00F7A2DB /* SearchBarBackground@2x.png */; };
 		41AB250B168DB92600F7A2DB /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AB2509168DB92600F7A2DB /* AddressBook.framework */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4151EADC16913462002DBAAE /* TabIconSocial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabIconSocial.png; sourceTree = "<group>"; };
+		4151EADD16913462002DBAAE /* TabIconSocial@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabIconSocial@2x.png"; sourceTree = "<group>"; };
 		41AB24FC168D9F8E00F7A2DB /* SearchBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SearchBarBackground.png; sourceTree = "<group>"; };
 		41AB24FD168D9F8E00F7A2DB /* SearchBarBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SearchBarBackground@2x.png"; sourceTree = "<group>"; };
 		41AB2509168DB92600F7A2DB /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -126,6 +130,8 @@
 		41B56785168D3157005D5130 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4151EADC16913462002DBAAE /* TabIconSocial.png */,
+				4151EADD16913462002DBAAE /* TabIconSocial@2x.png */,
 				41AB24FC168D9F8E00F7A2DB /* SearchBarBackground.png */,
 				41AB24FD168D9F8E00F7A2DB /* SearchBarBackground@2x.png */,
 				41B567A5168D31AD005D5130 /* NavBarDefaultBack.png */,
@@ -206,6 +212,8 @@
 				41B567AE168D31AD005D5130 /* NavBarDefaultBackPressed@2x.png in Resources */,
 				41AB24FE168D9F8E00F7A2DB /* SearchBarBackground.png in Resources */,
 				41AB24FF168D9F8E00F7A2DB /* SearchBarBackground@2x.png in Resources */,
+				4151EADE16913462002DBAAE /* TabIconSocial.png in Resources */,
+				4151EADF16913462002DBAAE /* TabIconSocial@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

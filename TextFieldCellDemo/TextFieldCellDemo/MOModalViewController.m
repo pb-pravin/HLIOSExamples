@@ -7,13 +7,12 @@
 //
 
 #import "MOModalViewController.h"
-#import "MOLabelFieldCell.h"
- 
+#import "MOTextFieldCell.h"
 
 @interface MOModalViewController ()
 @property (strong, nonatomic) UITableView *tableView;
-@property (strong, nonatomic) UIBarButtonItem *cancelBtn;
-@property (strong, nonatomic) UIBarButtonItem *saveBtn;
+@property (strong, nonatomic) MOBarButtonItem *cancelBtn;
+@property (strong, nonatomic) MOBarButtonItem *saveBtn;
 
 - (IBAction)cancelEdit:(id)sender;
 - (IBAction)saveEdit:(id)sender;
@@ -29,7 +28,7 @@
 - (IBAction)saveEdit:(id)sender
 {
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    MOLabelFieldCell *cell = (MOLabelFieldCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+    MOTextFieldCell *cell = (MOTextFieldCell *)[self.tableView cellForRowAtIndexPath:indexPath];
     NSString *result = cell.rowTextField.text;
     if (self.delegate)
     {    
@@ -42,7 +41,7 @@
 - (UIBarButtonItem *)cancelBtn
 {
     if (_cancelBtn == nil) {
-        _cancelBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
+        _cancelBtn = [[MOBarButtonItem alloc] initBarButtonItemWithTitle:@"Cancel"
                                                                    target:self
                                                                    action:@selector(cancelEdit:)];
     }
@@ -54,7 +53,7 @@
 - (UIBarButtonItem *)saveBtn
 {
     if (_saveBtn == nil) {
-        _saveBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave
+        _saveBtn = [[MOBarButtonItem alloc] initDoneBarButtonItemWithTitle:@"Save"
                                                                  target:self
                                                                  action:@selector(saveEdit:)];
     }
@@ -90,8 +89,21 @@
     // Create the navigation bar
     CGFloat navBarHeight = 44.f;
     UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, 320, navBarHeight)];
+    // For IOS version of above 5.0
+    UIImage *navBarBackgroundImage = [[UIImage imageNamed:@"NavBarBackground.png"] stretchableImageWithLeftCapWidth:0 topCapHeight:0];
+    [navBar setBackgroundImage:navBarBackgroundImage forBarMetrics:UIBarMetricsDefault];
     // The navigation item
     UINavigationItem *navItem = [[UINavigationItem alloc] initWithTitle:self.title];
+    UILabel *titleView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 160, 24)];
+    titleView.text = @"Name";
+    titleView.textAlignment = UITextAlignmentCenter;
+    titleView.backgroundColor = [UIColor clearColor];
+    titleView.font = [UIFont boldSystemFontOfSize:20.0];
+    titleView.shadowColor = [UIColor colorWithWhite:0.0 alpha:0.5];
+    titleView.textColor = [UIColor blackColor];
+    navItem.titleView = titleView;
+    [titleView release];
+
     // The cancel bar button item
     navItem.leftBarButtonItem = self.cancelBtn;
     navItem.rightBarButtonItem = self.saveBtn;
@@ -115,7 +127,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    MOLabelFieldCell *cell = (MOLabelFieldCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+    MOTextFieldCell *cell = (MOTextFieldCell *)[self.tableView cellForRowAtIndexPath:indexPath];
     [cell.rowTextField becomeFirstResponder];
 }
 
@@ -150,13 +162,12 @@
 {
     
     static NSString *CellIdentifier = @"Cell";
-    MOLabelFieldCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    MOTextFieldCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[MOLabelFieldCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[MOTextFieldCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
-    cell.rowLabel.text = @"Name";
     cell.rowTextField.placeholder = @"Input your name.";
     
     return cell;

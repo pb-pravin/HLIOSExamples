@@ -82,8 +82,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     NSLog(@"viewDidLoad");
     
-    [self.view addSubview:[self buttonWithTitle:@"Hello helasdfja;sdjfkl;a"]];
-    
+//    [self.view addSubview:[self buttonWithTitle:@"Hello helasdfja;sdjfkl;a"]];
+    [self.view addSubview:[self buttonWithImage:[UIImage imageNamed:@"TabIconSocial.png"]]];
     
     
     // Change the background image of UISearchBar
@@ -188,6 +188,19 @@
     
     
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    return btn;
+}
+
+- (UIButton *)buttonWithImage:(UIImage *)image {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(100, 100, 100, 30);
+    [btn setBackgroundImage:[[UIImage imageNamed:@"NavBarDefaultBack.png"] stretchableImageWithLeftCapWidth:15 topCapHeight:0] forState:UIControlStateNormal];
+    [btn setBackgroundImage:[[UIImage imageNamed:@"NavBarDefaultBackPressed.png"] stretchableImageWithLeftCapWidth:15 topCapHeight:0] forState:UIControlStateHighlighted];
+    
+    [btn setImage:image forState:UIControlStateNormal];
+    btn.adjustsImageWhenHighlighted = NO;
+    
+    [btn addTarget:self action:@selector(pressed:) forControlEvents:UIControlEventTouchUpInside];
     return btn;
 }
 
