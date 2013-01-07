@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:IntroductionViewController/IntroductionDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TextFieldCellDemo/TextFieldCellDemo.xcodeproj">
    </FileRef>
    <FileRef
