@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MOTabBarDemo/MOTabBarDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TextFieldCellDemo/TextFieldCellDemo.xcodeproj">
    </FileRef>
    <FileRef
@@ -9,6 +12,9 @@
    </FileRef>
    <FileRef
       location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:CustomizedTabBarDemo/CustomizedTabBarDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Autosize/Autosize.xcodeproj">
