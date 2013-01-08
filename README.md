@@ -27,3 +27,9 @@ a collection of examples of my IOS code
 5. make a UIImageView clickable
 
 ![](http://www.anhailin.co/blog/wp-content/uploads/2013/01/TextFieldCellDemo-e1357111612984.png)
+
+### ObjcTest
+This project is primarly for testing some features of Objective-C language.
+
+1. Test `+initialize` NSObject class method, which is invoked before it's used.
+2. Test `+load` NSObject class method, which is  invoked whenever a class or category is added to the Objective-C runtime; 
