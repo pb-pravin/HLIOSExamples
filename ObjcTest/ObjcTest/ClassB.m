@@ -25,4 +25,10 @@
     return @"ClassB ya";
 }
 
+- (void)dealloc
+{
+    NSLog(@"ClassB dealloc");
+    [super dealloc];
+}
+
 @end
