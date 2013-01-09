@@ -1,14 +1,13 @@
 //
 //  HLAppDelegate.m
-//  ObjcTest
+//  IntroductionViewController
 //
-//  Created by an hailin on 29/12/12.
-//  Copyright (c) 2012 HailinAn. All rights reserved.
+//  Created by an hailin on 1/5/13.
+//  Copyright (c) 2013 HailinAn. All rights reserved.
 //
 
 #import "HLAppDelegate.h"
-#import "ClassB.h"
-#import "HLViewController.h"
+#import "HLIntroductionViewController.h"
 
 @implementation HLAppDelegate
 
@@ -22,31 +21,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    application.statusBarHidden = YES;
     // Override point for customization after application launch.
-    self.viewController = [[[HLViewController alloc] initWithNibName:@"HLViewController" bundle:nil] autorelease];
+    _viewController = [[HLIntroductionViewController alloc] init];
     self.window.rootViewController = self.viewController;
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
-    
-    if ([[NSNull null] isKindOfClass:[ClassB class]]) {
-         
-    }
-    
-    //ClassA *a = [[ClassA alloc] init];
-    //ClassB *b = [[ClassB alloc] init];
-    //ClassA *a1 = [ClassA alloc];
-    //id a2 = [a1 init];
-    
-    //[a release];
-    //[a1 release];
-    //[b release];
-    //BOOL canJoin = [ClassA conformsToProtocol:@protocol(NSObject)];
-    //[a2 release];
-    
-    //NSArray *array = @[@"hell", @"world"];
-    
-    
-    
     return YES;
 }
 
