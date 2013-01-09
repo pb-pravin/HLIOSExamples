@@ -34,10 +34,6 @@
     [self.view addSubview:label];
 }
 
-- (NSString *)iconImageName {
-	return @"TabIconSocial.png";
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];

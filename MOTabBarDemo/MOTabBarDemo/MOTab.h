@@ -14,6 +14,7 @@
 }
 
 @property (nonatomic, assign, getter = isActive) BOOL active;
+@property (nonatomic, retain) NSString *imageName;
 
 - (id)initWithIconImageName:(NSString *)imageName;
 @end

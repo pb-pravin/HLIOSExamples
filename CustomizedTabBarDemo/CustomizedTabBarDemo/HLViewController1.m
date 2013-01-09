@@ -34,10 +34,6 @@
     [self.view addSubview:label];
 }
 
-- (NSString *)iconImageName {
-	return @"TabIconChats.png";
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];

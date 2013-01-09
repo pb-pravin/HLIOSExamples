@@ -27,32 +27,46 @@
 }
 
 
+- (id)init
+{
+    self = [super init];
+    if (self)
+    {
+
+    }
+    return self;
+}
+
+
 - (void)loadView
 {
+    // Create tabBarView
     _tabBarView = [[MOTabBarView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
 	_tabBarView.backgroundColor = [UIColor clearColor];
 	self.view = _tabBarView;
     
-	CGFloat tabBarHeight = 48;
-	_tabBar = [[MOTabBar alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - tabBarHeight, self.view.bounds.size.width, tabBarHeight)];
-	_tabBar.delegate = self;
-	_tabBarView.tabBar = _tabBar;
+    CGFloat tabBarHeight = 48;
+    _tabBar = [[MOTabBar alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - tabBarHeight, self.view.bounds.size.width, tabBarHeight)];
+    _tabBar.delegate = self;
+    _tabBar.backgroundColor = [UIColor redColor];
+    _tabBarView.tabBar = _tabBar;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+
+
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
-// tab bar delegate method
+// MOTabBarDelegate method, called when user selected a tab.
 - (void)tabBar:(MOTabBar *)aTabBar didSelectTabAtIndex:(NSInteger)index
 {
 	UIViewController *vc = [self.viewControllers objectAtIndex:index];
@@ -65,6 +79,7 @@
 	}
     else
     {
+        // Set the selected view, It will change the contentView
 		self.selectedViewController = vc;
 	}
 }
@@ -76,9 +91,14 @@
         [_selectedViewController release];
 		_selectedViewController = [vc retain];
 
-		self.tabBarView.contentView = vc.view;
+        MOTabBarView *tabBarView = (MOTabBarView *)self.view;
+		tabBarView.contentView = vc.view;
 		
-		[self.tabBar setSelectedTab:[self.tabBar.tabs objectAtIndex:self.selectedIndex]];
+        // When a viewController is selected programatically, tell the tabBar to make
+        // corresponding change.
+        
+        
+		[tabBarView.tabBar setSelectedTab:[tabBarView.tabBar.tabs objectAtIndex:self.selectedIndex]];
 	}
 }
 
@@ -89,6 +109,7 @@
 
 - (void)setSelectedIndex:(NSUInteger)aSelectedIndex
 {
+    // Eventually, change the selected view controller.
 	if (self.viewControllers.count > aSelectedIndex)
 		self.selectedViewController = [self.viewControllers objectAtIndex:aSelectedIndex];
 }
@@ -101,7 +122,10 @@
         _viewControllers = [array retain];
 	}
 	
-	self.selectedIndex = 0;
+    // the first view controller is selected by default.
+    self.selectedIndex = 1;
+    self.selectedIndex = 2;
+    self.selectedIndex = 0;
 }
 
 @end

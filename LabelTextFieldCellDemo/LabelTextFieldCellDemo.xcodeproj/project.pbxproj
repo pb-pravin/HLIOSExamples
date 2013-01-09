@@ -30,6 +30,7 @@
 		41B567AC168D31AD005D5130 /* NavBarDefaultBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41B567A6168D31AD005D5130 /* NavBarDefaultBack@2x.png */; };
 		41B567AD168D31AD005D5130 /* NavBarDefaultBackPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 41B567A7168D31AD005D5130 /* NavBarDefaultBackPressed.png */; };
 		41B567AE168D31AD005D5130 /* NavBarDefaultBackPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41B567A8168D31AD005D5130 /* NavBarDefaultBackPressed@2x.png */; };
+		41E8EED2169D96DB009EE4AF /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41E8EED1169D96DA009EE4AF /* images.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		41B567A6168D31AD005D5130 /* NavBarDefaultBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarDefaultBack@2x.png"; sourceTree = "<group>"; };
 		41B567A7168D31AD005D5130 /* NavBarDefaultBackPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarDefaultBackPressed.png; sourceTree = "<group>"; };
 		41B567A8168D31AD005D5130 /* NavBarDefaultBackPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarDefaultBackPressed@2x.png"; sourceTree = "<group>"; };
+		41E8EED1169D96DA009EE4AF /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpg; path = ../../../../Desktop/images.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		41B56785168D3157005D5130 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				41E8EED1169D96DA009EE4AF /* images.jpg */,
 				4151EADC16913462002DBAAE /* TabIconSocial.png */,
 				4151EADD16913462002DBAAE /* TabIconSocial@2x.png */,
 				41AB24FC168D9F8E00F7A2DB /* SearchBarBackground.png */,
@@ -214,6 +217,7 @@
 				41AB24FF168D9F8E00F7A2DB /* SearchBarBackground@2x.png in Resources */,
 				4151EADE16913462002DBAAE /* TabIconSocial.png in Resources */,
 				4151EADF16913462002DBAAE /* TabIconSocial@2x.png in Resources */,
+				41E8EED2169D96DB009EE4AF /* images.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

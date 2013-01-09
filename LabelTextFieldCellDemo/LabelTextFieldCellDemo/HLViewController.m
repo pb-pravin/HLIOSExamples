@@ -85,6 +85,14 @@
 //    [self.view addSubview:[self buttonWithTitle:@"Hello helasdfja;sdjfkl;a"]];
     [self.view addSubview:[self buttonWithImage:[UIImage imageNamed:@"TabIconSocial.png"]]];
     
+    // Keep the aspect ratio not change.
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 200, 150, 150)];
+    imageView.backgroundColor = [UIColor redColor];
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    imageView.clipsToBounds = YES;
+    imageView.image = [UIImage imageNamed:@"images.jpg"];
+    [self.view addSubview:imageView];
+    [imageView release];
     
     // Change the background image of UISearchBar
     UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];

@@ -18,8 +18,11 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-//        self.tabBarItem = [[[UITabBarItem alloc] initWithTitle:@"View3" image:[UIImage imageNamed:@"TabIconChats.png"] tag:3] autorelease];
-//        self.tabBarItem.badgeValue = @"1234567890";
+        self.tabBarItem = [[[UITabBarItem alloc] initWithTitle:@"View3" image:[UIImage imageNamed:@"TabIconChats.png"] tag:3] autorelease];
+        //self.tabBarItem.badgeValue = @"1234567890";
+        
+        //[self.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"TabIconChatsActive.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"TabIconChats.png"]];
+
     }
     return self;
 }
@@ -33,10 +36,6 @@
     label.text = @"View III";
     label.textColor = [UIColor redColor];
     [self.view addSubview:label];
-}
-
-- (NSString *)iconImageName {
-	return @"TabMeMask.png";
 }
 
 - (void)viewDidLoad

@@ -29,12 +29,6 @@
 		41015C6B169AB375007808D8 /* HLViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 41015C6A169AB375007808D8 /* HLViewController1.m */; };
 		41015C6E169AB40E007808D8 /* HLViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 41015C6D169AB40E007808D8 /* HLViewController2.m */; };
 		41015C71169AB431007808D8 /* HLViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 41015C70169AB431007808D8 /* HLViewController3.m */; };
-		41015C83169AC66F007808D8 /* BCTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 41015C78169AC66F007808D8 /* BCTab.m */; };
-		41015C84169AC66F007808D8 /* BCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 41015C7A169AC66F007808D8 /* BCTabBar.m */; };
-		41015C85169AC66F007808D8 /* BCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41015C7C169AC66F007808D8 /* BCTabBarController.m */; };
-		41015C86169AC66F007808D8 /* BCTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41015C7E169AC66F007808D8 /* BCTabBarView.m */; };
-		41015C87169AC66F007808D8 /* UINavigationController+icons.m in Sources */ = {isa = PBXBuildFile; fileRef = 41015C80169AC66F007808D8 /* UINavigationController+icons.m */; };
-		41015C88169AC66F007808D8 /* UIViewController+iconImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 41015C82169AC66F007808D8 /* UIViewController+iconImage.m */; };
 		41015C93169AC919007808D8 /* TabBackgroundActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 41015C8D169AC919007808D8 /* TabBackgroundActive.png */; };
 		41015C94169AC919007808D8 /* TabBackgroundActive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41015C8E169AC919007808D8 /* TabBackgroundActive@2x.png */; };
 		41015C95169AC919007808D8 /* TabIconChatsActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 41015C8F169AC919007808D8 /* TabIconChatsActive.png */; };
@@ -73,18 +67,6 @@
 		41015C6D169AB40E007808D8 /* HLViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLViewController2.m; sourceTree = "<group>"; };
 		41015C6F169AB431007808D8 /* HLViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLViewController3.h; sourceTree = "<group>"; };
 		41015C70169AB431007808D8 /* HLViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLViewController3.m; sourceTree = "<group>"; };
-		41015C77169AC66F007808D8 /* BCTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCTab.h; sourceTree = "<group>"; };
-		41015C78169AC66F007808D8 /* BCTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTab.m; sourceTree = "<group>"; };
-		41015C79169AC66F007808D8 /* BCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCTabBar.h; sourceTree = "<group>"; };
-		41015C7A169AC66F007808D8 /* BCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTabBar.m; sourceTree = "<group>"; };
-		41015C7B169AC66F007808D8 /* BCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCTabBarController.h; sourceTree = "<group>"; };
-		41015C7C169AC66F007808D8 /* BCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTabBarController.m; sourceTree = "<group>"; };
-		41015C7D169AC66F007808D8 /* BCTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCTabBarView.h; sourceTree = "<group>"; };
-		41015C7E169AC66F007808D8 /* BCTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTabBarView.m; sourceTree = "<group>"; };
-		41015C7F169AC66F007808D8 /* UINavigationController+icons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+icons.h"; sourceTree = "<group>"; };
-		41015C80169AC66F007808D8 /* UINavigationController+icons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+icons.m"; sourceTree = "<group>"; };
-		41015C81169AC66F007808D8 /* UIViewController+iconImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+iconImage.h"; sourceTree = "<group>"; };
-		41015C82169AC66F007808D8 /* UIViewController+iconImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+iconImage.m"; sourceTree = "<group>"; };
 		41015C8D169AC919007808D8 /* TabBackgroundActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBackgroundActive.png; sourceTree = "<group>"; };
 		41015C8E169AC919007808D8 /* TabBackgroundActive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBackgroundActive@2x.png"; sourceTree = "<group>"; };
 		41015C8F169AC919007808D8 /* TabIconChatsActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabIconChatsActive.png; sourceTree = "<group>"; };
@@ -137,7 +119,6 @@
 		41015C31169AB2CA007808D8 /* CustomizedTabBarDemo */ = {
 			isa = PBXGroup;
 			children = (
-				41015C76169AC625007808D8 /* BCTab */,
 				41015C48169AB2F5007808D8 /* images */,
 				41015C3A169AB2CA007808D8 /* HLAppDelegate.h */,
 				41015C3B169AB2CA007808D8 /* HLAppDelegate.m */,
@@ -187,25 +168,6 @@
 				41015C58169AB33E007808D8 /* TabSeparator@2x.png */,
 			);
 			name = images;
-			sourceTree = "<group>";
-		};
-		41015C76169AC625007808D8 /* BCTab */ = {
-			isa = PBXGroup;
-			children = (
-				41015C77169AC66F007808D8 /* BCTab.h */,
-				41015C78169AC66F007808D8 /* BCTab.m */,
-				41015C79169AC66F007808D8 /* BCTabBar.h */,
-				41015C7A169AC66F007808D8 /* BCTabBar.m */,
-				41015C7B169AC66F007808D8 /* BCTabBarController.h */,
-				41015C7C169AC66F007808D8 /* BCTabBarController.m */,
-				41015C7D169AC66F007808D8 /* BCTabBarView.h */,
-				41015C7E169AC66F007808D8 /* BCTabBarView.m */,
-				41015C7F169AC66F007808D8 /* UINavigationController+icons.h */,
-				41015C80169AC66F007808D8 /* UINavigationController+icons.m */,
-				41015C81169AC66F007808D8 /* UIViewController+iconImage.h */,
-				41015C82169AC66F007808D8 /* UIViewController+iconImage.m */,
-			);
-			name = BCTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,12 +257,6 @@
 				41015C6B169AB375007808D8 /* HLViewController1.m in Sources */,
 				41015C6E169AB40E007808D8 /* HLViewController2.m in Sources */,
 				41015C71169AB431007808D8 /* HLViewController3.m in Sources */,
-				41015C83169AC66F007808D8 /* BCTab.m in Sources */,
-				41015C84169AC66F007808D8 /* BCTabBar.m in Sources */,
-				41015C85169AC66F007808D8 /* BCTabBarController.m in Sources */,
-				41015C86169AC66F007808D8 /* BCTabBarView.m in Sources */,
-				41015C87169AC66F007808D8 /* UINavigationController+icons.m in Sources */,
-				41015C88169AC66F007808D8 /* UIViewController+iconImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +365,7 @@
 				41015C47169AB2CA007808D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

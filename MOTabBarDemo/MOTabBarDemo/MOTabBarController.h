@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MOTabBar.h"
-@class MOTabBarView;
 
+@class MOTabBarView;
 
 @interface MOTabBarController : UIViewController <MOTabBarDelegate>
 @property (nonatomic, retain) NSArray *viewControllers;

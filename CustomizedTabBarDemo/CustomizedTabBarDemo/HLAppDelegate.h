@@ -7,11 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
-@class BCTabBarController;
 
-@interface HLAppDelegate : UIResponder <UIApplicationDelegate>
+
+
+UIImageView *serivceImg;
+UIImageView *contactImg;
+UIImageView *bookingImg;
+
+#define kserviceHover @"TabIconChatsActive.png"
+#define kservice @"TabIconChats.png"
+#define ktabContactHover @"TabIconSocialActive.png"
+#define ktabContact @"TabIconSocial.png"
+#define ktabBookingHover @"TabMeMask.png"
+#define ktabBooking @"TabMeMask.png"
+
+@interface HLAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) BCTabBarController *tabBarController;
+@property (strong, nonatomic) UITabBarController *tabBarController;
 
 @end
