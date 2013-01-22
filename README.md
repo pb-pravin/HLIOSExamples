@@ -7,6 +7,7 @@ a collection of examples of my IOS code
 1. Demo how to use corner radius.
 2. Demo how to use SDWebImage library.
 3. Demo Labels, buttons, and image views.
+4. Demo how to use NSAttributedString
 
 
 ### LabelTextFieldCellDemo
@@ -41,3 +42,6 @@ This project is primarly for testing some features of Objective-C language.
 
 1. Test `+initialize` NSObject class method, which is invoked before it's used.
 2. Test `+load` NSObject class method, which is  invoked whenever a class or category is added to the Objective-C runtime; 
+3. Demo how to use NSMutableIndexSet.
+4. Demo how to use NSRange struct.
+5. 

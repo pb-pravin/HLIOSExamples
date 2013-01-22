@@ -38,6 +38,7 @@
 		4185E0CC16A1345F000FDFFB /* NavBarDoneButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4185E0BE16A1345F000FDFFB /* NavBarDoneButton@2x.png */; };
 		4185E0CD16A1345F000FDFFB /* NavBarDoneButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4185E0BF16A1345F000FDFFB /* NavBarDoneButtonPressed.png */; };
 		4185E0CE16A1345F000FDFFB /* NavBarDoneButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4185E0C016A1345F000FDFFB /* NavBarDoneButtonPressed@2x.png */; };
+		4194221616AE41D1000D3205 /* MOTextFieldController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4194221516AE41D1000D3205 /* MOTextFieldController.m */; };
 		41CF5E1D169FBFCB005510B8 /* 50.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41CF5E1C169FBFCB005510B8 /* 50.jpg */; };
 		41CF5E9316A01315005510B8 /* MOButtonDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF5E9216A01314005510B8 /* MOButtonDemoController.m */; };
 		41CF5EAF16A01A40005510B8 /* activityIndicator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 41CF5EAE16A01A40005510B8 /* activityIndicator.gif */; };
@@ -87,6 +88,8 @@
 		4185E0BE16A1345F000FDFFB /* NavBarDoneButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarDoneButton@2x.png"; sourceTree = "<group>"; };
 		4185E0BF16A1345F000FDFFB /* NavBarDoneButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarDoneButtonPressed.png; sourceTree = "<group>"; };
 		4185E0C016A1345F000FDFFB /* NavBarDoneButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarDoneButtonPressed@2x.png"; sourceTree = "<group>"; };
+		4194221416AE41D1000D3205 /* MOTextFieldController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOTextFieldController.h; sourceTree = "<group>"; };
+		4194221516AE41D1000D3205 /* MOTextFieldController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOTextFieldController.m; sourceTree = "<group>"; };
 		41CF5E1C169FBFCB005510B8 /* 50.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 50.jpg; sourceTree = "<group>"; };
 		41CF5E9116A01314005510B8 /* MOButtonDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOButtonDemoController.h; sourceTree = "<group>"; };
 		41CF5E9216A01314005510B8 /* MOButtonDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOButtonDemoController.m; sourceTree = "<group>"; };
@@ -149,7 +152,6 @@
 			children = (
 				4185E0AF16A1340F000FDFFB /* MOBarButtonItem.h */,
 				4185E0B016A1340F000FDFFB /* MOBarButtonItem.m */,
-				41CF5E1B169FBFCB005510B8 /* images */,
 				410F36A0169EDF600094D09D /* MOAppDelegate.h */,
 				410F36A1169EDF600094D09D /* MOAppDelegate.m */,
 				410F36A9169EDF600094D09D /* MOLabelDemoController.h */,
@@ -160,6 +162,9 @@
 				4185E0AD16A13343000FDFFB /* MOButtonDemo2Controller.m */,
 				41CF5EB216A027F7005510B8 /* MOImageLoadController.h */,
 				41CF5EB316A027F7005510B8 /* MOImageLoadController.m */,
+				4194221416AE41D1000D3205 /* MOTextFieldController.h */,
+				4194221516AE41D1000D3205 /* MOTextFieldController.m */,
+				41CF5E1B169FBFCB005510B8 /* images */,
 				410F3698169EDF600094D09D /* Supporting Files */,
 				4185E07116A11B9A000FDFFB /* UIImage+Utility.h */,
 				4185E07216A11B9A000FDFFB /* UIImage+Utility.m */,
@@ -309,6 +314,7 @@
 				4185E0AA16A131D9000FDFFB /* UILabel+Utility.m in Sources */,
 				4185E0AE16A13343000FDFFB /* MOButtonDemo2Controller.m in Sources */,
 				4185E0B116A1340F000FDFFB /* MOBarButtonItem.m in Sources */,
+				4194221616AE41D1000D3205 /* MOTextFieldController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

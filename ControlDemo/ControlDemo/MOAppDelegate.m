@@ -12,6 +12,7 @@
 #import "MOButtonDemoController.h"
 #import "MOButtonDemo2Controller.h"
 #import "MOImageLoadController.h"
+#import "MOTextFieldController.h"
 
 @implementation MOAppDelegate
 
@@ -27,10 +28,11 @@
     MOButtonDemoController *buttonDemoController = [[MOButtonDemoController alloc] init];
     MOButtonDemo2Controller *buttonDemo2Controller = [[MOButtonDemo2Controller alloc] init];
     MOImageLoadController *imageLoadController = [[MOImageLoadController alloc] init];
+    MOTextFieldController *textfieldController = [[MOTextFieldController alloc] init];
     // UIButton demo controller
     
     
-    _tabBarController.viewControllers = @[labelDemoController, buttonDemoController, [[UINavigationController alloc] initWithRootViewController:buttonDemo2Controller], imageLoadController];
+    _tabBarController.viewControllers = @[labelDemoController, buttonDemoController, [[UINavigationController alloc] initWithRootViewController:buttonDemo2Controller], imageLoadController, textfieldController];
     // NSUInteger type, could be NSNotFound, which is effectively NSIntegerMax
     // NSNotFound Defines a value that indicates that an item requested couldn’t be found or doesn’t exist.
     _tabBarController.selectedIndex = 1;
