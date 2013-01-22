@@ -323,11 +323,15 @@
 		41BDF43616940BE600B9200A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lei Lei (JV5Y7A3TGE)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextFieldCellDemo/TextFieldCellDemo-Prefix.pch";
 				INFOPLIST_FILE = "TextFieldCellDemo/TextFieldCellDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E021A936-4465-46AD-BA23-0B9D5E168A40";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -335,6 +339,7 @@
 		41BDF43716940BE600B9200A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextFieldCellDemo/TextFieldCellDemo-Prefix.pch";
 				INFOPLIST_FILE = "TextFieldCellDemo/TextFieldCellDemo-Info.plist";
@@ -363,6 +368,7 @@
 				41BDF43716940BE600B9200A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

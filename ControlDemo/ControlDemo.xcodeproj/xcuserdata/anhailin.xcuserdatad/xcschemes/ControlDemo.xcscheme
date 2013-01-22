@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "41015C26169AB2CA007808D8"
-               BuildableName = "CustomizedTabBarDemo.app"
-               BlueprintName = "CustomizedTabBarDemo"
-               ReferencedContainer = "container:CustomizedTabBarDemo.xcodeproj">
+               BlueprintIdentifier = "410F368C169EDF600094D09D"
+               BuildableName = "ControlDemo.app"
+               BlueprintName = "ControlDemo"
+               ReferencedContainer = "container:ControlDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41015C26169AB2CA007808D8"
-            BuildableName = "CustomizedTabBarDemo.app"
-            BlueprintName = "CustomizedTabBarDemo"
-            ReferencedContainer = "container:CustomizedTabBarDemo.xcodeproj">
+            BlueprintIdentifier = "410F368C169EDF600094D09D"
+            BuildableName = "ControlDemo.app"
+            BlueprintName = "ControlDemo"
+            ReferencedContainer = "container:ControlDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41015C26169AB2CA007808D8"
-            BuildableName = "CustomizedTabBarDemo.app"
-            BlueprintName = "CustomizedTabBarDemo"
-            ReferencedContainer = "container:CustomizedTabBarDemo.xcodeproj">
+            BlueprintIdentifier = "410F368C169EDF600094D09D"
+            BuildableName = "ControlDemo.app"
+            BlueprintName = "ControlDemo"
+            ReferencedContainer = "container:ControlDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41015C26169AB2CA007808D8"
-            BuildableName = "CustomizedTabBarDemo.app"
-            BlueprintName = "CustomizedTabBarDemo"
-            ReferencedContainer = "container:CustomizedTabBarDemo.xcodeproj">
+            BlueprintIdentifier = "410F368C169EDF600094D09D"
+            BuildableName = "ControlDemo.app"
+            BlueprintName = "ControlDemo"
+            ReferencedContainer = "container:ControlDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

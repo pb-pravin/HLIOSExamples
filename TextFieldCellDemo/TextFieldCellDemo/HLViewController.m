@@ -32,8 +32,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-    
     
     UIImage *image = [UIImage imageNamed:@"1.jpg"];
     UIImageView *imageView = [[[UIImageView alloc] initWithImage:image] autorelease];
@@ -43,11 +41,39 @@
     [imageView addGestureRecognizer:tap];
     [self.view addSubview:imageView];
     
-    
-    
-    
-    
+    // Long press test
+    imageView = [[[UIImageView alloc] initWithImage:image] autorelease];
+    imageView.frame = CGRectMake((320 - image.size.width)/2, ([UIScreen mainScreen].bounds.size.height - image.size.height)/2 - image.size.height, image.size.width, image.size.height);
+    imageView.userInteractionEnabled = YES;
+
+    UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(imageLongPressed:)];
+    longPressGesture.minimumPressDuration = 1.0;
+    [imageView addGestureRecognizer:longPressGesture];
+    [longPressGesture release];
+    [self.view addSubview:imageView];
 }
+
+- (IBAction)imageLongPressed:(id)sender
+{
+    //[[[[UIAlertView alloc] initWithTitle:nil message:@"long press" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease] show];
+//    static BOOL flag = YES;
+//    if (flag)
+//    {
+//        NSLog(@"long press");
+//        flag = NO;
+//    }
+    UILongPressGestureRecognizer *guestureRecognizer = (UILongPressGestureRecognizer *)sender;
+    if (guestureRecognizer.state == UIGestureRecognizerStateEnded) {
+        NSLog(@"UIGestureRecognizerStateEnded");
+        //Do Whatever You want on End of Gesture
+    }
+    else if (guestureRecognizer.state == UIGestureRecognizerStateBegan){
+        NSLog(@"UIGestureRecognizerStateBegan.");
+        //Do Whatever You want on Began of Gesture
+    }
+    //NSLog(@"long press");
+}
+
 
 - (void)didReceiveMemoryWarning
 {

@@ -83,7 +83,8 @@
     NSLog(@"viewDidLoad");
     
 //    [self.view addSubview:[self buttonWithTitle:@"Hello helasdfja;sdjfkl;a"]];
-    [self.view addSubview:[self buttonWithImage:[UIImage imageNamed:@"TabIconSocial.png"]]];
+    //[self.view addSubview:[self buttonWithImage:[UIImage imageNamed:@"TabIconSocial.png"]]];
+    [self.view addSubview:[self buttonWithTitle:@"Hello World"]];
     
     // Keep the aspect ratio not change.
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 200, 150, 150)];
@@ -179,7 +180,7 @@
     [btn setBackgroundImage:[[UIImage imageNamed:@"NavBarDefaultBack.png"] stretchableImageWithLeftCapWidth:15 topCapHeight:0] forState:UIControlStateNormal];
     [btn setBackgroundImage:[[UIImage imageNamed:@"NavBarDefaultBackPressed.png"] stretchableImageWithLeftCapWidth:15 topCapHeight:0] forState:UIControlStateHighlighted];
     
-    [btn setTitle:title forState:UIControlStateNormal];
+    //[btn setTitle:title forState:UIControlStateNormal];
     
     CGRect frame = btn.frame;
     btn.titleLabel.font = [UIFont boldSystemFontOfSize:12];

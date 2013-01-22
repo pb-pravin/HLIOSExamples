@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CollapsableTableViewDemo/CollapsableTableViewDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ControlDemo/ControlDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MOTabBarDemo/MOTabBarDemo.xcodeproj">
    </FileRef>
    <FileRef
@@ -12,9 +18,6 @@
    </FileRef>
    <FileRef
       location = "group:README.md">
-   </FileRef>
-   <FileRef
-      location = "group:CustomizedTabBarDemo/CustomizedTabBarDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Autosize/Autosize.xcodeproj">

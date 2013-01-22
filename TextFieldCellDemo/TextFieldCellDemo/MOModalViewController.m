@@ -95,7 +95,7 @@
     // The navigation item
     UINavigationItem *navItem = [[UINavigationItem alloc] initWithTitle:self.title];
     UILabel *titleView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 160, 24)];
-    titleView.text = @"Name";
+    titleView.text = @"Add by Phone Number";
     titleView.textAlignment = UITextAlignmentCenter;
     titleView.backgroundColor = [UIColor clearColor];
     titleView.font = [UIFont boldSystemFontOfSize:20.0];

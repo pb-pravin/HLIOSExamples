@@ -3,6 +3,12 @@ HLIOSExamples
 
 a collection of examples of my IOS code
 
+### ControlDemo (ARC project)
+1. Demo how to use corner radius.
+2. Demo how to use SDWebImage library.
+3. Demo Labels, buttons, and image views.
+
+
 ### LabelTextFieldCellDemo
 1. LabelTextFieldCell
 2. Customized UINavigationBar and UINavigationItem
@@ -23,9 +29,10 @@ a collection of examples of my IOS code
 ### TextFieldDemo
 1. TextFieldCell
 2. configure the background image of UINavigationBar.
-3. configure the color of UINavigationItem.
+3. customize title view for UINavigationItem.
 4. configure the background image of UIBarButtonItem.
 5. make a UIImageView clickable
+6. demo how to use long press guesture recognizer.
 
 ![](http://www.anhailin.co/blog/wp-content/uploads/2013/01/TextFieldCellDemo-e1357111612984.png)
 

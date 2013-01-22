@@ -9,6 +9,9 @@
 #import "HLAppDelegate.h"
 #import "ClassB.h"
 #import "HLViewController.h"
+#import "MOUser.h"
+#import "SPDeepCopy.h"
+
 
 @implementation HLAppDelegate
 
@@ -28,9 +31,9 @@
     [self.window makeKeyAndVisible];
     
     
-    if ([[NSNull null] isKindOfClass:[ClassB class]]) {
-         
-    }
+//    if ([[NSNull null] isKindOfClass:[ClassB class]]) {
+//         
+//    }
     
     //ClassA *a = [[ClassA alloc] init];
     //ClassB *b = [[ClassB alloc] init];
@@ -46,8 +49,92 @@
     //NSArray *array = @[@"hell", @"world"];
     
     
+//    NSMutableArray *array = [[NSMutableArray alloc] initWithArray:@[@"1", @"2", @"3", @"4", @"5"]];
+//    
+//    NSMutableIndexSet *indexes = [[[NSMutableIndexSet alloc] init] autorelease];
+//    for(int i=0; i<array.count; i++){
+//        NSString *s = [array objectAtIndex:i];
+//        if([s isEqualToString:@"2"]){
+//            [indexes addIndex:i];
+//        }
+//    }
+//    [array removeObjectsAtIndexes:indexes];
+    
+    NSMutableDictionary *m1 = [[[NSMutableDictionary alloc] init] autorelease];
+    [self inserting:m1 withFlag:@"an"];
+    
+    NSMutableDictionary *m2 = [[[NSMutableDictionary alloc] init] autorelease];
+    [self inserting:m2 withFlag:@"hai"];
+    
+    NSMutableDictionary *m3 = [[[NSMutableDictionary alloc] init] autorelease];
+    [self inserting:m3 withFlag:@"lin"];
+
+    
+    NSMutableDictionary *wrapDict = [[[NSMutableDictionary alloc] init] autorelease];
+    [wrapDict setObject:m1 forKey:@"hi"];
+    [wrapDict setObject:m2 forKey:@"ho"];
+    [wrapDict setObject:m3 forKey:@"ih"];
+    [self writing:wrapDict];
+
+    
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSString *path = [paths objectAtIndex:0];
+//    NSString *fileName = [path stringByAppendingPathComponent:@"demo"];
+//    NSMutableDictionary *mutableDict = [NSKeyedUnarchiver unarchiveObjectWithFile:fileName];
+//    if (mutableDict == nil) {
+//        mutableDict = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"Hailin", @"name", [NSNumber numberWithInt:1], @"gender", nil];
+//        NSData *buffer = [NSKeyedArchiver archivedDataWithRootObject:mutableDict];
+//        [buffer writeToFile:fileName atomically:YES];
+//    }
+    
+    
+    
+    
+    
+    
+    
+//    NSDictionary *dict = [[[NSDictionary alloc] initWithObjectsAndKeys:@"Hailin", @"name", nil] autorelease];
+//    MOUser *user = [[MOUser alloc] initWithDictionary:dict];
+//    
+//    NSLog(@"%@", user);
+//    
+//    [user release];
     
     return YES;
+}
+
+
+
+
+- (void)inserting:(NSMutableDictionary *)dict withFlag:(NSString *)flag{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        while (YES) {
+            static int i = 0;
+            NSLog(@"inserting at %@ with %d", flag, i);
+            [dict setObject:@"0" forKey:[NSNumber numberWithInt:i++]];
+        }
+    });
+}
+
+
+- (void)writing:(NSMutableDictionary *)dict {
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *path = [paths objectAtIndex:0];
+    NSString *fileName = [path stringByAppendingPathComponent:@"demo.plist"];
+    
+    NSDictionary *aDict = [[dict deepCopy] autorelease];
+    //NSDictionary *aDict = [dict mutableDeepCopy];
+    //NSDictionary *aDict = [[dict mutableCopy] autorelease];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        while (YES) {
+            NSLog(@"writing...");
+            NSData *buffer = [NSKeyedArchiver archivedDataWithRootObject:aDict];
+            [buffer writeToFile:fileName atomically:YES];
+            //[aDict writeToFile:fileName atomically:YES];
+        }
+    });
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
