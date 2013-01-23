@@ -44,4 +44,4 @@ This project is primarly for testing some features of Objective-C language.
 2. Test `+load` NSObject class method, which is  invoked whenever a class or category is added to the Objective-C runtime; 
 3. Demo how to use NSMutableIndexSet.
 4. Demo how to use NSRange struct.
-5. 
+5. Demo how to use NSRegularExpression class.

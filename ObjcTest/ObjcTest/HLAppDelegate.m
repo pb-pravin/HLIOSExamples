@@ -88,7 +88,7 @@
 //        [buffer writeToFile:fileName atomically:YES];
 //    }
     
-    /** Demo how to use NSRange struct. */
+    /** Demo how to use NSRange struct. 
     NSRange range1 = NSMakeRange(0, 10);
     NSLog(@"%@", NSStringFromRange(range1));
     
@@ -105,6 +105,7 @@
     
     NSLog(@"%d", NSLocationInRange(3, range4));
     NSLog(@"%d", NSEqualRanges(range1, range2));
+     */
     
     
 //    NSDictionary *dict = [[[NSDictionary alloc] initWithObjectsAndKeys:@"Hailin", @"name", nil] autorelease];
@@ -113,6 +114,52 @@
 //    NSLog(@"%@", user);
 //    
 //    [user release];
+    
+    /** Demo how to use NSRegularExpression class
+     */
+    
+    NSError *error = NULL;
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\\b(a|b)(c|d)\\b"
+                                                                           options:NSRegularExpressionCaseInsensitive
+                                                                             error:&error];
+    NSString *str = @"ac ccd bd BA cd";
+    NSUInteger numberOfMatches = [regex numberOfMatchesInString:str options:0 range:NSMakeRange(0, str.length)];
+    NSLog(@"number of matches: %u", numberOfMatches);
+    
+    NSRange range1 = [regex rangeOfFirstMatchInString:str options:0 range:NSMakeRange(0, str.length)];
+    if (NSEqualRanges(range1, NSMakeRange(NSNotFound, 0))) {
+        NSLog(@"There is no match");
+    } else {
+        NSLog(@"first matching range: %@ substring: %@", NSStringFromRange(range1), [str substringWithRange:range1]);
+    }
+    
+    NSTextCheckingResult *match = [regex firstMatchInString:str
+                                                    options:0
+                                                      range:NSMakeRange(0, [str length])];
+    if (match) {
+        NSRange matchRange = [match range];
+        NSRange firstHalfRange = [match rangeAtIndex:1];
+        NSRange secondHalfRange = [match rangeAtIndex:2];
+         NSLog(@"matchRange: %@%@, firstHalfRange: %@%@, secondHalfRange: %@%@", [str substringWithRange:matchRange], NSStringFromRange(matchRange), [str substringWithRange:firstHalfRange], NSStringFromRange(firstHalfRange), [str substringWithRange:secondHalfRange], NSStringFromRange(secondHalfRange));
+    }
+
+    
+    NSArray *matches = [regex matchesInString:str
+                                      options:0
+                                        range:NSMakeRange(0, [str length])];
+    for (NSTextCheckingResult *match in matches) {
+        NSRange matchRange = [match range];
+        NSRange firstHalfRange = [match rangeAtIndex:1];
+        NSRange secondHalfRange = [match rangeAtIndex:2];
+        NSLog(@"matchRange: %@%@, firstHalfRange: %@%@, secondHalfRange: %@%@", [str substringWithRange:matchRange], NSStringFromRange(matchRange), [str substringWithRange:firstHalfRange], NSStringFromRange(firstHalfRange), [str substringWithRange:secondHalfRange], NSStringFromRange(secondHalfRange));
+    }
+    // How powerful it is!
+    NSLog(@"original string: %@", str);
+    NSString *modifiedString = [regex stringByReplacingMatchesInString:str
+                                                               options:0
+                                                                 range:NSMakeRange(0, [str length])
+                                                          withTemplate:@"$2$1"];
+    NSLog(@"modified string: %@", modifiedString);
     
     return YES;
 }

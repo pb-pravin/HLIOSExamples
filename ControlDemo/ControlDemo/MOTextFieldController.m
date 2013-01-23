@@ -8,6 +8,9 @@
 
 #import "MOTextFieldController.h"
 
+#define NUMBERS_ONLY @"1234567890"
+#define CHARACTER_LIMIT 3
+
 @interface MOTextFieldController ()
 
 @end
@@ -40,7 +43,7 @@
                                 [UIColor blackColor], NSStrokeColorAttributeName, nil];
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:@"Heloo" attributes:attributes];
     textField.attributedText = attributedString;
-    
+    textField.delegate = self;
     textField.backgroundColor = [UIColor grayColor];
     [self.view addSubview:textField];
 }
@@ -49,6 +52,20 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textField:(UITextField *)textField
+shouldChangeCharactersInRange:(NSRange)range
+replacementString:(NSString *)string {
+    NSLog(@"%@", NSStringFromRange(range));
+    NSLog(@"%@", string);
+    NSUInteger newLength = [textField.text length] + [string length] - range.length;
+    NSCharacterSet *cs = [[NSCharacterSet characterSetWithCharactersInString:NUMBERS_ONLY] invertedSet];
+    NSString *filtered = [[string componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
+    return (([string isEqualToString:filtered])&&(newLength <= CHARACTER_LIMIT));
+    return YES;
 }
 
 @end
