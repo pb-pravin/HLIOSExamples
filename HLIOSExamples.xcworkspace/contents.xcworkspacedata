@@ -20,6 +20,9 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
+      location = "group:IOSDiner/IOSDiner.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Autosize/Autosize.xcodeproj">
    </FileRef>
    <FileRef

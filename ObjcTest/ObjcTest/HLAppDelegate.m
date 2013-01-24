@@ -116,8 +116,6 @@
 //    [user release];
     
     /** Demo how to use NSRegularExpression class
-     */
-    
     NSError *error = NULL;
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\\b(a|b)(c|d)\\b"
                                                                            options:NSRegularExpressionCaseInsensitive
@@ -160,7 +158,20 @@
                                                                  range:NSMakeRange(0, [str length])
                                                           withTemplate:@"$2$1"];
     NSLog(@"modified string: %@", modifiedString);
+     */
     
+    /** Demo string to int converting
+    NSLog(@"@\"\".intValue = %d", @"".intValue);
+    NSLog(@"@\"012\".intValue = %d", @"012".intValue);
+    NSLog(@"@\"a2bcd\".intValue = %d", @"a2bcd".intValue);
+    NSLog(@"@\"  12ab34\".intValue = %d", @"  12ab34".intValue);
+     */
+    
+    /** Demo URL path
+     */
+    NSURL *url = [NSURL URLWithString:@"http://api.mozat.net/account/requestVcode"];
+    NSLog(@"url description: %@", url);
+    NSLog(@"url path: %@", url.path);
     return YES;
 }
 

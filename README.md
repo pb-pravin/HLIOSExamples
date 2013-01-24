@@ -45,3 +45,5 @@ This project is primarly for testing some features of Objective-C language.
 3. Demo how to use NSMutableIndexSet.
 4. Demo how to use NSRange struct.
 5. Demo how to use NSRegularExpression class.
+6. Demo the convertion from string to int
+7. Demo the path property of NSURL object
