@@ -18,6 +18,8 @@
 		410F36A8169EDF600094D09D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 410F36A7169EDF600094D09D /* Default-568h@2x.png */; };
 		410F36AB169EDF600094D09D /* MOLabelDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410F36AA169EDF600094D09D /* MOLabelDemoController.m */; };
 		41388321169EF1FD00707639 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41388320169EF1FD00707639 /* QuartzCore.framework */; };
+		4155876716B132A800E4B432 /* MessageBubbleGray.png in Resources */ = {isa = PBXBuildFile; fileRef = 4155876516B132A800E4B432 /* MessageBubbleGray.png */; };
+		4155876816B132A800E4B432 /* MessageBubbleGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4155876616B132A800E4B432 /* MessageBubbleGray@2x.png */; };
 		417C49A616A1086300FA1C44 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417C49A516A1086300FA1C44 /* ImageIO.framework */; };
 		4185E07016A11665000FDFFB /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4185E06F16A11665000FDFFB /* SDWebImage.framework */; };
 		4185E07316A11B9A000FDFFB /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4185E07216A11B9A000FDFFB /* UIImage+Utility.m */; };
@@ -64,6 +66,8 @@
 		410F36A9169EDF600094D09D /* MOLabelDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOLabelDemoController.h; sourceTree = "<group>"; };
 		410F36AA169EDF600094D09D /* MOLabelDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOLabelDemoController.m; sourceTree = "<group>"; };
 		41388320169EF1FD00707639 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4155876516B132A800E4B432 /* MessageBubbleGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageBubbleGray.png; sourceTree = "<group>"; };
+		4155876616B132A800E4B432 /* MessageBubbleGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageBubbleGray@2x.png"; sourceTree = "<group>"; };
 		417C49A516A1086300FA1C44 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		4185E06F16A11665000FDFFB /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		4185E07116A11B9A000FDFFB /* UIImage+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utility.h"; sourceTree = "<group>"; };
@@ -188,6 +192,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4155876416B132A800E4B432 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				4155876516B132A800E4B432 /* MessageBubbleGray.png */,
+				4155876616B132A800E4B432 /* MessageBubbleGray@2x.png */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
 		4185E0B216A1345F000FDFFB /* navBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +225,7 @@
 		41CF5E1B169FBFCB005510B8 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4155876416B132A800E4B432 /* Messages */,
 				4185E0B216A1345F000FDFFB /* navBar */,
 				41CF5EB516A029BE005510B8 /* loading.gif */,
 				41CF5EB016A023B3005510B8 /* failed.png */,
@@ -295,6 +309,8 @@
 				4185E0CC16A1345F000FDFFB /* NavBarDoneButton@2x.png in Resources */,
 				4185E0CD16A1345F000FDFFB /* NavBarDoneButtonPressed.png in Resources */,
 				4185E0CE16A1345F000FDFFB /* NavBarDoneButtonPressed@2x.png in Resources */,
+				4155876716B132A800E4B432 /* MessageBubbleGray.png in Resources */,
+				4155876816B132A800E4B432 /* MessageBubbleGray@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -69,6 +69,14 @@
     CGSize size = [label5.text sizeWithFont:label5.font constrainedToSize:CGSizeMake(120, CGFLOAT_MAX) lineBreakMode:NSLineBreakByWordWrapping];
     label5.frame = CGRectMake(label5.frame.origin.x, label5.frame.origin.y, size.width, size.height);
     [self.view addSubview:label5];
+    
+    // Message bubble
+    UIImage *_messageBubbleGray = [[UIImage imageNamed:@"MessageBubbleGray"] stretchableImageWithLeftCapWidth:23 topCapHeight:15];
+    UIImageView *messageBackgroundImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+    messageBackgroundImageView.frame = CGRectMake(label5.frame.origin.x+label5.frame.size.width+10, label5.frame.origin.y, 120+34, 50+12);
+    messageBackgroundImageView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
+    messageBackgroundImageView.image = _messageBubbleGray;
+    [self.view addSubview:messageBackgroundImageView];  
 
 }
 
