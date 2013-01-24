@@ -45,3 +45,6 @@ This project is primarly for testing some features of Objective-C language.
 3. Demo how to use NSMutableIndexSet.
 4. Demo how to use NSRange struct.
 5. 
+
+### AdvancedTableViewCells
+This project demos how to use customized UITableViewCell class

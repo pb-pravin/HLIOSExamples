@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:AdvancedTableViewCells/AdvancedTableViewCells.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ActivityCellDemo/ActivityCellDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CollapsableTableViewDemo/CollapsableTableViewDemo.xcodeproj">
    </FileRef>
    <FileRef
