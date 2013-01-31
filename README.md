@@ -8,7 +8,8 @@ a collection of examples of my IOS code
 2. Demo how to use SDWebImage library.
 3. Demo Labels, buttons, and image views.
 4. Demo how to use NSAttributedString
-
+5. Demo how to open the phone application to make a dial.
+6. Demo the delegate methods of text field and text view.
 
 ### LabelTextFieldCellDemo
 1. LabelTextFieldCell
@@ -47,6 +48,7 @@ This project is primarly for testing some features of Objective-C language.
 5. Demo how to use NSRegularExpression class
 6. Demo the convertion from string to int
 7. Demo the path property of NSURL object
+8. Demo the character replacement method of NSMutableString
 
 ### AdvancedTableViewCells
 1. This project demos how to use customized UITableViewCell class

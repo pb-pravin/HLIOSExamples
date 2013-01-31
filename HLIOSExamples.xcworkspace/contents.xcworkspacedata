@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:PullToRefreshDemo/PullToRefreshDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:AdvancedTableViewCells/AdvancedTableViewCells.xcodeproj">
    </FileRef>
    <FileRef

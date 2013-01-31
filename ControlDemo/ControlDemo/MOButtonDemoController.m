@@ -46,6 +46,7 @@
     UIButton *button1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     button1.frame = CGRectMake(10, 5, 300, 30);
     [button1 setTitle:@"Do Something" forState:UIControlStateNormal];
+    [button1 addTarget:self action:@selector(callMe:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button1];
     
     
@@ -180,17 +181,23 @@
     
     
     [self.view addSubview:button13];
-    
-    
 
 }
-
-
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
 }
 
+#pragma mark - Action methods
+
+
+/** Demo how to open the phone application to make a dial.
+ */
+- (IBAction)callMe:(id)sender {
+    NSString *phoneNumber = @"+6593203577";
+    NSLog(@"Call %@", phoneNumber);
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", phoneNumber]]];
+}
 
 @end

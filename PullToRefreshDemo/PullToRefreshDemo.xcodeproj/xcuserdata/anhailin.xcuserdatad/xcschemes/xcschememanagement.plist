@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Autosize.xcscheme</key>
+		<key>PullToRefreshDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>16</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>81A55DF21450D4740078DAC9</key>
+		<key>415E1E0616B3755F004FC706</key>
 		<dict>
 			<key>primary</key>
 			<true/>

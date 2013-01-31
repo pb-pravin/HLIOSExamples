@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MOTextFieldController : UIViewController <UITextFieldDelegate>
+@interface MOTextFieldController : UIViewController <UITextFieldDelegate, UITextViewDelegate>
 
 @end

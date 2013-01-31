@@ -168,10 +168,17 @@
      */
     
     /** Demo URL path
-     */
     NSURL *url = [NSURL URLWithString:@"http://api.mozat.net/account/requestVcode"];
     NSLog(@"url description: %@", url);
     NSLog(@"url path: %@", url.path);
+     */
+    
+    /** Demo the character replacement method of NSMutableString
+     */
+    NSMutableString *mutableStr = [[[NSMutableString alloc] initWithString:@"01234"] autorelease];
+    NSRange range1 = NSMakeRange(1, 1);
+    [mutableStr replaceCharactersInRange:range1 withString:@"aaa"];
+    NSLog(@"original: 01234  range: %@  changed: %@", NSStringFromRange(range1), mutableStr);
     return YES;
 }
 
