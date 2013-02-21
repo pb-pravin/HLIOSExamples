@@ -92,6 +92,8 @@ shouldChangeTextInRange:(NSRange)range
     //    NSCharacterSet *cs = [[NSCharacterSet characterSetWithCharactersInString:NUMBERS_ONLY] invertedSet];
     //    NSString *filtered = [[string componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
     //    return (([string isEqualToString:filtered])&&(newLength <= CHARACTER_LIMIT));
+    
+    [textView.text intValue];
     return YES;
 }
 

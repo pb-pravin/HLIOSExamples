@@ -9,6 +9,7 @@
 #import "MOViewController.h"
 
 @interface MOViewController ()
+- (IBAction)buttonPressed:(id)sender;
 @end
 
 @implementation MOViewController
@@ -116,4 +117,6 @@
     [self performSelector:@selector(loadMoreDataToTable) withObject:nil afterDelay:3.0f];
 }
 
+- (IBAction)buttonPressed:(id)sender {
+}
 @end

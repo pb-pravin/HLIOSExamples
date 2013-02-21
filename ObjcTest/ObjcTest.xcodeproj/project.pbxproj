@@ -22,6 +22,7 @@
 		4151EA45168E8F81002DBAAE /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151EA44168E8F81002DBAAE /* ClassB.m */; };
 		416C22D916A81E0C00BCC987 /* SPDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 416C22D816A81E0C00BCC987 /* SPDeepCopy.m */; };
 		4196FDD416A6C796009396DD /* MOUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4196FDD316A6C796009396DD /* MOUser.m */; };
+		41A9AA0016BA5D0E00927F4F /* emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41A9A9FF16BA5D0E00927F4F /* emoji.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		416C22D816A81E0C00BCC987 /* SPDeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDeepCopy.m; sourceTree = "<group>"; };
 		4196FDD216A6C796009396DD /* MOUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOUser.h; sourceTree = "<group>"; };
 		4196FDD316A6C796009396DD /* MOUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOUser.m; sourceTree = "<group>"; };
+		41A9A9FF16BA5D0E00927F4F /* emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emoji.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		4151EA23168E8EAA002DBAAE /* ObjcTest */ = {
 			isa = PBXGroup;
 			children = (
+				41A9A9FD16BA5CEE00927F4F /* Resources */,
 				4151EA40168E8F25002DBAAE /* ClassA.h */,
 				4151EA41168E8F25002DBAAE /* ClassA.m */,
 				4151EA43168E8F81002DBAAE /* ClassB.h */,
@@ -125,6 +128,14 @@
 				4151EA33168E8EAA002DBAAE /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41A9A9FD16BA5CEE00927F4F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41A9A9FF16BA5D0E00927F4F /* emoji.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				4151EA32168E8EAA002DBAAE /* Default@2x.png in Resources */,
 				4151EA34168E8EAA002DBAAE /* Default-568h@2x.png in Resources */,
 				4151EA3A168E8EAA002DBAAE /* HLViewController.xib in Resources */,
+				41A9AA0016BA5D0E00927F4F /* emoji.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -64,7 +64,7 @@
     //label5.textAlignment = UITextAlignmentCenter;
     label5.backgroundColor = [UIColor lightGrayColor];
     label5.layer.cornerRadius = 6;
-    label5.text = @"Hello, WorldHello, WorldHello, WorldHello, WorldHello, ";
+    label5.text = @"Hello, WorldHello, WorldHello, WorldHello, WorldHello, \ue001";
     label5.numberOfLines = 0;
     CGSize size = [label5.text sizeWithFont:label5.font constrainedToSize:CGSizeMake(120, CGFLOAT_MAX) lineBreakMode:NSLineBreakByWordWrapping];
     label5.frame = CGRectMake(label5.frame.origin.x, label5.frame.origin.y, size.width, size.height);

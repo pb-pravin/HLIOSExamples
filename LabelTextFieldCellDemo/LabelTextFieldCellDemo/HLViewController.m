@@ -167,6 +167,16 @@
     
     
     MOModalViewController *controller = [[MOModalViewController alloc] init];
+    
+    
+    /** Demo the transition style of showing modal view.
+     */
+    //controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    controller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    //controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    //controller.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+//    self.modalPresentationStyle = UIModalPresentationFormSheet;
+    self.modalPresentationStyle = UIModalPresentationCurrentContext;
     controller.delegate = self;
     [self presentModalViewController:controller animated:YES];
     

@@ -174,11 +174,61 @@
      */
     
     /** Demo the character replacement method of NSMutableString
-     */
     NSMutableString *mutableStr = [[[NSMutableString alloc] initWithString:@"01234"] autorelease];
     NSRange range1 = NSMakeRange(1, 1);
     [mutableStr replaceCharactersInRange:range1 withString:@"aaa"];
     NSLog(@"original: 01234  range: %@  changed: %@", NSStringFromRange(range1), mutableStr);
+     */
+    
+    /** Demo the emoji unicode
+     */
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"emoji" ofType:@"plist"];
+    NSDictionary *emojiDict = [NSDictionary dictionaryWithContentsOfFile:filePath];
+    for (NSString *key in emojiDict.allKeys) {
+        //unsigned short value = [[emojiDict objectForKey:key] intValue];
+        //unsigned short keyInShort = [key intValue];
+        
+        //NSData *data = [NSData datawith
+        NSLog(@"=====key %@ len: %d value: %@", key, key.length, [emojiDict objectForKey:key]);
+        for (int i=0; i<key.length; i++) {
+            unichar c = [key characterAtIndex:i];
+            NSLog(@"%u", c);
+        }
+        
+        //NSLog(@"key=%@, value=%C", key, value);
+    }
+    NSString *s = @"中";
+    NSLog(@"=====s %@ len: %d", s, s.length);
+    for (int i=0; i<s.length; i++) {
+        unichar c = [s characterAtIndex:i];
+        NSLog(@"%x", c);
+    }
+    
+    NSLog(@"%d", 0xd83cdf71);
+    
+    /** NSLog format specifiers: 
+     %@ Object
+     %d, %i signed int 
+     %u unsigned int 
+     %f float/double
+     %x, %X hexadecimal int 
+     %o octal int 
+     %zu size_t 
+     %p pointer 
+     %e float/double (in scientific notation) 
+     %g float/double (as %f or %e, depending on value) 
+     %s C string (bytes) 
+     %S C string (unichar) 
+     %.s Pascal string (requires two arguments, pass pstr[0] as the first, pstr+1 as the second) 
+     %c character 
+     %C unichar
+     %lld long long 
+     %llu unsigned long long 
+     %Lf long double
+    NSLog(@"%s\t%s\t0x%08x", "hex", "value", 0x1243);
+     */
+    
+    
     return YES;
 }
 

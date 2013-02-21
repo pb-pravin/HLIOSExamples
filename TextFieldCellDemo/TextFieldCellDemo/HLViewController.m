@@ -55,25 +55,16 @@
 
 - (IBAction)imageLongPressed:(id)sender
 {
-    //[[[[UIAlertView alloc] initWithTitle:nil message:@"long press" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease] show];
-//    static BOOL flag = YES;
-//    if (flag)
-//    {
-//        NSLog(@"long press");
-//        flag = NO;
-//    }
     UILongPressGestureRecognizer *guestureRecognizer = (UILongPressGestureRecognizer *)sender;
-    if (guestureRecognizer.state == UIGestureRecognizerStateEnded) {
+
+    if (guestureRecognizer.state == UIGestureRecognizerStateBegan) {
+        NSLog(@"UIGestureRecognizerStateBegan.");
+        //Do Whatever You want on Began of Gesture
+    } else if (guestureRecognizer.state == UIGestureRecognizerStateEnded) {
         NSLog(@"UIGestureRecognizerStateEnded");
         //Do Whatever You want on End of Gesture
     }
-    else if (guestureRecognizer.state == UIGestureRecognizerStateBegan){
-        NSLog(@"UIGestureRecognizerStateBegan.");
-        //Do Whatever You want on Began of Gesture
-    }
-    //NSLog(@"long press");
 }
-
 
 - (void)didReceiveMemoryWarning
 {

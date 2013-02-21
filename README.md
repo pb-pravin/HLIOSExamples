@@ -1,7 +1,7 @@
 HLIOSExamples
 =============
 
-a collection of examples of my IOS code
+A collection of examples of my IOS code
 
 ### ControlDemo (ARC project)
 1. Demo how to use corner radius.
@@ -49,6 +49,7 @@ This project is primarly for testing some features of Objective-C language.
 6. Demo the convertion from string to int
 7. Demo the path property of NSURL object
 8. Demo the character replacement method of NSMutableString
+9. NSLog format specifiers guide
 
 ### AdvancedTableViewCells
 1. This project demos how to use customized UITableViewCell class
