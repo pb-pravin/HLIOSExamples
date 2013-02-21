@@ -41,6 +41,12 @@
 
 - (void)dealloc {
     [_pullTableView release];
+    [_imageView1 release];
+    [_imageView2 release];
+    [_imageView3 release];
+    [_imageView4 release];
+    [_imageView5 release];
+    [_imageView6 release];
     [super dealloc];
 }
 

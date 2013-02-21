@@ -53,3 +53,8 @@ This project is primarly for testing some features of Objective-C language.
 
 ### AdvancedTableViewCells
 1. This project demos how to use customized UITableViewCell class
+
+### LongPressGestureDemo
+1. Demo the usage of UILongPressGestureRecognizer class.
+2. the state of UIGestureRecognizer, UIGestureRecognizerBegan UIGestureRecognizerEnd
+3. minimumPressDuration, numberOfTapsRequired, numberOfTouchesRequired, allowableMovement

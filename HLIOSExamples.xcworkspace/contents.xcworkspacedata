@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:LongPressGestureDemo/LongPressGestureDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:HUDDemo/HUDDemo.xcodeproj">
    </FileRef>
    <FileRef
