@@ -55,7 +55,8 @@
 
 - (NSString *)dataFilePath
 {
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(
+														 NSDocumentDirectory, NSUserDomainMask, YES);
 	NSString *documentDirectory = [paths objectAtIndex:0];
 	return [documentDirectory stringByAppendingPathComponent:kFileName];
 }
@@ -76,6 +77,15 @@
 	[data release];
 	[archiver release];
 	[fourLines release];
+}
+
+- (void)dealloc
+{
+	self.field1 = nil;
+	self.field2 = nil;
+	self.field3 = nil;
+	self.field4 = nil;
+	[super dealloc];
 }
 
 
