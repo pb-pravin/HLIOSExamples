@@ -35,73 +35,54 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIImageView" id="149403450">
+					<object class="IBUIImageView" id="244702935">
 						<reference key="NSNextResponder" ref="774585933"/>
-						<int key="NSvFlags">260</int>
+						<int key="NSvFlags">274</int>
 						<string key="NSFrame">{{20, 30}, {120, 120}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
-						<reference key="NSNextKeyView" ref="312756633"/>
+						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage" id="624358704">
+						<object class="NSCustomResource" key="IBUIImage" id="448860847">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">1.jpg</string>
 						</object>
 					</object>
-					<object class="IBUIImageView" id="312756633">
+					<object class="IBUIImageView" id="378659565">
 						<reference key="NSNextResponder" ref="774585933"/>
-						<int key="NSvFlags">260</int>
+						<int key="NSvFlags">274</int>
 						<string key="NSFrame">{{180, 30}, {120, 120}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
-						<reference key="NSNextKeyView" ref="846523532"/>
+						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUIImage" ref="624358704"/>
+						<reference key="IBUIImage" ref="448860847"/>
 					</object>
-					<object class="IBUIImageView" id="846523532">
+					<object class="IBUIImageView" id="657274060">
 						<reference key="NSNextResponder" ref="774585933"/>
-						<int key="NSvFlags">260</int>
-						<string key="NSFrame">{{20, 158}, {120, 120}}</string>
+						<int key="NSvFlags">274</int>
+						<string key="NSFrame">{{20, 170}, {120, 120}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
-						<reference key="NSNextKeyView" ref="130260375"/>
+						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUIImage" ref="624358704"/>
+						<reference key="IBUIImage" ref="448860847"/>
 					</object>
-					<object class="IBUIImageView" id="130260375">
+					<object class="IBUIImageView" id="125822959">
 						<reference key="NSNextResponder" ref="774585933"/>
-						<int key="NSvFlags">260</int>
-						<string key="NSFrame">{{180, 158}, {120, 120}}</string>
+						<int key="NSvFlags">274</int>
+						<string key="NSFrame">{{180, 170}, {120, 120}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
-						<reference key="NSNextKeyView" ref="717413603"/>
+						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUIImage" ref="624358704"/>
-					</object>
-					<object class="IBUIImageView" id="717413603">
-						<reference key="NSNextResponder" ref="774585933"/>
-						<int key="NSvFlags">260</int>
-						<string key="NSFrame">{{20, 286}, {120, 120}}</string>
-						<reference key="NSSuperview" ref="774585933"/>
-						<reference key="NSNextKeyView" ref="331414378"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUIImage" ref="624358704"/>
-					</object>
-					<object class="IBUIImageView" id="331414378">
-						<reference key="NSNextResponder" ref="774585933"/>
-						<int key="NSvFlags">260</int>
-						<string key="NSFrame">{{180, 286}, {120, 120}}</string>
-						<reference key="NSSuperview" ref="774585933"/>
-						<reference key="NSNextKeyView"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUIImage" ref="624358704"/>
+						<reference key="IBUIImage" ref="448860847"/>
 					</object>
 				</array>
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSNextKeyView" ref="149403450"/>
+				<reference key="NSWindow"/>
+				<reference key="NSNextKeyView" ref="244702935"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MC43NQA</bytes>
@@ -145,49 +126,33 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">imageView1</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="149403450"/>
+						<reference key="destination" ref="244702935"/>
 					</object>
-					<int key="connectionID">14</int>
+					<int key="connectionID">12</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">imageView2</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="312756633"/>
+						<reference key="destination" ref="378659565"/>
 					</object>
-					<int key="connectionID">15</int>
+					<int key="connectionID">13</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">imageView3</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="846523532"/>
+						<reference key="destination" ref="657274060"/>
 					</object>
-					<int key="connectionID">16</int>
+					<int key="connectionID">14</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">imageView4</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="130260375"/>
+						<reference key="destination" ref="125822959"/>
 					</object>
-					<int key="connectionID">17</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">imageView5</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="717413603"/>
-					</object>
-					<int key="connectionID">18</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">imageView6</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="331414378"/>
-					</object>
-					<int key="connectionID">19</int>
+					<int key="connectionID">15</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -213,43 +178,31 @@
 						<int key="objectID">6</int>
 						<reference key="object" ref="774585933"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="312756633"/>
-							<reference ref="149403450"/>
-							<reference ref="717413603"/>
-							<reference ref="846523532"/>
-							<reference ref="130260375"/>
-							<reference ref="331414378"/>
+							<reference ref="244702935"/>
+							<reference ref="378659565"/>
+							<reference ref="125822959"/>
+							<reference ref="657274060"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">8</int>
-						<reference key="object" ref="149403450"/>
+						<reference key="object" ref="244702935"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">9</int>
-						<reference key="object" ref="312756633"/>
+						<reference key="object" ref="378659565"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">10</int>
-						<reference key="object" ref="846523532"/>
+						<reference key="object" ref="657274060"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">11</int>
-						<reference key="object" ref="130260375"/>
-						<reference key="parent" ref="774585933"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">12</int>
-						<reference key="object" ref="717413603"/>
-						<reference key="parent" ref="774585933"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">13</int>
-						<reference key="object" ref="331414378"/>
+						<reference key="object" ref="125822959"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 				</array>
@@ -261,8 +214,6 @@
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="10.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="11.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="12.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="13.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="9.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -271,9 +222,117 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">19</int>
+			<int key="maxID">15</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">MOViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="buttonPressed:">id</string>
+						<string key="pressed1:">id</string>
+						<string key="pressed2:">id</string>
+						<string key="pressed3:">id</string>
+						<string key="pressed4:">id</string>
+						<string key="pressed5:">id</string>
+						<string key="pressed6:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="buttonPressed:">
+							<string key="name">buttonPressed:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="pressed1:">
+							<string key="name">pressed1:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="pressed2:">
+							<string key="name">pressed2:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="pressed3:">
+							<string key="name">pressed3:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="pressed4:">
+							<string key="name">pressed4:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="pressed5:">
+							<string key="name">pressed5:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="pressed6:">
+							<string key="name">pressed6:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="imageView1">UIImageView</string>
+						<string key="imageView2">UIImageView</string>
+						<string key="imageView3">UIImageView</string>
+						<string key="imageView4">UIImageView</string>
+						<string key="imageView5">UIImageView</string>
+						<string key="imageView6">UIImageView</string>
+						<string key="pullTableView">PullTableView</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="imageView1">
+							<string key="name">imageView1</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="imageView2">
+							<string key="name">imageView2</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="imageView3">
+							<string key="name">imageView3</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="imageView4">
+							<string key="name">imageView4</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="imageView5">
+							<string key="name">imageView5</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="imageView6">
+							<string key="name">imageView6</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="pullTableView">
+							<string key="name">pullTableView</string>
+							<string key="candidateClassName">PullTableView</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/MOViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">PullTableView</string>
+					<string key="superclassName">UITableView</string>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">pullDelegate</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<string key="NS.key.0">pullDelegate</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">pullDelegate</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/PullTableView.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencies">

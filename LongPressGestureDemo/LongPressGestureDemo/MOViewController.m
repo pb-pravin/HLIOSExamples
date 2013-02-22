@@ -66,13 +66,6 @@
 	
 	[self.imageView6 addGestureRecognizer:longPressGesture6];
 	[longPressGesture6 release];
-	
-	
-	
-	
-	
-	
-	
 }
 
 - (void)didReceiveMemoryWarning
@@ -81,59 +74,58 @@
 
 }
 
-- (IBAction)pressed1:(id)sender
+- (IBAction)pressed1:(UILongPressGestureRecognizer *)sender
 {
-	UILongPressGestureRecognizer *recognizer = (UILongPressGestureRecognizer *)sender;
-	if (recognizer.state == UIGestureRecognizerStateBegan) {
+	if (sender.state == UIGestureRecognizerStateBegan) {
 		NSLog(@"pressed1 starded");
-	} else if (recognizer.state == UIGestureRecognizerStateEnded) {
+	} else if (sender.state == UIGestureRecognizerStateEnded) {
 		NSLog(@"pressed1 ended");
 	}
 }
 
-- (IBAction)pressed2:(id)sender
+- (IBAction)pressed2:(UILongPressGestureRecognizer *)sender
 {
-	UILongPressGestureRecognizer *recognizer = (UILongPressGestureRecognizer *)sender;
-	if (recognizer.state == UIGestureRecognizerStateBegan) {
+	if (sender.state == UIGestureRecognizerStateBegan) {
 		NSLog(@"pressed2 starded");
-	} else if (recognizer.state == UIGestureRecognizerStateEnded) {
+	} else if (sender.state == UIGestureRecognizerStateEnded) {
 		NSLog(@"pressed2 ended");
-	}}
+	}
+}
 
-- (IBAction)pressed3:(id)sender
+- (IBAction)pressed3:(UILongPressGestureRecognizer *)sender
 {
-	UILongPressGestureRecognizer *recognizer = (UILongPressGestureRecognizer *)sender;
-	if (recognizer.state == UIGestureRecognizerStateBegan) {
+	if (sender.state == UIGestureRecognizerStateBegan) {
 		NSLog(@"pressed3 starded");
-	} else if (recognizer.state == UIGestureRecognizerStateEnded) {
+	} else if (sender.state == UIGestureRecognizerStateEnded) {
 		NSLog(@"pressed3 ended");
-	}}
+	}
+}
 
-- (IBAction)pressed4:(id)sender
+- (IBAction)pressed4:(UILongPressGestureRecognizer *)sender
 {
-	UILongPressGestureRecognizer *recognizer = (UILongPressGestureRecognizer *)sender;
-	if (recognizer.state == UIGestureRecognizerStateBegan) {
+	if (sender.state == UIGestureRecognizerStateBegan) {
 		NSLog(@"pressed4 starded");
-	} else if (recognizer.state == UIGestureRecognizerStateEnded) {
+	} else if (sender.state == UIGestureRecognizerStateEnded) {
 		NSLog(@"pressed4 ended");
-	}}
+	}
+}
 
-- (IBAction)pressed5:(id)sender
+- (IBAction)pressed5:(UILongPressGestureRecognizer *)sender
 {
-	UILongPressGestureRecognizer *recognizer = (UILongPressGestureRecognizer *)sender;
-	if (recognizer.state == UIGestureRecognizerStateBegan) {
+	if (sender.state == UIGestureRecognizerStateBegan) {
 		NSLog(@"pressed5 starded");
-	} else if (recognizer.state == UIGestureRecognizerStateEnded) {
+	} else if (sender.state == UIGestureRecognizerStateEnded) {
 		NSLog(@"pressed5 ended");
-	}}
+	}
+}
 
-- (IBAction)pressed6:(id)sender
+- (IBAction)pressed6:(UILongPressGestureRecognizer *)sender
 {
-	UILongPressGestureRecognizer *recognizer = (UILongPressGestureRecognizer *)sender;
-	if (recognizer.state == UIGestureRecognizerStateBegan) {
+	if (sender.state == UIGestureRecognizerStateBegan) {
 		NSLog(@"pressed6 starded");
-	} else if (recognizer.state == UIGestureRecognizerStateEnded) {
+	} else if (sender.state == UIGestureRecognizerStateEnded) {
 		NSLog(@"pressed6 ended");
-	}}
+	}
+}
 
 @end

@@ -58,3 +58,12 @@ This project is primarly for testing some features of Objective-C language.
 1. Demo the usage of UILongPressGestureRecognizer class.
 2. the state of UIGestureRecognizer, UIGestureRecognizerBegan UIGestureRecognizerEnd
 3. minimumPressDuration, numberOfTapsRequired, numberOfTouchesRequired, allowableMovement
+
+### TapGestureDemo
+1. Demo the usage of UITapGestureRecognizer class.
+2. numberOfTapsRequired, numberOfTouchesRequired.
+3. Get the generic single-point location of the tap gesture, a generic single-point location is usually the centeroid of the touches involved.
+4. the correct declaration of gesture handling method.
+
+### HUDDemo
+1. Demo the usage of MBProgressHUD library

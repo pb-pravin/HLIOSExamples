@@ -27,7 +27,6 @@
 {
     [super viewDidLoad];
     
-//    MBProgressHUD *HUD = [[MBProgressHUD alloc] initWithFrame:self.view.bounds];
     MBProgressHUD *HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
 	[self.navigationController.view addSubview:HUD];
     HUD.delegate = self;
@@ -37,7 +36,6 @@
     
     [HUD hide:YES afterDelay:3];
     [self retain];
-    
 }
 
 - (void)didReceiveMemoryWarning
