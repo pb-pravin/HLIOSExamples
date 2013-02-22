@@ -67,3 +67,7 @@ This project is primarly for testing some features of Objective-C language.
 
 ### HUDDemo
 1. Demo the usage of MBProgressHUD library
+
+### PersistenceDemo
+1. Demo how to create data model apply to NSCoding/NScopying protocol.
+2. Demo how to archive/unarchive.

@@ -51,11 +51,19 @@
     [_imageView2 release];
     [_imageView3 release];
     [_imageView4 release];
+    [_field1 release];
+    [_field2 release];
+    [_field3 release];
+    [_field4 release];
     [super dealloc];
 }
 
 - (void)viewDidUnload {
     [self setPullTableView:nil];
+    [self setField1:nil];
+    [self setField2:nil];
+    [self setField3:nil];
+    [self setField4:nil];
     [super viewDidUnload];
 }
 

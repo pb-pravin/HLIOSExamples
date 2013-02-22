@@ -36,4 +36,18 @@
     [self.navigationController pushViewController:hudViewController animated:YES];
 }
 
+- (void)dealloc {
+    [_field1 release];
+    [_field2 release];
+    [_field3 release];
+    [_field4 release];
+    [super dealloc];
+}
+- (void)viewDidUnload {
+    [self setField1:nil];
+    [self setField2:nil];
+    [self setField3:nil];
+    [self setField4:nil];
+    [super viewDidUnload];
+}
 @end
