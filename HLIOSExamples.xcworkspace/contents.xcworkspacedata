@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:PersistenceWithSQLiteDemo/PersistenceWithSQLiteDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:PersistenceDemo/PersistenceDemo.xcodeproj">
    </FileRef>
    <FileRef

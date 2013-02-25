@@ -161,12 +161,17 @@
      */
     
     /** Demo string to int converting
+     */
     NSLog(@"@\"\".intValue = %d", @"".intValue);
     NSLog(@"@\"012\".intValue = %d", @"012".intValue);
     NSLog(@"@\"a2bcd\".intValue = %d", @"a2bcd".intValue);
     NSLog(@"@\"  12ab34\".intValue = %d", @"  12ab34".intValue);
-     */
     
+	NSString *original = @"1234567890";
+	// Returns a new string containing the characters of the receiver up to, but not including the one at a given index.
+	NSString *sub = [original substringToIndex:5];
+	NSLog(@"sub: %@", sub);
+	
     /** Demo URL path
     NSURL *url = [NSURL URLWithString:@"http://api.mozat.net/account/requestVcode"];
     NSLog(@"url description: %@", url);
@@ -181,7 +186,6 @@
      */
     
     /** Demo the emoji unicode
-     */
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"emoji" ofType:@"plist"];
     NSDictionary *emojiDict = [NSDictionary dictionaryWithContentsOfFile:filePath];
     for (NSString *key in emojiDict.allKeys) {
@@ -194,7 +198,7 @@
             unichar c = [key characterAtIndex:i];
             NSLog(@"%u", c);
         }
-        
+     
         //NSLog(@"key=%@, value=%C", key, value);
     }
     NSString *s = @"中";
@@ -205,18 +209,19 @@
     }
     
     NSLog(@"%d", 0xd83cdf71);
+     */
     
-    /** NSLog format specifiers: 
+    /** NSLog format specifiers:
      %@ Object
-     %d, %i signed int 
-     %u unsigned int 
+     %d, %i signed int
+     %u unsigned int
      %f float/double
-     %x, %X hexadecimal int 
-     %o octal int 
-     %zu size_t 
-     %p pointer 
-     %e float/double (in scientific notation) 
-     %g float/double (as %f or %e, depending on value) 
+     %x, %X hexadecimal int
+     %o octal int
+     %zu size_t
+     %p pointer
+     %e float/double (in scientific notation)
+     %g float/double (as %f or %e, depending on value)
      %s C string (bytes) 
      %S C string (unichar) 
      %.s Pascal string (requires two arguments, pass pstr[0] as the first, pstr+1 as the second) 
@@ -228,7 +233,17 @@
     NSLog(@"%s\t%s\t0x%08x", "hex", "value", 0x1243);
      */
     
-    
+	/** Demo the usage of @encode
+	 please refer to
+	 https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100
+	const char *s = @encode(bool);
+    NSLog(@"%s", s);
+	 */
+	
+	/** Demo the usage of NSDate
+	 */
+	NSDate *date = [NSDate dateWithTimeIntervalSince1970:(2014-1970)*365*24*60*60];
+	NSLog(@"date: %@", date);
     return YES;
 }
 

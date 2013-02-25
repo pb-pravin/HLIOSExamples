@@ -50,6 +50,9 @@ This project is primarly for testing some features of Objective-C language.
 7. Demo the path property of NSURL object
 8. Demo the character replacement method of NSMutableString
 9. NSLog format specifiers guide
+10. Demo NSDate method: + (NSDate *)dateWithTimeIntervalSince1970:(NSTimeInterval)secs;
+11. Demo NSString method: - (NSString *)substringToIndex:(NSUInteger)to;
+12. Demo Objective-C type encoding.
 
 ### AdvancedTableViewCells
 1. This project demos how to use customized UITableViewCell class
@@ -71,3 +74,7 @@ This project is primarly for testing some features of Objective-C language.
 ### PersistenceDemo
 1. Demo how to create data model apply to NSCoding/NScopying protocol.
 2. Demo how to archive/unarchive.
+
+### PersistenceWithSQLiteDemo
+1. Demo how to code with sqlite3 library.
+
