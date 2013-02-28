@@ -54,6 +54,7 @@ This project is primarly for testing some features of Objective-C language.
 10. Demo NSDate method: + (NSDate *)dateWithTimeIntervalSince1970:(NSTimeInterval)secs;
 11. Demo NSString method: - (NSString *)substringToIndex:(NSUInteger)to;
 12. Demo Objective-C type encoding.
+13. Demo the [] accessor for NSDictionary / NSArray.
 
 ### AdvancedTableViewCells
 1. This project demos how to use customized UITableViewCell class

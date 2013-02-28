@@ -161,7 +161,6 @@
      */
     
     /** Demo string to int converting
-     */
     NSLog(@"@\"\".intValue = %d", @"".intValue);
     NSLog(@"@\"012\".intValue = %d", @"012".intValue);
     NSLog(@"@\"a2bcd\".intValue = %d", @"a2bcd".intValue);
@@ -171,6 +170,7 @@
 	// Returns a new string containing the characters of the receiver up to, but not including the one at a given index.
 	NSString *sub = [original substringToIndex:5];
 	NSLog(@"sub: %@", sub);
+     */
 	
     /** Demo URL path
     NSURL *url = [NSURL URLWithString:@"http://api.mozat.net/account/requestVcode"];
@@ -241,9 +241,21 @@
 	 */
 	
 	/** Demo the usage of NSDate
-	 */
 	NSDate *date = [NSDate dateWithTimeIntervalSince1970:(2014-1970)*365*24*60*60];
 	NSLog(@"date: %@", date);
+	 */
+    
+    /** Demo the [] accessor for NSDictionary / NSArray
+     */
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"United States", @"US", @"China", @"CN", nil];
+    for (NSString *key in dict.allKeys) {
+        NSLog(@"%@->%@", key, dict[key]);
+    }
+    
+    NSArray *ar = [NSArray arrayWithObjects:@"US", @"CN", @"JP", nil];
+    for (int i=0; i<ar.count; i++) {
+        NSLog(@"%d : %@", i, ar[i]);
+    }
     return YES;
 }
 
