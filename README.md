@@ -18,6 +18,7 @@ A collection of examples of my IOS code
 3. Change the background image of UISearchBar
 4. Demo how to access address book
 5. Demo how to center an image in a UIImageView
+6. Demo the usage of memory warning
 
 ![LabelTextFieldCell](http://www.anhailin.co/blog/wp-content/uploads/2012/12/LabelTextFieldCell.png)
 ![](http://www.anhailin.co/blog/wp-content/uploads/2012/12/UISeachBarChnagingBackgroundImage.png)

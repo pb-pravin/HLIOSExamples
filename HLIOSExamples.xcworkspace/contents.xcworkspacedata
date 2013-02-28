@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:KivaJSONDemo/KivaJSONDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UserDemo/UserDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:PersistenceWithSQLiteDemo/PersistenceWithSQLiteDemo.xcodeproj">
    </FileRef>
    <FileRef

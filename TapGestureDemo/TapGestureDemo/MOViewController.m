@@ -96,4 +96,9 @@
 	}
 }
 
+- (void)viewDidUnload {
+    [self setHumanReadable:nil];
+    [self setJsonSummary:nil];
+    [super viewDidUnload];
+}
 @end

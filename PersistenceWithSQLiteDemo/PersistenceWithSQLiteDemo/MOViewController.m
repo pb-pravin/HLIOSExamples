@@ -78,7 +78,7 @@
         UITextField *field = [self valueForKey:fieldName];
         [fieldName release];
 		
-        char *errorMsg = NULL;
+        //char *errorMsg = NULL;
         char *update = "INSERT OR REPLACE INTO FIELDS (ROW, FIELD_DATA) VALUES (?, ?);";
         sqlite3_stmt *stmt;
         if (sqlite3_prepare_v2(database, update, -1, &stmt, nil)
@@ -87,9 +87,8 @@
             sqlite3_bind_text(stmt, 2, [field.text UTF8String], -1, NULL);
         }
         if (sqlite3_step(stmt) != SQLITE_DONE)
-            NSAssert1(0, @"Error updating table: %s", errorMsg);
+            NSAssert(0, @"Error updating table");
         sqlite3_finalize(stmt);
-		
     }
     sqlite3_close(database);
 }
@@ -97,7 +96,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    
 }
 
 @end

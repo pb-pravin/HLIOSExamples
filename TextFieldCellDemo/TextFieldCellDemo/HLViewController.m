@@ -9,24 +9,45 @@
 #import "HLViewController.h"
 
 
-@interface HLViewController ()
-
+@interface HLViewController () {
+	MOModalViewController *modalViewController;
+}
+@property (nonatomic, retain) MOModalViewController *modalViewController;
 @end
 
 @implementation HLViewController
+@synthesize modalViewController = _modalViewController;
+
+- (void)dealloc {
+	self.modalViewController = nil;
+	[super dealloc];
+}
+
+- (MOModalViewController *)modalViewController {
+	if (_modalViewController == nil) {
+		_modalViewController = [[MOModalViewController alloc] init];
+		_modalViewController.delegate = self;
+		NSLog(@"#1ref count: %d", _modalViewController.retainCount);
+	}
+	return _modalViewController;
+}
 
 - (IBAction)imageTapped:(id)sender
 {
-    MOModalViewController *controller = [[MOModalViewController alloc] init];
-    controller.delegate = self;
-    [self presentModalViewController:controller animated:YES];
+	NSLog(@"#2ref count: %d", _modalViewController.retainCount);
+    [self presentModalViewController:self.modalViewController animated:YES];
+	NSLog(@"#3ref count: %d", _modalViewController.retainCount);
 }
 
 - (void)modalViewController:(MOModalViewController *)controller
                     DidEdit:(NSString *)result
 {
-    NSLog(@"%@", result);
-    [self dismissModalViewControllerAnimated:YES];
+    NSLog(@"#4ref count: %d", _modalViewController.retainCount);
+	[self dismissModalViewControllerAnimated:YES];
+	
+	[NSThread sleepForTimeInterval:5];
+	
+	NSLog(@"#5ref count: %d", _modalViewController.retainCount);
 }
 
 - (void)viewDidLoad
@@ -69,6 +90,9 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+	NSLog(@"#1 receive memory warning.");
+	self.modalViewController = nil;
+//	NSLog(@"#6ref count: %d", _modalViewController.retainCount);
 }
 
 @end
