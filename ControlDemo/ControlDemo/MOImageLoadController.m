@@ -50,6 +50,18 @@
     imageView2.layer.cornerRadius = 6;
     [imageView2 setImageWithURL:url2 placeholderImage:loadingImage];
     [self.view addSubview:imageView2];
+	
+	// Load image from url directly.
+	UIImageView *imageView3 = [[UIImageView alloc] initWithFrame:CGRectMake(imageView1.frame.origin.x, imageView1.frame.origin.y + imageView1.frame.size.height + 5, 200, 100)];
+    NSURL *url3 = [NSURL URLWithString:@"http://we.vanillicon.com/eca62e8b1da79de98da331a1c988cb62_100.png"];
+    // Center the image, and clips to bounds.
+    imageView3.contentMode = UIViewContentModeScaleAspectFill;
+    imageView3.clipsToBounds = YES;
+    imageView3.layer.cornerRadius = 6;
+	NSData *data = [[NSData alloc] initWithContentsOfURL:url3];
+	UIImage *image = [UIImage imageWithData:data];
+	imageView3.image = image;
+    [self.view addSubview:imageView3];
 }
 
 - (void)didReceiveMemoryWarning

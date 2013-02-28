@@ -10,6 +10,7 @@ A collection of examples of my IOS code
 4. Demo how to use NSAttributedString
 5. Demo how to open the phone application to make a dial.
 6. Demo the delegate methods of text field and text view.
+7. URL -> NSData -> UIImage
 
 ### LabelTextFieldCellDemo
 1. LabelTextFieldCell
@@ -79,4 +80,8 @@ This project is primarly for testing some features of Objective-C language.
 
 ### PersistenceWithSQLiteDemo
 1. Demo how to code with sqlite3 library.
+
+### KivaJSONDemo
+1. Work with JSON in IOS5.0
+2. URL -> NSData(json) -> Foundation Objects; Foundation Objects(NSArry/NSDictionary) -> NSData -> File
 
