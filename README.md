@@ -85,3 +85,6 @@ This project is primarly for testing some features of Objective-C language.
 1. Work with JSON in IOS5.0
 2. URL -> NSData(json) -> Foundation Objects; Foundation Objects(NSArry/NSDictionary) -> NSData -> File
 
+### ExtensionUtilDemo
+1. The collection of Extension Utils for some classes.
+2. Demo the usage of NSDictionary/NSMutableDictionary JSONCategories
