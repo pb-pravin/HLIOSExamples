@@ -18,9 +18,9 @@
 		4129B64316E04989000B2A3C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4129B64216E04989000B2A3C /* Default-568h@2x.png */; };
 		4129B64616E04989000B2A3C /* MOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4129B64516E04989000B2A3C /* MOViewController.m */; };
 		4129B64916E04989000B2A3C /* MOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4129B64716E04989000B2A3C /* MOViewController.xib */; };
-		4129B65116E04A55000B2A3C /* NSDictionary+JSONCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4129B65016E04A55000B2A3C /* NSDictionary+JSONCategories.m */; };
-		4129B65416E04BE7000B2A3C /* NSMutableDictionary+JSONCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4129B65316E04BE7000B2A3C /* NSMutableDictionary+JSONCategories.m */; };
 		4129B65616E04CA2000B2A3C /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 4129B65516E04CA2000B2A3C /* example.json */; };
+		4169F07416E0525E001F7E32 /* NSDictionary+JSONCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4169F07116E0525E001F7E32 /* NSDictionary+JSONCategories.m */; };
+		4169F07516E0525E001F7E32 /* NSMutableDictionary+JSONCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4169F07316E0525E001F7E32 /* NSMutableDictionary+JSONCategories.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,11 +40,11 @@
 		4129B64416E04989000B2A3C /* MOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOViewController.h; sourceTree = "<group>"; };
 		4129B64516E04989000B2A3C /* MOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOViewController.m; sourceTree = "<group>"; };
 		4129B64816E04989000B2A3C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MOViewController.xib; sourceTree = "<group>"; };
-		4129B64F16E04A55000B2A3C /* NSDictionary+JSONCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSONCategories.h"; sourceTree = "<group>"; };
-		4129B65016E04A55000B2A3C /* NSDictionary+JSONCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONCategories.m"; sourceTree = "<group>"; };
-		4129B65216E04BE7000B2A3C /* NSMutableDictionary+JSONCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+JSONCategories.h"; sourceTree = "<group>"; };
-		4129B65316E04BE7000B2A3C /* NSMutableDictionary+JSONCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+JSONCategories.m"; sourceTree = "<group>"; };
 		4129B65516E04CA2000B2A3C /* example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
+		4169F07016E0525E001F7E32 /* NSDictionary+JSONCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSONCategories.h"; sourceTree = "<group>"; };
+		4169F07116E0525E001F7E32 /* NSDictionary+JSONCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONCategories.m"; sourceTree = "<group>"; };
+		4169F07216E0525E001F7E32 /* NSMutableDictionary+JSONCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+JSONCategories.h"; sourceTree = "<group>"; };
+		4169F07316E0525E001F7E32 /* NSMutableDictionary+JSONCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+JSONCategories.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +64,7 @@
 		4129B62016E04988000B2A3C = {
 			isa = PBXGroup;
 			children = (
-				4129B65216E04BE7000B2A3C /* NSMutableDictionary+JSONCategories.h */,
-				4129B65316E04BE7000B2A3C /* NSMutableDictionary+JSONCategories.m */,
-				4129B64F16E04A55000B2A3C /* NSDictionary+JSONCategories.h */,
-				4129B65016E04A55000B2A3C /* NSDictionary+JSONCategories.m */,
+				4169F06F16E0525E001F7E32 /* Extensions */,
 				4129B63216E04989000B2A3C /* ExtensionUtilsDemo */,
 				4129B62B16E04989000B2A3C /* Frameworks */,
 				4129B62A16E04989000B2A3C /* Products */,
@@ -118,6 +115,17 @@
 				4129B65516E04CA2000B2A3C /* example.json */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4169F06F16E0525E001F7E32 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4169F07016E0525E001F7E32 /* NSDictionary+JSONCategories.h */,
+				4169F07116E0525E001F7E32 /* NSDictionary+JSONCategories.m */,
+				4169F07216E0525E001F7E32 /* NSMutableDictionary+JSONCategories.h */,
+				4169F07316E0525E001F7E32 /* NSMutableDictionary+JSONCategories.m */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,8 +199,8 @@
 				4129B63916E04989000B2A3C /* main.m in Sources */,
 				4129B63D16E04989000B2A3C /* MOAppDelegate.m in Sources */,
 				4129B64616E04989000B2A3C /* MOViewController.m in Sources */,
-				4129B65116E04A55000B2A3C /* NSDictionary+JSONCategories.m in Sources */,
-				4129B65416E04BE7000B2A3C /* NSMutableDictionary+JSONCategories.m in Sources */,
+				4169F07416E0525E001F7E32 /* NSDictionary+JSONCategories.m in Sources */,
+				4169F07516E0525E001F7E32 /* NSMutableDictionary+JSONCategories.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +325,7 @@
 				4129B64E16E04989000B2A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,6 +12,8 @@
 
 @interface MOViewController ()
 - (IBAction)buttonPressed:(id)sender;
+- (IBAction)doTask:(id)sender;
+- (IBAction)doTask:(id)sender;
 @end
 
 @implementation MOViewController
@@ -36,6 +38,12 @@
     [self.navigationController pushViewController:hudViewController animated:YES];
 }
 
+- (IBAction)doTask:(id)sender {
+}
+
+- (IBAction)doTask:(id)sender {
+}
+
 - (void)dealloc {
     [_field1 release];
     [_field2 release];
@@ -48,6 +56,9 @@
     [self setField2:nil];
     [self setField3:nil];
     [self setField4:nil];
+    [self setStartBtn:nil];
+    [self setResultLabel:nil];
+    [self setTaskIndicator:nil];
     [super viewDidUnload];
 }
 @end

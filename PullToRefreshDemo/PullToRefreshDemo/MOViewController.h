@@ -10,6 +10,7 @@
 #import "PullTableView.h"
 
 @interface MOViewController : UIViewController <PullTableViewDelegate, UITableViewDataSource>
+- (IBAction)doTask:(id)sender;
 
 @property (retain, nonatomic) IBOutlet PullTableView *pullTableView;
 

@@ -88,3 +88,7 @@ This project is primarly for testing some features of Objective-C language.
 ### ExtensionUtilDemo
 1. The collection of Extension Utils for some classes.
 2. Demo the usage of NSDictionary/NSMutableDictionary JSONCategories
+
+### SlowWorker
+1. Demo the usage of GCD
+2. Demo how to use dispatch_group_create/dispatch_release
