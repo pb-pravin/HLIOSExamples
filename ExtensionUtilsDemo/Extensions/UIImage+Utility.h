@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (Utility)
+/**
+ @desc Scale the receiver to the specified size.
+ */
 - (UIImage *)scaleToSize:(CGSize)size;
 @end

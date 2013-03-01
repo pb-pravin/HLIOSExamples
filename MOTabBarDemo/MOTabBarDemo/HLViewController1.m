@@ -32,6 +32,15 @@
     label.text = @"View I";
     label.textColor = [UIColor redColor];
     [self.view addSubview:label];
+	
+	UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(10, 10, 80, 40)];
+	NSString *bgImageName = @"TabBackground.png";
+//		bgImageName = @"TabBackgroundActive.png";
+	
+	UIImage *bgImage = [[UIImage imageNamed:bgImageName] stretchableImageWithLeftCapWidth:1 topCapHeight:0];
+	[btn setBackgroundImage:bgImage forState:UIControlStateNormal];
+	[btn setImage:[UIImage imageNamed:@"TabIconChats.png"] forState:UIControlStateNormal];
+	[self.view addSubview:btn];
 }
 
 - (NSString *)iconImageName {

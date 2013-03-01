@@ -21,6 +21,8 @@
 		4129B65616E04CA2000B2A3C /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 4129B65516E04CA2000B2A3C /* example.json */; };
 		4169F07416E0525E001F7E32 /* NSDictionary+JSONCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4169F07116E0525E001F7E32 /* NSDictionary+JSONCategories.m */; };
 		4169F07516E0525E001F7E32 /* NSMutableDictionary+JSONCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4169F07316E0525E001F7E32 /* NSMutableDictionary+JSONCategories.m */; };
+		41FBEAFF16E08C09001517EC /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBEAFB16E08C09001517EC /* UIImage+Utility.m */; };
+		41FBEB0016E08C09001517EC /* UILabel+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBEAFD16E08C09001517EC /* UILabel+Utility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,10 @@
 		4169F07116E0525E001F7E32 /* NSDictionary+JSONCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONCategories.m"; sourceTree = "<group>"; };
 		4169F07216E0525E001F7E32 /* NSMutableDictionary+JSONCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+JSONCategories.h"; sourceTree = "<group>"; };
 		4169F07316E0525E001F7E32 /* NSMutableDictionary+JSONCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+JSONCategories.m"; sourceTree = "<group>"; };
+		41FBEAFB16E08C09001517EC /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utility.m"; sourceTree = "<group>"; };
+		41FBEAFC16E08C09001517EC /* UIImage+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utility.h"; sourceTree = "<group>"; };
+		41FBEAFD16E08C09001517EC /* UILabel+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Utility.m"; sourceTree = "<group>"; };
+		41FBEAFE16E08C09001517EC /* UILabel+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Utility.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,10 @@
 		4169F06F16E0525E001F7E32 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				41FBEAFB16E08C09001517EC /* UIImage+Utility.m */,
+				41FBEAFC16E08C09001517EC /* UIImage+Utility.h */,
+				41FBEAFD16E08C09001517EC /* UILabel+Utility.m */,
+				41FBEAFE16E08C09001517EC /* UILabel+Utility.h */,
 				4169F07016E0525E001F7E32 /* NSDictionary+JSONCategories.h */,
 				4169F07116E0525E001F7E32 /* NSDictionary+JSONCategories.m */,
 				4169F07216E0525E001F7E32 /* NSMutableDictionary+JSONCategories.h */,
@@ -201,6 +211,8 @@
 				4129B64616E04989000B2A3C /* MOViewController.m in Sources */,
 				4169F07416E0525E001F7E32 /* NSDictionary+JSONCategories.m in Sources */,
 				4169F07516E0525E001F7E32 /* NSMutableDictionary+JSONCategories.m in Sources */,
+				41FBEAFF16E08C09001517EC /* UIImage+Utility.m in Sources */,
+				41FBEB0016E08C09001517EC /* UILabel+Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

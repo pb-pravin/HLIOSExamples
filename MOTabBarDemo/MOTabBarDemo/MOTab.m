@@ -23,21 +23,6 @@
     if (self)
     {
         _imageName = [imageName retain];
-        // Set the
-//        NSString *selectedName = [NSString stringWithFormat:@"%@Active.%@",
-//                                  [imageName stringByDeletingPathExtension],
-//                                  [imageName pathExtension]];
-//		
-//		[self setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
-//		[self setImage:[UIImage imageNamed:selectedName] forState:UIControlStateSelected];
-//        
-//        NSString *bgImageName = @"TabBackground.png";
-//        UIImage *bgImage = [[UIImage imageNamed:bgImageName] stretchableImageWithLeftCapWidth:1 topCapHeight:0];
-//        [self setBackgroundImage:bgImage forState:UIControlStateNormal];
-        
-//        NSString *bgSelectedImageName = @"TabBackgroundActive.png";
-//        UIImage *bgSelectedImage = [[UIImage imageNamed:bgSelectedImageName] stretchableImageWithLeftCapWidth:1 topCapHeight:0];
-//        [self setBackgroundImage:bgSelectedImage forState:UIControlStateSelected];
     }
     return self;
 }
@@ -59,8 +44,10 @@
         
         UIImage *bgImage = [[UIImage imageNamed:bgImageName] stretchableImageWithLeftCapWidth:1 topCapHeight:0];
         [self setBackgroundImage:bgImage forState:UIControlStateNormal];
-        
+        [self setBackgroundImage:bgImage forState:UIControlStateHighlighted];
         [self setImage:[UIImage imageNamed:btnImageName] forState:UIControlStateNormal];
+		[self setImage:[UIImage imageNamed:btnImageName] forState:UIControlStateHighlighted];
+		
         
         [self setNeedsLayout];
     }

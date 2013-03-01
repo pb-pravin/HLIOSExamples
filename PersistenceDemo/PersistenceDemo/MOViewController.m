@@ -89,4 +89,8 @@
 }
 
 
+- (void)viewDidUnload {
+    [self setImgV:nil];
+    [super viewDidUnload];
+}
 @end
