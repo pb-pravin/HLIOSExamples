@@ -60,7 +60,7 @@
     [self.view addSubview:label4];
     
     // height of label5 could be automatic adjusted by its content.
-    UILabel *label5 = [[UILabel alloc] initWithFrame:CGRectMake(10, label4.frame.origin.y + label4.frame.size.height + 5, 120, 200)];
+    UILabel *label5 = [[UILabel alloc] initWithFrame:CGRectMake(10, label4.frame.origin.y + label4.frame.size.height + 5, 120, 0)];
     //label5.textAlignment = UITextAlignmentCenter;
     label5.backgroundColor = [UIColor lightGrayColor];
     label5.layer.cornerRadius = 6;
@@ -76,7 +76,18 @@
     messageBackgroundImageView.frame = CGRectMake(label5.frame.origin.x+label5.frame.size.width+10, label5.frame.origin.y, 120+34, 50+12);
     messageBackgroundImageView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
     messageBackgroundImageView.image = _messageBubbleGray;
-    [self.view addSubview:messageBackgroundImageView];  
+    [self.view addSubview:messageBackgroundImageView];
+	
+	// height of label6 could be automatic adjusted by its content.
+    UILabel *label6 = [[UILabel alloc] initWithFrame:CGRectMake(10, label5.frame.origin.y + label5.frame.size.height + 5, 200, 0)];
+    label6.backgroundColor = [UIColor lightGrayColor];
+    label6.layer.cornerRadius = 6;
+    label6.text = @"Hello, WorldHello, WorldHello, WorldHello, WorldHello, \ue001";
+	label6.lineBreakMode = UILineBreakModeWordWrap;
+	label6.numberOfLines = 0;
+	[label6 sizeToFit];
+    [self.view addSubview:label6];
+	
 
 }
 

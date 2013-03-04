@@ -11,6 +11,7 @@ A collection of examples of my IOS code
 5. Demo how to open the phone application to make a dial.
 6. Demo the delegate methods of text field and text view.
 7. URL -> NSData -> UIImage
+8. Another way of automatic ajusta label's height according to its content.
 
 ### LabelTextFieldCellDemo
 1. LabelTextFieldCell
@@ -92,3 +93,7 @@ This project is primarly for testing some features of Objective-C language.
 ### SlowWorker
 1. Demo the usage of GCD
 2. Demo how to use dispatch_group_create/dispatch_release
+
+### PlaceHolderTextView
+1. Demo the textview with a placeholder label, like the placeholder in a UITextField.
+2. Demo the label used to show the left number of characters available to input.
