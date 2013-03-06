@@ -20,6 +20,7 @@
 		41388321169EF1FD00707639 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41388320169EF1FD00707639 /* QuartzCore.framework */; };
 		4155876716B132A800E4B432 /* MessageBubbleGray.png in Resources */ = {isa = PBXBuildFile; fileRef = 4155876516B132A800E4B432 /* MessageBubbleGray.png */; };
 		4155876816B132A800E4B432 /* MessageBubbleGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4155876616B132A800E4B432 /* MessageBubbleGray@2x.png */; };
+		416DE6D616E5D2A2008D3832 /* MOSpecialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 416DE6D516E5D2A2008D3832 /* MOSpecialView.m */; };
 		417C49A616A1086300FA1C44 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417C49A516A1086300FA1C44 /* ImageIO.framework */; };
 		4185E07016A11665000FDFFB /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4185E06F16A11665000FDFFB /* SDWebImage.framework */; };
 		4185E07316A11B9A000FDFFB /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4185E07216A11B9A000FDFFB /* UIImage+Utility.m */; };
@@ -68,6 +69,8 @@
 		41388320169EF1FD00707639 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4155876516B132A800E4B432 /* MessageBubbleGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MessageBubbleGray.png; sourceTree = "<group>"; };
 		4155876616B132A800E4B432 /* MessageBubbleGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageBubbleGray@2x.png"; sourceTree = "<group>"; };
+		416DE6D416E5D2A2008D3832 /* MOSpecialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOSpecialView.h; sourceTree = "<group>"; };
+		416DE6D516E5D2A2008D3832 /* MOSpecialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOSpecialView.m; sourceTree = "<group>"; };
 		417C49A516A1086300FA1C44 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		4185E06F16A11665000FDFFB /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		4185E07116A11B9A000FDFFB /* UIImage+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utility.h"; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 				41CF5EB316A027F7005510B8 /* MOImageLoadController.m */,
 				4194221416AE41D1000D3205 /* MOTextFieldController.h */,
 				4194221516AE41D1000D3205 /* MOTextFieldController.m */,
+				416DE6D416E5D2A2008D3832 /* MOSpecialView.h */,
+				416DE6D516E5D2A2008D3832 /* MOSpecialView.m */,
 				41CF5E1B169FBFCB005510B8 /* images */,
 				410F3698169EDF600094D09D /* Supporting Files */,
 				4185E07116A11B9A000FDFFB /* UIImage+Utility.h */,
@@ -331,6 +336,7 @@
 				4185E0AE16A13343000FDFFB /* MOButtonDemo2Controller.m in Sources */,
 				4185E0B116A1340F000FDFFB /* MOBarButtonItem.m in Sources */,
 				4194221616AE41D1000D3205 /* MOTextFieldController.m in Sources */,
+				416DE6D616E5D2A2008D3832 /* MOSpecialView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

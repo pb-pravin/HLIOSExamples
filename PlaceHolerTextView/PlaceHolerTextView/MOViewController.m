@@ -28,16 +28,20 @@
 	pTextView.layer.cornerRadius = 8;
 	pTextView.delegate = self;
 	[self.view addSubview:pTextView];
+	pTextView.multipleTouchEnabled = YES;
+	NSLog(@"window: %@", pTextView.window);
+	//[pTextView removeFromSuperview];
+	NSLog(@"nextResponder: %@", pTextView.nextResponder);
+	NSLog(@"self.view: %@", self.view);
+	NSLog(@"self.view.nextResponder: %@", self.view.nextResponder);
+	NSLog(@"self: %@", self);
+	NSLog(@"self.nextResponder: %@", self.nextResponder);
 	
-	for (UIView *subView in pTextView.subviews) {
-		NSLog(@"%@", subView);
-	}
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - UITextViewDelegate

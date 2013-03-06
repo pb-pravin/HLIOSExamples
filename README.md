@@ -12,6 +12,8 @@ A collection of examples of my IOS code
 6. Demo the delegate methods of text field and text view.
 7. URL -> NSData -> UIImage
 8. Another way of automatic ajusta label's height according to its content.
+9. Demo how to handle a UIView object's event. And demo the usage of inputView / firstResponder
+10. Demo how to handle emotion event.
 
 ### LabelTextFieldCellDemo
 1. LabelTextFieldCell

@@ -16,7 +16,7 @@
 
 @property (nonatomic, retain) NSString *placeholder;
 @property (nonatomic, assign) NSUInteger maxNumberOfCharacter;
-
+@property (readwrite, retain) UIView *inputView;
 -(void)textChanged:(NSNotification*)notification;
 
 @end

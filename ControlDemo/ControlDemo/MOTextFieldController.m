@@ -7,6 +7,7 @@
 //
 
 #import "MOTextFieldController.h"
+#import "MOSpecialView.h"
 
 #define NUMBERS_ONLY @"1234567890"
 #define CHARACTER_LIMIT 3
@@ -49,11 +50,20 @@
     [self.view addSubview:textField];
     
     
-    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(10, textField.frame.origin.y + textField.frame.size.height + 10, 300, 100)];
+    UITextView *textView =
+	[[UITextView alloc] initWithFrame:CGRectMake(
+												 10, textField.frame.origin.y + textField.frame.size.height + 10, 300, 100)];
     textView.backgroundColor = [UIColor brownColor];
     textView.delegate = self;
     [self.view addSubview:textView];
-    
+	
+	// Demo how to handle a UIView object's event.
+	// and demo the usage of inputView / firstResponder
+	MOSpecialView *specialView =
+	[[MOSpecialView alloc] initWithFrame:CGRectMake(
+													10, textView.frame.origin.y + textView.frame.size.height + 10, 300, 50)];
+	[self.view addSubview:specialView];
+	
 }
 
 - (void)didReceiveMemoryWarning
