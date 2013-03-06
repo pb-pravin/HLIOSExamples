@@ -256,6 +256,12 @@
     for (int i=0; i<ar.count; i++) {
         NSLog(@"%d : %@", i, ar[i]);
     }
+	
+	/** Demo how to use CFBridgingRelease function.
+	CFStringRef cfName = ABRecordCopyValue(person, kABPersonFirstNameProperty);
+	NSString *name = (NSString *)CFBridgingRelease(cfName);
+	 */
+	
     return YES;
 }
 

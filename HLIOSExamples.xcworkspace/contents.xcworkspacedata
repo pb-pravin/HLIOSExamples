@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:AddressBookManager/AddressBookManager.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:PlaceHolerTextView/PlaceHolerTextView.xcodeproj">
    </FileRef>
    <FileRef
