@@ -7,6 +7,7 @@
 //
 
 #import "MOViewController.h"
+#import "MOABManager.h"
 
 @interface MOViewController ()
 
@@ -17,7 +18,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(10, 10, 100, 44);
+    [btn setTitle:@"Check" forState:UIControlStateNormal];
+    [btn addTarget:self
+            action:@selector(checkAddressBookAuthorizationStatus:)
+  forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
+}
+
+/**********************************************************
+ typedef CF_ENUM(CFIndex, ABAuthorizationStatus) {
+     kABAuthorizationStatusNotDetermined = 0,
+     kABAuthorizationStatusRestricted,
+     kABAuthorizationStatusDenied,
+     kABAuthorizationStatusAuthorized
+ };
+ **********************************************************/
+- (IBAction)checkAddressBookAuthorizationStatus:(id)sender {
+    NSLog(@"address book authorization status: %ld", ABAddressBookGetAuthorizationStatus());
 }
 
 - (void)didReceiveMemoryWarning
