@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41550A6716E89DC2007F1CDF /* UnreadCountIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 41550A6516E89DC2007F1CDF /* UnreadCountIndicator.png */; };
+		41550A6816E89DC2007F1CDF /* UnreadCountIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41550A6616E89DC2007F1CDF /* UnreadCountIndicator@2x.png */; };
+		41550A6B16E89DE1007F1CDF /* MOBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41550A6A16E89DE1007F1CDF /* MOBadgeView.m */; };
 		41FBEB4316E48351001517EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FBEB4216E48351001517EC /* UIKit.framework */; };
 		41FBEB4516E48351001517EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FBEB4416E48351001517EC /* Foundation.framework */; };
 		41FBEB4716E48351001517EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FBEB4616E48351001517EC /* CoreGraphics.framework */; };
@@ -23,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41550A6516E89DC2007F1CDF /* UnreadCountIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnreadCountIndicator.png; sourceTree = "<group>"; };
+		41550A6616E89DC2007F1CDF /* UnreadCountIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UnreadCountIndicator@2x.png"; sourceTree = "<group>"; };
+		41550A6916E89DE1007F1CDF /* MOBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBadgeView.h; sourceTree = "<group>"; };
+		41550A6A16E89DE1007F1CDF /* MOBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBadgeView.m; sourceTree = "<group>"; };
 		41FBEB3F16E48351001517EC /* PlaceHolerTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaceHolerTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FBEB4216E48351001517EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		41FBEB4416E48351001517EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +104,8 @@
 				41FBEB5A16E48351001517EC /* MOViewController.h */,
 				41FBEB5B16E48351001517EC /* MOViewController.m */,
 				41FBEB5D16E48351001517EC /* MOViewController.xib */,
+				41550A6916E89DE1007F1CDF /* MOBadgeView.h */,
+				41550A6A16E89DE1007F1CDF /* MOBadgeView.m */,
 				41FBEB4916E48351001517EC /* Supporting Files */,
 			);
 			path = PlaceHolerTextView;
@@ -105,6 +114,8 @@
 		41FBEB4916E48351001517EC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				41550A6516E89DC2007F1CDF /* UnreadCountIndicator.png */,
+				41550A6616E89DC2007F1CDF /* UnreadCountIndicator@2x.png */,
 				41FBEB4A16E48351001517EC /* PlaceHolerTextView-Info.plist */,
 				41FBEB4B16E48351001517EC /* InfoPlist.strings */,
 				41FBEB4E16E48351001517EC /* main.m */,
@@ -173,6 +184,8 @@
 				41FBEB5716E48351001517EC /* Default@2x.png in Resources */,
 				41FBEB5916E48351001517EC /* Default-568h@2x.png in Resources */,
 				41FBEB5F16E48351001517EC /* MOViewController.xib in Resources */,
+				41550A6716E89DC2007F1CDF /* UnreadCountIndicator.png in Resources */,
+				41550A6816E89DC2007F1CDF /* UnreadCountIndicator@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +200,7 @@
 				41FBEB5316E48351001517EC /* MOAppDelegate.m in Sources */,
 				41FBEB5C16E48351001517EC /* MOViewController.m in Sources */,
 				41FBEB6716E48366001517EC /* UIPlaceHolderTextView.m in Sources */,
+				41550A6B16E89DE1007F1CDF /* MOBadgeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +323,7 @@
 				41FBEB6416E48351001517EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

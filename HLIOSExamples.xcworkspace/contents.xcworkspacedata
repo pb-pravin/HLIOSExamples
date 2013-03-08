@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CoreDataPersistence/CoreDataPersistence.xcodeproj">
+      location = "group:CoreDataPersistence/Core Data Persistence.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:AddressBookManager/AddressBookManager.xcodeproj">

@@ -309,6 +309,7 @@
 				41550A1D16E76CA3007F1CDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

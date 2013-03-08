@@ -59,6 +59,7 @@ This project is primarly for testing some features of Objective-C language.
 11. Demo NSString method: - (NSString *)substringToIndex:(NSUInteger)to;
 12. Demo Objective-C type encoding.
 13. Demo the [] accessor for NSDictionary / NSArray.
+14. Demo how to use CFBridgingRelease function.
 
 ### AdvancedTableViewCells
 1. This project demos how to use customized UITableViewCell class
@@ -99,3 +100,6 @@ This project is primarly for testing some features of Objective-C language.
 ### PlaceHolderTextView
 1. Demo the textview with a placeholder label, like the placeholder in a UITextField.
 2. Demo the label used to show the left number of characters available to input.
+
+### CoreDataPersistence
+1. Demo how to use CoreData framework.
