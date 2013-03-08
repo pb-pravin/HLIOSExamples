@@ -7,8 +7,9 @@
 //
 
 #import "MOAppDelegate.h"
-
 #import "MOViewController.h"
+#import "MOABManager.h"
+#import <AddressBook/AddressBook.h>
 
 @implementation MOAppDelegate
 
@@ -19,8 +20,51 @@
     [super dealloc];
 }
 
+static void ABExternalChanged (ABAddressBookRef addressBook,
+							   CFDictionaryRef info,
+							   void *context)
+{
+    NSLog(@"address book changed.");
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    if (ABAddressBookGetAuthorizationStatus != NULL) {
+        NSLog(@"address book authorization status: %ld", ABAddressBookGetAuthorizationStatus());
+    } else {
+        NSLog(@"not avaliable");
+    }
+    
+    
+//    ABAddressBookRef addressBook = ABAddressBookCreate();
+
+    MOABManager *abManager = [MOABManager sharedManager];
+    [abManager requestAccessWithCompletion:^(bool granted, CFErrorRef error) {
+        if (granted) {
+            NSLog(@"address book access granted");
+            ABAddressBookRef addressbook = [abManager addressbook];
+            NSArray *people = (NSArray *)ABAddressBookCopyArrayOfAllPeople(addressbook);
+            if ((people != nil) && people.count) {
+                ABRecordRef record = (ABRecordRef)[people objectAtIndex:0];
+                CFStringRef cfName = ABRecordCopyCompositeName(record);
+                NSLog(@"name: %@", (NSString *)cfName);
+                if (cfName) {
+                    CFRelease(cfName);
+                }
+            }
+            if (people) {
+                [people release];
+            }
+        } else {
+            NSLog(@"address book access not granted");
+        }
+    }];
+    
+    
+    
+    
+    
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
 	self.viewController = [[[MOViewController alloc] initWithNibName:@"MOViewController" bundle:nil] autorelease];
