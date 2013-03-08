@@ -36,21 +36,22 @@ static void MOAddressBookExternalChangeCallback (
 }
 
 - (void)requestAccessWithCompletion:(ABAddressBookRequestAccessCompletionHandler)completionHandler {
-    dispatch_async(dispatch_get_main_queue(), ^{
+    dispatch_async(kAddressBookQueue, ^{
         addressbook = ABAddressBookCreate();
-        ABAddressBookRegisterExternalChangeCallback(addressbook, MOAddressBookExternalChangeCallback, NULL);
+        ABAddressBookRegisterExternalChangeCallback(addressbook,
+													MOAddressBookExternalChangeCallback,
+													NULL);
         if (ABAddressBookRequestAccessWithCompletion != NULL) { // we're on iOS 6
             // Check the authorization status.
             if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusNotDetermined) {
-                ABAddressBookRequestAccessWithCompletion(addressbook, ^(bool granted, CFErrorRef error) {
+                ABAddressBookRequestAccessWithCompletion(addressbook,
+														 ^(bool granted, CFErrorRef error) {
                     addressbookAccessGranted = granted;
-                    //ABAddressBookRegisterExternalChangeCallback(addressbook, MOAddressBookExternalChangeCallback, NULL);
                     completionHandler(granted, error);
                 });
             } else if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusAuthorized) {
                 // The user has previously given access, add the contact
                 addressbookAccessGranted = YES;
-                //ABAddressBookRegisterExternalChangeCallback(addressbook, MOAddressBookExternalChangeCallback, NULL);
                 completionHandler(YES, NULL);
             } else {
                 // The user has previously denied access
@@ -59,7 +60,6 @@ static void MOAddressBookExternalChangeCallback (
             }
         } else { // we're on iOS 5 or older
             addressbookAccessGranted = YES;
-            //ABAddressBookRegisterExternalChangeCallback(addressbook, MOAddressBookExternalChangeCallback, NULL);
             completionHandler(YES, NULL);
         }
     });

@@ -35,9 +35,6 @@ static void ABExternalChanged (ABAddressBookRef addressBook,
         NSLog(@"not avaliable");
     }
     
-    
-//    ABAddressBookRef addressBook = ABAddressBookCreate();
-
     MOABManager *abManager = [MOABManager sharedManager];
     [abManager requestAccessWithCompletion:^(bool granted, CFErrorRef error) {
         if (granted) {
@@ -59,11 +56,6 @@ static void ABExternalChanged (ABAddressBookRef addressBook,
             NSLog(@"address book access not granted");
         }
     }];
-    
-    
-    
-    
-    
     
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.

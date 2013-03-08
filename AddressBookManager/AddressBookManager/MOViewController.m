@@ -30,14 +30,6 @@
     
 }
 
-/**********************************************************
- typedef CF_ENUM(CFIndex, ABAuthorizationStatus) {
-     kABAuthorizationStatusNotDetermined = 0,
-     kABAuthorizationStatusRestricted,
-     kABAuthorizationStatusDenied,
-     kABAuthorizationStatusAuthorized
- };
- **********************************************************/
 - (IBAction)checkAddressBookAuthorizationStatus:(id)sender {
     NSLog(@"address book authorization status: %ld", ABAddressBookGetAuthorizationStatus());
 }
