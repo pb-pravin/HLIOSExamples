@@ -39,4 +39,18 @@
     return result;
 }
 
+- (NSString *)prettyDescription
+{
+    if ([NSJSONSerialization isValidJSONObject:self]) {
+        NSError *error;
+        NSData *data = [NSJSONSerialization dataWithJSONObject:self
+                                                       options:NSJSONWritingPrettyPrinted
+                                                         error:&error];
+        NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        return result;
+    } else {
+        [self description];
+    }
+}
+
 @end
