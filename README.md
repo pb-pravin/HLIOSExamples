@@ -103,3 +103,6 @@ This project is primarly for testing some features of Objective-C language.
 
 ### CoreDataPersistence
 1. Demo how to use CoreData framework.
+
+### NSTimerTest
+1. Demo how to use NSTimer class.

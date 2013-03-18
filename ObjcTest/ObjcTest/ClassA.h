@@ -10,4 +10,6 @@
 
 @interface ClassA : NSObject
 
+- (void)methodInA;
+- (void)f;
 @end

@@ -34,4 +34,12 @@
     [super dealloc];
 }
 
+- (void)methodInA {
+
+}
+
+- (void)f {
+	NSLog(@"A:f");
+}
+
 @end

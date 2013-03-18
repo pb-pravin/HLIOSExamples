@@ -31,4 +31,14 @@
     [super dealloc];
 }
 
+- (void)methodInB {
+}
+
+- (void)f {
+	NSLog(@"%d", [self respondsToSelector:@selector(f)]);
+	NSLog(@"%d", [ClassB instancesRespondToSelector:@selector(f)]);
+	if ([ClassB instancesRespondToSelector:@selector(f)]) {
+		[super f];
+	}
+}
 @end

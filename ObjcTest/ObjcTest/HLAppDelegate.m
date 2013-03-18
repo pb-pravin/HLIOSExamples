@@ -246,7 +246,6 @@
 	 */
     
     /** Demo the [] accessor for NSDictionary / NSArray
-     */
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"United States", @"US", @"China", @"CN", nil];
     for (NSString *key in dict.allKeys) {
         NSLog(@"%@->%@", key, dict[key]);
@@ -256,11 +255,24 @@
     for (int i=0; i<ar.count; i++) {
         NSLog(@"%d : %@", i, ar[i]);
     }
+     */
 	
-	/** Demo how to use CFBridgingRelease function.
+	/** Demo how to use CFBridgingRelease function. Only for ARC project
 	CFStringRef cfName = ABRecordCopyValue(person, kABPersonFirstNameProperty);
 	NSString *name = (NSString *)CFBridgingRelease(cfName);
 	 */
+	
+	/** Demo how to respondsToSelector
+	 */
+	if ([ClassA instancesRespondToSelector:@selector(methodInA)]) {
+		NSLog(@"A methodInA");
+	}
+	if ([ClassB instancesRespondToSelector:@selector(methodInA)]) {
+		NSLog(@"B methodInA");
+	}
+
+	ClassB *b = [[ClassB alloc] init];
+	[b f];
 	
     return YES;
 }

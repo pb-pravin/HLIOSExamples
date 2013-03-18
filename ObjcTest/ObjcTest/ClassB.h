@@ -11,6 +11,6 @@
 @interface ClassB : ClassA
 
 
-
-
+- (void)methodInB;
+- (void)f;
 @end

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NSTimerTest/NSTimerTest.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CoreDataPersistence/Core Data Persistence.xcodeproj">
    </FileRef>
    <FileRef
