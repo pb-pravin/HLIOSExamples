@@ -12,4 +12,5 @@
 + (NSDictionary *)dictionaryWithContentsOfJSONURLString:(NSString *)urlAddress;
 + (NSDictionary *)dictionaryWithContentsOfJSONFile:(NSString *)filePath;
 - (NSData *)toJSON;
+- (NSString *)prettyDescription;
 @end
