@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "A.h"
 @class MOViewController;
 
 @interface MOAppDelegate : UIResponder <UIApplicationDelegate>
@@ -16,4 +16,5 @@
 
 @property (strong, nonatomic) MOViewController *viewController;
 
+@property (strong, nonatomic) A *a;
 @end

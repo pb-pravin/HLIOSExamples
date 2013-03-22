@@ -19,6 +19,13 @@
 	self.viewController = [[MOViewController alloc] initWithNibName:@"MOViewController" bundle:nil];
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+	
+	
+	// Demo the dealloc method in ARC project.
+	_a = [[A alloc] init];
+	_a = nil;	// this line will trigger calling dealloc method.
+	
+	
     return YES;
 }
 

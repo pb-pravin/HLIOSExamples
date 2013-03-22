@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412A156E16F7200D0099A16B /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = 412A156D16F7200D0099A16B /* A.m */; };
 		41FBEAD916E0539A001517EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FBEAD816E0539A001517EC /* UIKit.framework */; };
 		41FBEADB16E0539A001517EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FBEADA16E0539A001517EC /* Foundation.framework */; };
 		41FBEADD16E0539A001517EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FBEADC16E0539A001517EC /* CoreGraphics.framework */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		412A156C16F7200D0099A16B /* A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A.h; sourceTree = "<group>"; };
+		412A156D16F7200D0099A16B /* A.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A.m; sourceTree = "<group>"; };
 		41FBEAD516E0539A001517EC /* SlowWorker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlowWorker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FBEAD816E0539A001517EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		41FBEADA16E0539A001517EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -83,6 +86,8 @@
 		41FBEADE16E0539A001517EC /* SlowWorker */ = {
 			isa = PBXGroup;
 			children = (
+				412A156C16F7200D0099A16B /* A.h */,
+				412A156D16F7200D0099A16B /* A.m */,
 				41FBEAE716E0539A001517EC /* MOAppDelegate.h */,
 				41FBEAE816E0539A001517EC /* MOAppDelegate.m */,
 				41FBEAF016E0539A001517EC /* MOViewController.h */,
@@ -177,6 +182,7 @@
 				41FBEAE516E0539A001517EC /* main.m in Sources */,
 				41FBEAE916E0539A001517EC /* MOAppDelegate.m in Sources */,
 				41FBEAF216E0539A001517EC /* MOViewController.m in Sources */,
+				412A156E16F7200D0099A16B /* A.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +307,7 @@
 				41FBEAFA16E0539A001517EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

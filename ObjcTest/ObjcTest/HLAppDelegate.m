@@ -262,8 +262,7 @@
 	NSString *name = (NSString *)CFBridgingRelease(cfName);
 	 */
 	
-	/** Demo how to respondsToSelector
-	 */
+	/** Demo how to use respondsToSelector
 	if ([ClassA instancesRespondToSelector:@selector(methodInA)]) {
 		NSLog(@"A methodInA");
 	}
@@ -273,6 +272,19 @@
 
 	ClassB *b = [[ClassB alloc] init];
 	[b f];
+	 */
+	
+	/**
+	 * Demo whether the mutable dictionary in another dictionary could be modified.
+	 * It seems that it could be modified, however, in the apple documentation, it says:
+	 Thus, for example, a mutable dictionary can be put in a hash table but you must not change it while it is in there. 
+	 (Note that it can be difficult to know whether or not a given object is in a collection.)
+	 */
+	// Is dictionay a kind of Collection?
+	NSMutableDictionary *mutableDict = [[NSMutableDictionary alloc] init];
+	NSDictionary *dict = [NSDictionary dictionaryWithObject:mutableDict forKey:@"mutableDict"];
+	[mutableDict setObject:@"American" forKey:@"A"];
+	NSLog(@"%@", dict);
 	
     return YES;
 }
