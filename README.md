@@ -106,3 +106,6 @@ This project is primarly for testing some features of Objective-C language.
 
 ### NSTimerTest
 1. Demo how to use NSTimer class.
+
+### ImagePickerDemo
+1. Demo how to use UIImagePickerController

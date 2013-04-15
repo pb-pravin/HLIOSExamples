@@ -10,6 +10,11 @@
 
 #import "MOViewController.h"
 
+@interface MOAppDelegate () {
+	dispatch_queue_t _serialQueue;
+}
+@end
+
 @implementation MOAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -25,8 +30,28 @@
 	_a = [[A alloc] init];
 	_a = nil;	// this line will trigger calling dealloc method.
 	
+	_serialQueue = dispatch_queue_create("test", DISPATCH_QUEUE_SERIAL);
+	[self f];
 	
+	dispatch_release(_serialQueue);
     return YES;
+}
+
+- (void)f{
+	// Definitely, will print 10 'f' first, then 10 'g'.
+	// not 'fgfgfgfgfgfgfgfgfg'
+	dispatch_async(_serialQueue, ^{
+		for (int i=0; i<10; i++) {
+			NSLog(@"f");
+			[self g];
+		}
+	});
+}
+
+- (void)g {
+	dispatch_async(_serialQueue, ^{
+		NSLog(@"g");
+	});
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

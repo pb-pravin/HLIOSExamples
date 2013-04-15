@@ -80,7 +80,7 @@
 	// Change view's frame according to the length of text.
 	// bgImageView and badgeLabel's frame will be automatically adjusted.
 	CGSize size = [_badgeLabel.text sizeWithFont:_badgeLabel.font];
-	NSLog(@"font:%@ size:%f",_badgeLabel.font, size.width);
+	//NSLog(@"font:%@ size:%f",_badgeLabel.font, size.width);
 	CGRect frame = self.frame;
 	frame.size.width = 2*kLeftMargin + size.width;
 	self.frame = frame;

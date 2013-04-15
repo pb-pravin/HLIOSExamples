@@ -9,6 +9,7 @@
 #import "MOViewController.h"
 
 @interface MOViewController ()
+- (IBAction)buttonPressed:(id)sender;
 @property (retain, nonatomic) IBOutlet UIImageView *imageView1;
 @property (retain, nonatomic) IBOutlet UIImageView *imageView2;
 @property (retain, nonatomic) IBOutlet UIImageView *imageView3;
@@ -141,5 +142,7 @@
     [self setField3:nil];
     [self setField4:nil];
     [super viewDidUnload];
+}
+- (IBAction)buttonPressed:(id)sender {
 }
 @end

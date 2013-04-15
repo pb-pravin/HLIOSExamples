@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:WebViewDemo/WebViewDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ImagePickerDemo/ImagePickerDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NSTimerTest/NSTimerTest.xcodeproj">
    </FileRef>
    <FileRef
@@ -11,7 +17,7 @@
       location = "group:AddressBookManager/AddressBookManager.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:PlaceHolerTextView/PlaceHolerTextView.xcodeproj">
+      location = "group:PlaceHolerTextView/UICharCountingTextView.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:CITest/CITest.xcodeproj">
@@ -57,9 +63,6 @@
    </FileRef>
    <FileRef
       location = "group:ControlDemo/ControlDemo.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:MOTabBarDemo/MOTabBarDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:TextFieldCellDemo/TextFieldCellDemo.xcodeproj">
