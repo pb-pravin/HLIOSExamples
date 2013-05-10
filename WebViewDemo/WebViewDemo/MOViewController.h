@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MOViewController : UIViewController <UIWebViewDelegate>
+@interface MOViewController : UIViewController <UIWebViewDelegate, UIAlertViewDelegate>
 
 @end

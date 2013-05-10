@@ -35,7 +35,44 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          // insert code for mouse click here
          // Navigate to a new URL in the current window
          // (replace "_self" with appropriate target attribute for a new window)
-         window.open("http://www.adobe.com", "_self");
+         window.open("http://create", "_self");
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_Text}", "click", function(sym, e) {
+         // Navigate to a new URL in the current window
+         // (replace "_self" with appropriate target attribute for a new window)
+         window.open("http://skip", "_self");
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_background}", "click", function(sym, e) {
+         // insert code for mouse click here
+         e.stopPropagation();
+         e.preventDefault();
+         return false();	
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_logo_800}", "click", function(sym, e) {
+         // insert code for mouse click here
+         e.stopPropagation();
+         e.preventDefault();
+         return false();	
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_Text3}", "click", function(sym, e) {
+         // insert code for mouse click here
+         e.stopPropagation();
+         e.preventDefault();
+         return false();	
+         
 
       });
       //Edge binding end
