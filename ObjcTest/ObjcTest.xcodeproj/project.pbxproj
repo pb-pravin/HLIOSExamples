@@ -23,6 +23,7 @@
 		416C22D916A81E0C00BCC987 /* SPDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 416C22D816A81E0C00BCC987 /* SPDeepCopy.m */; };
 		4196FDD416A6C796009396DD /* MOUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4196FDD316A6C796009396DD /* MOUser.m */; };
 		41A9AA0016BA5D0E00927F4F /* emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41A9A9FF16BA5D0E00927F4F /* emoji.plist */; };
+		41B5ED3C173CA44400CD88FB /* HLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B5ED3B173CA44400CD88FB /* HLUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		4196FDD216A6C796009396DD /* MOUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOUser.h; sourceTree = "<group>"; };
 		4196FDD316A6C796009396DD /* MOUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOUser.m; sourceTree = "<group>"; };
 		41A9A9FF16BA5D0E00927F4F /* emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emoji.plist; sourceTree = "<group>"; };
+		41B5ED3A173CA44400CD88FB /* HLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLUser.h; sourceTree = "<group>"; };
+		41B5ED3B173CA44400CD88FB /* HLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				4196FDD316A6C796009396DD /* MOUser.m */,
 				416C22D716A81E0C00BCC987 /* SPDeepCopy.h */,
 				416C22D816A81E0C00BCC987 /* SPDeepCopy.m */,
+				41B5ED3A173CA44400CD88FB /* HLUser.h */,
+				41B5ED3B173CA44400CD88FB /* HLUser.m */,
 			);
 			path = ObjcTest;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				4151EA45168E8F81002DBAAE /* ClassB.m in Sources */,
 				4196FDD416A6C796009396DD /* MOUser.m in Sources */,
 				416C22D916A81E0C00BCC987 /* SPDeepCopy.m in Sources */,
+				41B5ED3C173CA44400CD88FB /* HLUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

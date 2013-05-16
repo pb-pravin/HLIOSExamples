@@ -9,7 +9,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "MOImageLoadController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-
+#import "AFNetworking.h"
 
 
 @interface MOImageLoadController ()
@@ -62,6 +62,40 @@
 	UIImage *image = [UIImage imageWithData:data];
 	imageView3.image = image;
     [self.view addSubview:imageView3];
+	
+	
+	NSURL *url4 = [NSURL URLWithString:@"http://we.vanillicon.com/eca62e8b1da79de98da331a1c988cb62_100.png"];
+	NSURLRequest *request = [NSURLRequest requestWithURL:url4];
+	
+//	AFImageRequestOperation *operation = [AFImageRequestOperation imageRequestOperationWithRequest:request
+//																						   success:^(UIImage *image)
+//	{
+//		UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(imageView3.frame.origin.x, imageView3.frame.origin.y + imageView3.frame.size.height + 5, 200, 100)];
+//		// Center the image, and clips to bounds.
+//		imageView.contentMode = UIViewContentModeScaleAspectFill;
+//		imageView.clipsToBounds = YES;
+//		imageView.layer.cornerRadius = 6;
+//		imageView.image = image;
+//		[self.view addSubview:imageView];
+//	}];
+	
+	AFImageRequestOperation *operation = [AFImageRequestOperation imageRequestOperationWithRequest:request
+																			  imageProcessingBlock:nil																						   success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image)
+	{
+		UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(imageView3.frame.origin.x, imageView3.frame.origin.y + imageView3.frame.size.height + 5, 200, 100)];
+		// Center the image, and clips to bounds.
+		imageView.contentMode = UIViewContentModeScaleAspectFill;
+		imageView.clipsToBounds = YES;
+		imageView.layer.cornerRadius = 6;
+		imageView.image = image;
+		[self.view addSubview:imageView];
+	}
+																						   failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error)
+	{
+		
+	}];
+	
+	[operation start];
 }
 
 - (void)didReceiveMemoryWarning
