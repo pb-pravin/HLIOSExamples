@@ -51,9 +51,9 @@
 
 
 // Define one of the following macros to 1 to control which type of cell will be used.
-#define USE_INDIVIDUAL_SUBVIEWS_CELL    0	// use a xib file defining the cell
+#define USE_INDIVIDUAL_SUBVIEWS_CELL    1	// use a xib file defining the cell
 #define USE_COMPOSITE_SUBVIEW_CELL      0	// use a single view to draw all the content
-#define USE_HYBRID_CELL                 1	// use a single view to draw most of the content + separate label to render the rest of the content
+#define USE_HYBRID_CELL                 0	// use a single view to draw most of the content + separate label to render the rest of the content
 
 
 /*
@@ -140,8 +140,9 @@
 #if USE_INDIVIDUAL_SUBVIEWS_CELL
         [self.cellNib instantiateWithOwner:self options:nil];
 		cell = tmpCell;
+        NSLog(@"BEF cell retain count: %d", cell.retainCount);
 		self.tmpCell = nil;
-		
+        NSLog(@"AFT cell retain count: %d", cell.retainCount);
 #elif USE_COMPOSITE_SUBVIEW_CELL
         cell = [[[CompositeSubviewBasedApplicationCell alloc] initWithStyle:UITableViewCellStyleDefault
                                                             reuseIdentifier:CellIdentifier] autorelease];

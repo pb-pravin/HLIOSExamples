@@ -60,6 +60,8 @@ This project is primarly for testing some features of Objective-C language.
 12. Demo Objective-C type encoding.
 13. Demo the [] accessor for NSDictionary / NSArray.
 14. Demo how to use CFBridgingRelease function.
+15. Demo how to use respondsToSelector
+16. Demo whether the mutable dictionary in another dictionary could be modified.
 
 ### AdvancedTableViewCells
 1. This project demos how to use customized UITableViewCell class

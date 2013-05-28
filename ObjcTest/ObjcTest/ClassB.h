@@ -13,4 +13,5 @@
 
 - (void)methodInB;
 - (void)f;
++ (NSString *)shared;
 @end

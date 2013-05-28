@@ -34,6 +34,11 @@
 - (void)methodInB {
 }
 
++ (NSString *)shared
+{
+    return [super shared];
+}
+
 - (void)f {
 	NSLog(@"%d", [self respondsToSelector:@selector(f)]);
 	NSLog(@"%d", [ClassB instancesRespondToSelector:@selector(f)]);

@@ -28,6 +28,11 @@
     NSLog(@"ClassA load");
 }
 
++ (NSString *)shared
+{
+    return @"A";
+}
+
 - (void)dealloc
 {
     NSLog(@"ClassA dealloc");
