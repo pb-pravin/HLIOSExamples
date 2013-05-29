@@ -23,6 +23,8 @@
     // Override point for customization after application launch.
     _tabBarController = [[UITabBarController alloc] init];
     
+	NSLog(@"Deployment target: %i", __IPHONE_OS_VERSION_MIN_REQUIRED);
+	
     // UILabel demo controller
     MOLabelDemoController *labelDemoController = [[MOLabelDemoController alloc] init];
     MOButtonDemoController *buttonDemoController = [[MOButtonDemoController alloc] init];

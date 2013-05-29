@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:LazyTableImages/LazyTableImages.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:WebViewDemo/WebViewDemo.xcodeproj">
    </FileRef>
    <FileRef

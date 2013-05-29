@@ -114,3 +114,6 @@ This project is primarly for testing some features of Objective-C language.
 
 ### WebViewDemo
 1. Demo how to use UIWebViewController
+
+### LazyTabelImage
+This sample demonstrates a multi-stage approach to loading and displaying a UITableView. It begins by loading the relevant text from an RSS feed so the table can load as quickly as possible, and then downloads the images for each row asynchronously so the UI is more responsive.
