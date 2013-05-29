@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NSThreadDemo/NSThreadDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FakeContactsGenerator/FakeContactsGenerator.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:LazyTableImages/LazyTableImages.xcodeproj">
    </FileRef>
    <FileRef
