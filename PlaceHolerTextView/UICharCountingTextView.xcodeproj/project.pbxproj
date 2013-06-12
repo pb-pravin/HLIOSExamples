@@ -10,6 +10,8 @@
 		41550A6716E89DC2007F1CDF /* UnreadCountIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 41550A6516E89DC2007F1CDF /* UnreadCountIndicator.png */; };
 		41550A6816E89DC2007F1CDF /* UnreadCountIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41550A6616E89DC2007F1CDF /* UnreadCountIndicator@2x.png */; };
 		41550A6B16E89DE1007F1CDF /* MOBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41550A6A16E89DE1007F1CDF /* MOBadgeView.m */; };
+		417F54FB175C848900268AAE /* MOBadgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417F54F9175C848900268AAE /* MOBadgeViewController.m */; };
+		417F54FC175C848900268AAE /* MOBadgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417F54FA175C848900268AAE /* MOBadgeViewController.xib */; };
 		41FBEB4316E48351001517EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FBEB4216E48351001517EC /* UIKit.framework */; };
 		41FBEB4516E48351001517EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FBEB4416E48351001517EC /* Foundation.framework */; };
 		41FBEB4716E48351001517EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FBEB4616E48351001517EC /* CoreGraphics.framework */; };
@@ -30,6 +32,9 @@
 		41550A6616E89DC2007F1CDF /* UnreadCountIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UnreadCountIndicator@2x.png"; sourceTree = "<group>"; };
 		41550A6916E89DE1007F1CDF /* MOBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBadgeView.h; sourceTree = "<group>"; };
 		41550A6A16E89DE1007F1CDF /* MOBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBadgeView.m; sourceTree = "<group>"; };
+		417F54F8175C848800268AAE /* MOBadgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBadgeViewController.h; sourceTree = "<group>"; };
+		417F54F9175C848900268AAE /* MOBadgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBadgeViewController.m; sourceTree = "<group>"; };
+		417F54FA175C848900268AAE /* MOBadgeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MOBadgeViewController.xib; sourceTree = "<group>"; };
 		41FBEB3F16E48351001517EC /* UICharCountingTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICharCountingTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FBEB4216E48351001517EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		41FBEB4416E48351001517EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,6 +111,9 @@
 				41FBEB5D16E48351001517EC /* MOViewController.xib */,
 				41550A6916E89DE1007F1CDF /* MOBadgeView.h */,
 				41550A6A16E89DE1007F1CDF /* MOBadgeView.m */,
+				417F54F8175C848800268AAE /* MOBadgeViewController.h */,
+				417F54F9175C848900268AAE /* MOBadgeViewController.m */,
+				417F54FA175C848900268AAE /* MOBadgeViewController.xib */,
 				41FBEB4916E48351001517EC /* Supporting Files */,
 			);
 			name = UICharCountingTextView;
@@ -187,6 +195,7 @@
 				41FBEB5F16E48351001517EC /* MOViewController.xib in Resources */,
 				41550A6716E89DC2007F1CDF /* UnreadCountIndicator.png in Resources */,
 				41550A6816E89DC2007F1CDF /* UnreadCountIndicator@2x.png in Resources */,
+				417F54FC175C848900268AAE /* MOBadgeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +211,7 @@
 				41FBEB5C16E48351001517EC /* MOViewController.m in Sources */,
 				41FBEB6716E48366001517EC /* UICharCountingTextView.m in Sources */,
 				41550A6B16E89DE1007F1CDF /* MOBadgeView.m in Sources */,
+				417F54FB175C848900268AAE /* MOBadgeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

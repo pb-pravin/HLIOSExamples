@@ -10,18 +10,113 @@
 
 #import "ViewController.h"
 
+@interface ThreadA : NSThread
+
+@end
+
+@implementation ThreadA
+
+//- (id)init
+//{
+//	self = [super init];
+//	if (self)
+//	{
+//		[self setName:@"ThreadA"];
+//	}
+//	return self;
+//}
+
+- (void)main
+{
+	[[NSThread currentThread] setName:@"ThreadA"];
+	for (int i=0; i<10; i++) {
+		NSLog(@"count %d", i);
+		[NSThread sleepForTimeInterval:1];
+	}
+	NSLog(@"ThreadA call stack backtrace: %@", [NSThread callStackSymbols]);
+}
+
+@end
+
+
 @implementation AppDelegate
 
-//- (void)happen:(NSNotification *)notification
-//{
-//	NSLog(@"notification: %@", notification.name);
-//}
+- (void)happen:(NSNotification *)notification
+{
+	NSLog(@"notification: %@", notification.name);
+}
+
+- (void)printCount:(NSTimer *)timer
+{
+	NSLog(@"count %@", [timer fireDate]);
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	//[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(happen:) name:NSWillBecomeMultiThreadedNotification object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(happen:) name:NSThreadWillExitNotification object:nil];
 	
 	NSLog(@"multi-threaded: %d", [NSThread isMultiThreaded]);
+	NSLog(@"is main thread: %d", [NSThread isMainThread]);
+	NSLog(@"thread priority: %f", [NSThread threadPriority]);
+	//[NSThread sleepForTimeInterval:2];
+	NSThread *mainThread = [NSThread mainThread];
+	NSLog(@"main thread: %@", mainThread);
+	
+	NSThread *currentThread = [NSThread currentThread];
+	NSLog(@"current thread: %@", currentThread);
+	
+	NSLog(@"is executing: %d", [currentThread isExecuting]);
+	NSLog(@"is finished: %d", [currentThread isFinished]);
+	NSLog(@"is canceled: %d", [currentThread isCancelled]);
+	NSLog(@"Cancel the current thread.");
+	[currentThread cancel];
+	NSLog(@"is canceled: %d", [currentThread isCancelled]);
+	// It seems that main thread can not be canceled, isCanceled state always returns NO even we perform cancel method on it.
+	
+	NSLog(@"Set the name of the current thread");
+	[currentThread setName:@"Main thread"];
+	// This feature is usefull when debugging, you can easily identify threads being executing.
+	
+	NSLog(@"Call stack symbols: %@", [NSThread callStackSymbols]);
+	// This is very usefull for debugging.
+	
+	NSLog(@"Call stack return addresses: %@", [NSThread callStackReturnAddresses]);
+	
+	/*You can use the returned dictionary to store thread-specific data. The thread dictionary is not used during any manipulations of the NSThread object—it is simply a place where you can store any interesting data. For example, Foundation uses it to store the thread’s default NSConnection and NSAssertionHandler instances. You may define your own keys for the dictionary.*/
+	NSLog(@"current thread's dictionary: %@", [currentThread threadDictionary]);
+	
+	
+	NSLog(@"runloop object: %@", [NSRunLoop currentRunLoop]);
+	NSLog(@"runloop's current run mode: %@", [[NSRunLoop currentRunLoop] currentMode]);
+	NSLog(@"ns defualt runloop mode name: %@", NSDefaultRunLoopMode);
+	NSLog(@"ns runloop common mode name: %@", NSRunLoopCommonModes);
+	
+//	ThreadA *threadA = [[ThreadA alloc] init];
+//	[threadA start];
+//	
+//	while (![threadA isFinished]) {
+//		NSLog(@"thread A is executing.");
+//		[NSThread sleepForTimeInterval:0.8];
+//	}
+//
+	
+	dispatch_async(dispatch_get_global_queue(0, 0), ^{
+		__block NSTimer *timer = nil;
+		// The timer must be scheduled on a runloop.
+		timer = [NSTimer timerWithTimeInterval:5 target:self selector:@selector(printCount:) userInfo:nil repeats:YES];
+		dispatch_async(dispatch_get_main_queue(), ^{
+			[[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+		});
+		[timer fire];
+	});
+	
+	
+//	NSLog(@"Exit the maine thread");
+//	[NSThread exit];
+	
+	// 
+	NSLog(@"###");
 	
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

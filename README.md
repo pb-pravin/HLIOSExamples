@@ -120,3 +120,8 @@ This sample demonstrates a multi-stage approach to loading and displaying a UITa
 
 ### FakeContactGenerator
 1. Demo how to create a ABRecord object and how to insert it into contact database.
+
+### SMSDemo
+1. [MFMessageComposeViewController canSendText] shoudl retrun NO in Simulator, however, for iphone simulator5 and later, it returns YES.
+please refer to http://stackoverflow.com/questions/9349381/mfmessagecomposeviewcontroller-on-simulator-cansendtext
+

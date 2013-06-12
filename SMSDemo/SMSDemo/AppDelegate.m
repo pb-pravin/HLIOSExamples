@@ -1,31 +1,22 @@
 //
-//  MOAppDelegate.m
-//  PlaceHolerTextView
+//  AppDelegate.m
+//  SMSDemo
 //
-//  Created by an hailin on 4/3/13.
+//  Created by an hailin on 31/5/13.
 //  Copyright (c) 2013 mozat. All rights reserved.
 //
 
-#import "MOAppDelegate.h"
+#import "AppDelegate.h"
 
-//#import "MOViewController.h"
-#import "MOBadgeViewController.h"
-@implementation MOAppDelegate
+#import "ViewController.h"
 
-- (void)dealloc
-{
-	[_window release];
-	[_viewController release];
-    [super dealloc];
-}
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-	self.viewController = [[[MOBadgeViewController alloc] initWithNibName:@"MOBadgeViewController" bundle:nil] autorelease];
-	
-	//[[[MOViewController alloc] initWithNibName:@"MOViewController" bundle:nil] autorelease];
+	self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

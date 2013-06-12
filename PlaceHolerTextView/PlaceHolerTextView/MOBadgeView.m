@@ -28,14 +28,16 @@
 		_bgImageView.image =
 		[[UIImage imageNamed:@"UnreadCountIndicator.png"] stretchableImageWithLeftCapWidth:9 topCapHeight:8];
 		_bgImageView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+		[_bgImageView sizeToFit];
 		_badgeLabel = [[UILabel alloc] initWithFrame:frame];
 		_badgeLabel.textAlignment = UITextAlignmentCenter;
-		_badgeLabel.backgroundColor = [UIColor clearColor];
+		_badgeLabel.backgroundColor = [UIColor redColor];
 		_badgeLabel.font = kDefaultBadgeFont;
 		_badgeLabel.textColor = kDefaultBadgeColor;
 		_badgeLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 		[self addSubview:_bgImageView];
 		[self addSubview:_badgeLabel];
+		
     }
     return self;
 }
@@ -61,7 +63,7 @@
 		[_badgeFont release];
 		_badgeFont = [badgeFont retain];
 		_badgeLabel.font = badgeFont;
-		[self setNeedsLayout];
+		[self setNeedsDisplay];
 	}
 }
 
@@ -73,14 +75,16 @@
 		text = [NSString stringWithFormat:@"%d", badgeNum];
 	}
 	_badgeLabel.text = text;
-	[self setNeedsLayout];
+	[self layoutIfNeeded];
 }
 
-- (void)layoutSubviews {
+- (void)drawRect:(CGRect)rect {
+	
+	_bgImageView.frame = rect;
 	// Change view's frame according to the length of text.
 	// bgImageView and badgeLabel's frame will be automatically adjusted.
 	CGSize size = [_badgeLabel.text sizeWithFont:_badgeLabel.font];
-	//NSLog(@"font:%@ size:%f",_badgeLabel.font, size.width);
+	_badgeLabel.frame = CGRectMake(kLeftMargin, 0, size.width, size.height);
 	CGRect frame = self.frame;
 	frame.size.width = 2*kLeftMargin + size.width;
 	self.frame = frame;

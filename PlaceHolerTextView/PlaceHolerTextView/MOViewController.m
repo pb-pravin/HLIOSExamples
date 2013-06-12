@@ -22,18 +22,18 @@
 {
     [super viewDidLoad];
 	
-	pTextView = [[[UICharCountingTextView alloc] initWithFrame:CGRectMake(8, 8, 300, 100)] autorelease];
-	pTextView.placeholder = @"What do you think?";
-	pTextView.maxNumberOfCharacter = 100;
-	[self.view addSubview:pTextView];
-	[pTextView setText:@"hello"];
+//	pTextView = [[[UICharCountingTextView alloc] initWithFrame:CGRectMake(8, 8, 300, 100)] autorelease];
+//	pTextView.placeholder = @"What do you think?";
+//	pTextView.maxNumberOfCharacter = 100;
+//	[self.view addSubview:pTextView];
+//	[pTextView setText:@"hello"];
 	
 	//for (int i=1; i<=10; i++) {
-//	MOBadgeView *badgeView =
-//	[[[MOBadgeView alloc] initWithFrame:CGRectMake(8, (20), 10, 17)] autorelease];
-//	badgeView.badgeNumber = 1900000;
-//	badgeView.badgeFont = [UIFont systemFontOfSize:13];
-//	[self.view addSubview:badgeView];
+	MOBadgeView *badgeView =
+	[[[MOBadgeView alloc] initWithFrame:CGRectMake(8, (20), 10, 17)] autorelease];
+	badgeView.badgeNumber = 1900000;
+	badgeView.badgeFont = [UIFont systemFontOfSize:13];
+	[self.view addSubview:badgeView];
 	//}
 	
 }

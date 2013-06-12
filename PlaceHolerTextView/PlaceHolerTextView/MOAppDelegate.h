@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class MOViewController;
+//@class MOViewController;
+@class MOBadgeViewController;
 
 @interface MOAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) MOViewController *viewController;
-
+//@property (strong, nonatomic) MOViewController *viewController;
+@property (strong, nonatomic) MOBadgeViewController *viewController;
 @end
