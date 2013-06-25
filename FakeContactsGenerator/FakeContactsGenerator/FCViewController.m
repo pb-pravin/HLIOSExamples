@@ -55,7 +55,7 @@
 		 {
 			 CFStringRef firstNameRef = ABRecordCopyValue(record, kABPersonFirstNameProperty);
 			 NSString *firstName = (__bridge NSString *)firstNameRef;
-			 if ([firstName hasPrefix:@"FakeContact"])
+			 if ([firstName hasPrefix:@"AT"])
 			 {
 				 countOfFakeContacts++;
 			 }
@@ -92,24 +92,24 @@
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         ABAddressBookRef addressbook = ABAddressBookCreate();
         CFErrorRef anError = NULL;
-		int base = 77000000;
-        for (int i = 0; i < 10000; i++)
+		int base = 73000000;
+        for (int i = 0; i < 10; i++)
         {
             ABRecordRef record = ABPersonCreate();
 			// Set first name
-            CFStringRef nameRef = (__bridge CFStringRef)[NSString stringWithFormat:@"FakeContact%d", i];
+            CFStringRef nameRef = (__bridge CFStringRef)[NSString stringWithFormat:@"AT%d", i];
             bool didSetFirstName = ABRecordSetValue(record, kABPersonFirstNameProperty, nameRef, &anError);
 			
 			// Set phone number
 			NSString *strNumber = nil;
-			if (i < self.phoneNumbers.count)
-			{
-				strNumber = self.phoneNumbers[i];
-			}
-			else
-			{
+//			if (i < self.phoneNumbers.count)
+//			{
+//				strNumber = self.phoneNumbers[i];
+//			}
+//			else
+//			{
 				strNumber = [NSString stringWithFormat:@"+65%d", base++];
-			}
+//			}
 			
 			ABMultiValueRef phoneNumbersRef = ABMultiValueCreateMutable(kABMultiStringPropertyType);
 			ABMultiValueAddValueAndLabel(phoneNumbersRef,
@@ -146,7 +146,7 @@
 			{
 				CFStringRef firstNameRef = ABRecordCopyValue(record, kABPersonFirstNameProperty);
 				NSString *firstName = (__bridge NSString *)firstNameRef;
-				if ([firstName hasPrefix:@"FakeContact"])
+				if ([firstName hasPrefix:@"AT"])
 				{
 					ABAddressBookRemoveRecord(addressbook, record, &anError);
 				}

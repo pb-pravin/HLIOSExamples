@@ -45,6 +45,7 @@
                                 [UIColor blackColor], NSStrokeColorAttributeName, nil];
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:@"Heloo" attributes:attributes];
     textField.attributedText = attributedString;
+	
     textField.delegate = self;
     textField.backgroundColor = [UIColor grayColor];
     [self.view addSubview:textField];

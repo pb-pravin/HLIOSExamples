@@ -126,3 +126,6 @@ This sample demonstrates a multi-stage approach to loading and displaying a UITa
 1. [MFMessageComposeViewController canSendText] should retrun NO in Simulator, however, for iphone simulator5 and later, it returns YES.
 please refer to http://stackoverflow.com/questions/9349381/mfmessagecomposeviewcontroller-on-simulator-cansendtext
 
+### SearchTable
+1. Demo how to use UISearchDisplayController.
+
