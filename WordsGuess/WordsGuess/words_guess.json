@@ -1,0 +1,679 @@
+{
+    "word_guesses" :[
+                     {
+                     "note" : "猜一个字",
+                     "question" : "2110",
+                     "answer" : "言"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "4个人搬个木头",
+                     "answer" : "杰"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一人",
+                     "answer" : "大"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一人一张口, 口下长只手",
+                     "answer" : "拿"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一人在内",
+                     "answer" : "肉"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一人挑两小人",
+                     "answer" : "夹"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一人腰上挂把弓",
+                     "answer" : "夷"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一口吃掉牛尾巴",
+                     "answer" : "告"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一口咬定",
+                     "answer" : "交"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一大二小",
+                     "answer" : "奈"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一斗米",
+                     "answer" : "料"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一月七日",
+                     "answer" : "脂"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一加一",
+                     "answer" : "王"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一半儿",
+                     "answer" : "臼"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一字十三点, 难在如何点",
+                     "answer" : "汁"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一百减一",
+                     "answer" : "白"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一夜又一夜",
+                     "answer" : "多"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一个人搬两个土",
+                     "answer" : "佳"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一个礼拜",
+                     "answer" : "旨"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一家十一口",
+                     "answer" : "吉"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一家有七口, 种田种一亩, 自己吃不够, 还养一条狗",
+                     "answer" : "兽"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一根木棍, 吊个方箱, 一把梯子, 搭在中央",
+                     "answer" : "面"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一只牛",
+                     "answer" : "生"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一只狗四个口",
+                     "answer" : "器"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一箭穿心",
+                     "answer" : "必"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "星星之歌",
+                     "answer" : "农"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "昨日不可留",
+                     "answer" : "乍"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "洋婆子",
+                     "answer" : "要"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "流眼泪对流眼泪",
+                     "answer" : "器"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "洞裏会郎君",
+                     "answer" : "窥"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "美国小姐",
+                     "answer" : "要"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "苗头不对",
+                     "answer" : "笛"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "风儿吐舌头",
+                     "answer" : "刮"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "飞砂走石",
+                     "answer" : "少"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "乘人不备",
+                     "answer" : "乖"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "值钱不值钱, 全在这两点",
+                     "answer" : "金"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "唐老鸭退役",
+                     "answer" : "鸟"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "家中兄长多, 一门共八个",
+                     "answer" : "阅"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "家书",
+                     "answer" : "响"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "家乡话",
+                     "answer" : "响"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "徒弟",
+                     "answer" : "们"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "拿不出手",
+                     "answer" : "合"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "旅行坐飞机",
+                     "answer" : "辈"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "真心相伴",
+                     "answer" : "慎"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "真丢人",
+                     "answer" : "直"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "真情指数",
+                     "answer" : "皓(告白)"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "缺钱啦",
+                     "answer" : "钦"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "草上飞",
+                     "answer" : "早"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "草木之中有个人",
+                     "answer" : "茶"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "起死回生",
+                     "answer" : "苏"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "酒中没有水, 简直活见鬼",
+                     "answer" : "丑"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "酒肉朋友",
+                     "answer" : "饺"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "饥荒",
+                     "answer" : "欲"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "乾燥剂",
+                     "answer" : "法"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "接吻",
+                     "answer" : "吕"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "斩草不除根",
+                     "answer" : "早"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "欲言又止",
+                     "answer" : "认"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "欲话无言听流水",
+                     "answer" : "活"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "欲罢不能",
+                     "answer" : "四"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "添丁进口",
+                     "answer" : "可"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "猜酒拳",
+                     "answer" : "批"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "眼看田上长青草",
+                     "answer" : "瞄"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "这一页",
+                     "answer" : "题"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "连中三元",
+                     "answer" : "车"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "部位相反",
+                     "answer" : "陪"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "阴曹地府",
+                     "answer" : "块"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "掌门人",
+                     "answer" : "们"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "挥手告别",
+                     "answer" : "军"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "森林大火",
+                     "answer" : "焚"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "无心的爱",
+                     "answer" : "受"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "无限心头语, 尽在情丝中",
+                     "answer" : "恋"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "无风荷叶动",
+                     "answer" : "衡"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "无头无尾一亩田.",
+                     "answer" : "鱼"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "结实累累",
+                     "answer" : "夥"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "视而不见",
+                     "answer" : "示"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "邮差",
+                     "answer" : "储"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "云南大旱",
+                     "answer" : "滇"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "云破月来",
+                     "answer" : "育"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "傻瓜",
+                     "answer" : "保"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "新竹",
+                     "answer" : "笋"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "楚霸王乌江自刎",
+                     "answer" : "翠"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "枫树无风, 旁边有位老公",
+                     "answer" : "松"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "万物之灵",
+                     "answer" : "他(人也)"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "落花人独立, 微雨燕双飞",
+                     "answer" : "俩"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "雷而无雨",
+                     "answer" : "田"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "驯狗者",
+                     "answer" : "狮"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "鼠头虎尾",
+                     "answer" : "儿"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "算命先生",
+                     "answer" : "仆"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "闻不入耳",
+                     "answer" : "门"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "闻不用耳",
+                     "answer" : "门"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "与人方便",
+                     "answer" : "更"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "与我同行",
+                     "answer" : "衙"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "裹脚",
+                     "answer" : "跑"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "银楼",
+                     "answer" : "锯"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "欧洲人",
+                     "answer" : "伯"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "欧洲妇人",
+                     "answer" : "要"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "瞎子",
+                     "answer" : "盲"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "请十二时准时入席",
+                     "answer" : "许"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "学子远去, 又见归来",
+                     "answer" : "觉"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "学生学字",
+                     "answer" : "救"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "横算直算, 二四得八",
+                     "answer" : "买"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "树旁站著两个人",
+                     "answer" : "来"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "独留花下人, 有情却无心",
+                     "answer" : "倩"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "独眼龙",
+                     "answer" : "省"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "阎罗王",
+                     "answer" : "瑰"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "头寸不足",
+                     "answer" : "钦"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "骇人听闻",
+                     "answer" : "诡"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "总有一天出头日",
+                     "answer" : "春"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "耸人听闻",
+                     "answer" : "诡"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "讲师钟点费",
+                     "answer" : "读"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "讲鬼",
+                     "answer" : "魂"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "赛跑冠军",
+                     "answer" : "道"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "点点成金",
+                     "answer" : "全"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "点点是黄金",
+                     "answer" : "全"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "礼义廉耻",
+                     "answer" : "罗(由「四维」得知)"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "礼聘千万两",
+                     "answer" : "钟"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "虫入凤巢飞去鸟",
+                     "answer" : "风"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "丰收年",
+                     "answer" : "移"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "离别(分手)",
+                     "answer" : "扮"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "边打边谈",
+                     "answer" : "订"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "镜中人",
+                     "answer" : "入"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "宝岛姑娘",
+                     "answer" : "始"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "钟馗",
+                     "answer" : "瑰"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "馨香飘逝, 闻香无门",
+                     "answer" : "声"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "樱桃小嘴",
+                     "answer" : "如"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "观不见鸟飞来",
+                     "answer" : "鹳"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一点一横长, 一撇到南洋, 南洋有个人, 只有一寸长",
+                     "answer" : "府"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一边是水, 一边是山",
+                     "answer" : "汕"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "一边是红, 一边是绿, 一边喜风, 一边喜雨",
+                     "answer" : "秋"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "七人八只眼",
+                     "answer" : "货"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "七人头上长了草",
+                     "answer" : "花"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "七十二小时",
+                     "answer" : "晶"
+                     },
+                     {
+                     "note" : "猜四个字",
+                     "question" : "七个人有八只眼, 十人亦有八只眼, 西洋人也眼八只, 家母同样眼八只",
+                     "answer" : "货真价实"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "九十九",
+                     "answer" : "白"
+                     },
+                     {
+                     "note" : "猜一个字",
+                     "question" : "九只鸟",
+                     "answer" : "鸠"
+                     }
+                     ]
+}

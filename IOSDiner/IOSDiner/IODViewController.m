@@ -17,13 +17,41 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    return toInterfaceOrientation==UIInterfaceOrientationLandscapeLeft;
+}
+
+- (void)viewDidUnload {
+    [self setIbRemoveItemButton:nil];
+    [self setIbAddItemButton:nil];
+    [self setIbPreviousItemButton:nil];
+    [self setIbNextItemButton:nil];
+    [self setIbTotalOrderButton:nil];
+    [self setIbChalkboardLabel:nil];
+    [self setIbCurrentItemImageView:nil];
+    [self setIbCurrentItemLabel:nil];
+    [super viewDidUnload];
+}
+- (IBAction)ibaRemoveItem:(id)sender {
+}
+
+- (IBAction)ibaAddItem:(id)sender {
+}
+
+- (IBAction)ibaLoadPreviousItem:(id)sender {
+}
+
+- (IBAction)ibaLoadNextItem:(id)sender {
+}
+
+- (IBAction)ibaCalculateTotal:(id)sender {
+}
 @end
