@@ -30,28 +30,28 @@
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "No"
+         shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "NSThreadDemo/NSThreadDemo/AppDelegate.m"
-         timestampString = "391594353.36501"
+         timestampString = "393939841.559448"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "66"
-         endingLineNumber = "66"
-         landmarkName = "-application:didFinishLaunchingWithOptions:"
+         startingLineNumber = "47"
+         endingLineNumber = "47"
+         landmarkName = "-happen:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "No"
+         shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "NSThreadDemo/NSThreadDemo/AppDelegate.m"
-         timestampString = "391577098.737311"
+         timestampString = "393939837.273562"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "34"
-         endingLineNumber = "34"
+         startingLineNumber = "37"
+         endingLineNumber = "37"
          landmarkName = "-main"
          landmarkType = "5">
       </FileBreakpoint>

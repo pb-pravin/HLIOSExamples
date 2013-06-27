@@ -29,11 +29,12 @@
 - (void)main
 {
 	[[NSThread currentThread] setName:@"ThreadA"];
-	for (int i=0; i<10; i++) {
-		NSLog(@"count %d", i);
-		[NSThread sleepForTimeInterval:1];
-	}
+//	for (int i=0; i<10; i++) {
+//		NSLog(@"count %d", i);
+//		[NSThread sleepForTimeInterval:1];
+//	}
 	NSLog(@"ThreadA call stack backtrace: %@", [NSThread callStackSymbols]);
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"hello" object:nil];
 }
 
 @end
@@ -54,7 +55,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	//[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(happen:) name:NSWillBecomeMultiThreadedNotification object:nil];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(happen:) name:NSThreadWillExitNotification object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(happen:) name:@"hello" object:nil];
 	
 	NSLog(@"multi-threaded: %d", [NSThread isMultiThreaded]);
 	NSLog(@"is main thread: %d", [NSThread isMainThread]);
@@ -92,9 +93,9 @@
 	NSLog(@"ns defualt runloop mode name: %@", NSDefaultRunLoopMode);
 	NSLog(@"ns runloop common mode name: %@", NSRunLoopCommonModes);
 	
-//	ThreadA *threadA = [[ThreadA alloc] init];
-//	[threadA start];
-//	
+	ThreadA *threadA = [[ThreadA alloc] init];
+	[threadA start];
+//
 //	while (![threadA isFinished]) {
 //		NSLog(@"thread A is executing.");
 //		[NSThread sleepForTimeInterval:0.8];
@@ -105,9 +106,10 @@
 		__block NSTimer *timer = nil;
 		// The timer must be scheduled on a runloop.
 		timer = [NSTimer timerWithTimeInterval:5 target:self selector:@selector(printCount:) userInfo:nil repeats:YES];
-		dispatch_async(dispatch_get_main_queue(), ^{
+//		dispatch_async(dispatch_get_main_queue(), ^{
 			[[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
-		});
+//		});
+		
 		[timer fire];
 	});
 	
