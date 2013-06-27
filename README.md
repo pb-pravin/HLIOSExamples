@@ -62,6 +62,7 @@ This project is primarly for testing some features of Objective-C language.
 14. Demo how to use CFBridgingRelease function.
 15. Demo how to use respondsToSelector
 16. Demo whether the mutable dictionary in another dictionary could be modified.
+17. Demo how to use enumerateObjectsUsingBlock method of NSArray
 
 ### AdvancedTableViewCells
 1. This project demos how to use customized UITableViewCell class
@@ -122,7 +123,7 @@ This sample demonstrates a multi-stage approach to loading and displaying a UITa
 1. Demo how to create a ABRecord object and how to insert it into contact database.
 
 ### SMSDemo
-1. [MFMessageComposeViewController canSendText] shoudl retrun NO in Simulator, however, for iphone simulator5 and later, it returns YES.
+1. [MFMessageComposeViewController canSendText] should retrun NO in Simulator, however, for iphone simulator5 and later, it returns YES.
 please refer to http://stackoverflow.com/questions/9349381/mfmessagecomposeviewcontroller-on-simulator-cansendtext
 
 ### SearchTable

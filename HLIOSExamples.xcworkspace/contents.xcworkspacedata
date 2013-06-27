@@ -2,8 +2,11 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SearchTable2/SearchTable2.xcodeproj">
+      location = "group:README.md">
    </FileRef>
+	<FileRef
+	  location = "group:SearchTable2/SearchTable2.xcodeproj">
+	</FileRef>
    <FileRef
       location = "group:SearchTable/SearchTable.xcodeproj">
    </FileRef>
@@ -87,9 +90,6 @@
    </FileRef>
    <FileRef
       location = "group:ObjcTest/ObjcTest.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:README.md">
    </FileRef>
    <FileRef
       location = "group:IOSDiner/IOSDiner.xcodeproj">

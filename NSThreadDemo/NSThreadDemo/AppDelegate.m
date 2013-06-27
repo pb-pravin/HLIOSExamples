@@ -55,7 +55,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	//[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(happen:) name:NSWillBecomeMultiThreadedNotification object:nil];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(happen:) name:@"hello" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(happen:)
+                                                 name:NSThreadWillExitNotification
+                                               object:nil];
 	
 	NSLog(@"multi-threaded: %d", [NSThread isMultiThreaded]);
 	NSLog(@"is main thread: %d", [NSThread isMainThread]);
@@ -105,11 +108,13 @@
 	dispatch_async(dispatch_get_global_queue(0, 0), ^{
 		__block NSTimer *timer = nil;
 		// The timer must be scheduled on a runloop.
+        /**
+         You must add the new timer to a run loop, using addTimer:forMode:. Then, after seconds seconds have elapsed, the timer fires, sending the message aSelector to target. (If the timer is configured to repeat, there is no need to subsequently re-add the timer to the run loop.)
+         */
 		timer = [NSTimer timerWithTimeInterval:5 target:self selector:@selector(printCount:) userInfo:nil repeats:YES];
 //		dispatch_async(dispatch_get_main_queue(), ^{
 			[[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
 //		});
-		
 		[timer fire];
 	});
 	

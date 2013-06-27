@@ -345,9 +345,23 @@
     
     /**
      Demo the class method override
-     */
     
     NSLog(@"%@", [ClassB shared]);
+     */
+    
+    /**
+     Demo how to use enumerateObjectsUsingBlock method of NSArray
+     // Here are some tips for when to use this method instead of fast-enumeration.
+     // http://stackoverflow.com/questions/4486622/when-to-use-enumerateobjectsusingblock-vs-for/4487012#4487012
+     */
+    NSArray *array = [NSArray arrayWithObjects:@"a", @"b", @"c", @"d", @"e", nil];
+    [array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSLog(@"idx: %d obj:%@", idx, obj);
+        if ([obj isEqualToString:@"c"])
+        {
+            *stop = YES;
+        }
+    }];
     return YES;
 }
 
