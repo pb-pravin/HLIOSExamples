@@ -52,6 +52,13 @@
 		4185E0CD16A1345F000FDFFB /* NavBarDoneButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4185E0BF16A1345F000FDFFB /* NavBarDoneButtonPressed.png */; };
 		4185E0CE16A1345F000FDFFB /* NavBarDoneButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4185E0C016A1345F000FDFFB /* NavBarDoneButtonPressed@2x.png */; };
 		4194221616AE41D1000D3205 /* MOTextFieldController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4194221516AE41D1000D3205 /* MOTextFieldController.m */; };
+		419EC3D11783EDD200C514F7 /* MOButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 419EC3D01783EDD100C514F7 /* MOButton.m */; };
+		419EC3D41783F55F00C514F7 /* MOGradientTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 419EC3D31783F55E00C514F7 /* MOGradientTestView.m */; };
+		419EC3D9178411F500C514F7 /* AttachMenuButtonIconLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 419EC3D5178411F500C514F7 /* AttachMenuButtonIconLocation.png */; };
+		419EC3DA178411F500C514F7 /* AttachMenuButtonIconLocation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 419EC3D6178411F500C514F7 /* AttachMenuButtonIconLocation@2x.png */; };
+		419EC3DB178411F500C514F7 /* AttachMenuButtonIconLocationPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 419EC3D7178411F500C514F7 /* AttachMenuButtonIconLocationPressed.png */; };
+		419EC3DC178411F500C514F7 /* AttachMenuButtonIconLocationPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 419EC3D8178411F500C514F7 /* AttachMenuButtonIconLocationPressed@2x.png */; };
+		419EC3DF17842D2100C514F7 /* UIColor+Deja.m in Sources */ = {isa = PBXBuildFile; fileRef = 419EC3DD17842D2000C514F7 /* UIColor+Deja.m */; };
 		41CF5E1D169FBFCB005510B8 /* 50.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41CF5E1C169FBFCB005510B8 /* 50.jpg */; };
 		41CF5E9316A01315005510B8 /* MOButtonDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF5E9216A01314005510B8 /* MOButtonDemoController.m */; };
 		41CF5EAF16A01A40005510B8 /* activityIndicator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 41CF5EAE16A01A40005510B8 /* activityIndicator.gif */; };
@@ -128,6 +135,16 @@
 		4185E0C016A1345F000FDFFB /* NavBarDoneButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarDoneButtonPressed@2x.png"; sourceTree = "<group>"; };
 		4194221416AE41D1000D3205 /* MOTextFieldController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOTextFieldController.h; sourceTree = "<group>"; };
 		4194221516AE41D1000D3205 /* MOTextFieldController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOTextFieldController.m; sourceTree = "<group>"; };
+		419EC3CF1783EDD100C514F7 /* MOButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOButton.h; sourceTree = "<group>"; };
+		419EC3D01783EDD100C514F7 /* MOButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOButton.m; sourceTree = "<group>"; };
+		419EC3D21783F55E00C514F7 /* MOGradientTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOGradientTestView.h; sourceTree = "<group>"; };
+		419EC3D31783F55E00C514F7 /* MOGradientTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOGradientTestView.m; sourceTree = "<group>"; };
+		419EC3D5178411F500C514F7 /* AttachMenuButtonIconLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AttachMenuButtonIconLocation.png; sourceTree = "<group>"; };
+		419EC3D6178411F500C514F7 /* AttachMenuButtonIconLocation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AttachMenuButtonIconLocation@2x.png"; sourceTree = "<group>"; };
+		419EC3D7178411F500C514F7 /* AttachMenuButtonIconLocationPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AttachMenuButtonIconLocationPressed.png; sourceTree = "<group>"; };
+		419EC3D8178411F500C514F7 /* AttachMenuButtonIconLocationPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AttachMenuButtonIconLocationPressed@2x.png"; sourceTree = "<group>"; };
+		419EC3DD17842D2000C514F7 /* UIColor+Deja.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Deja.m"; sourceTree = "<group>"; };
+		419EC3DE17842D2100C514F7 /* UIColor+Deja.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Deja.h"; sourceTree = "<group>"; };
 		41CF5E1C169FBFCB005510B8 /* 50.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 50.jpg; sourceTree = "<group>"; };
 		41CF5E9116A01314005510B8 /* MOButtonDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOButtonDemoController.h; sourceTree = "<group>"; };
 		41CF5E9216A01314005510B8 /* MOButtonDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOButtonDemoController.m; sourceTree = "<group>"; };
@@ -189,24 +206,30 @@
 		410F3697169EDF600094D09D /* ControlDemo */ = {
 			isa = PBXGroup;
 			children = (
-				4185E0AF16A1340F000FDFFB /* MOBarButtonItem.h */,
-				4185E0B016A1340F000FDFFB /* MOBarButtonItem.m */,
+				41CF5E1B169FBFCB005510B8 /* images */,
 				410F36A0169EDF600094D09D /* MOAppDelegate.h */,
 				410F36A1169EDF600094D09D /* MOAppDelegate.m */,
-				410F36A9169EDF600094D09D /* MOLabelDemoController.h */,
-				410F36AA169EDF600094D09D /* MOLabelDemoController.m */,
-				41CF5E9116A01314005510B8 /* MOButtonDemoController.h */,
-				41CF5E9216A01314005510B8 /* MOButtonDemoController.m */,
+				4185E0AF16A1340F000FDFFB /* MOBarButtonItem.h */,
+				4185E0B016A1340F000FDFFB /* MOBarButtonItem.m */,
+				419EC3CF1783EDD100C514F7 /* MOButton.h */,
+				419EC3D01783EDD100C514F7 /* MOButton.m */,
 				4185E0AC16A13343000FDFFB /* MOButtonDemo2Controller.h */,
 				4185E0AD16A13343000FDFFB /* MOButtonDemo2Controller.m */,
+				41CF5E9116A01314005510B8 /* MOButtonDemoController.h */,
+				41CF5E9216A01314005510B8 /* MOButtonDemoController.m */,
+				419EC3D21783F55E00C514F7 /* MOGradientTestView.h */,
+				419EC3D31783F55E00C514F7 /* MOGradientTestView.m */,
 				41CF5EB216A027F7005510B8 /* MOImageLoadController.h */,
 				41CF5EB316A027F7005510B8 /* MOImageLoadController.m */,
-				4194221416AE41D1000D3205 /* MOTextFieldController.h */,
-				4194221516AE41D1000D3205 /* MOTextFieldController.m */,
+				410F36A9169EDF600094D09D /* MOLabelDemoController.h */,
+				410F36AA169EDF600094D09D /* MOLabelDemoController.m */,
 				416DE6D416E5D2A2008D3832 /* MOSpecialView.h */,
 				416DE6D516E5D2A2008D3832 /* MOSpecialView.m */,
-				41CF5E1B169FBFCB005510B8 /* images */,
+				4194221416AE41D1000D3205 /* MOTextFieldController.h */,
+				4194221516AE41D1000D3205 /* MOTextFieldController.m */,
 				410F3698169EDF600094D09D /* Supporting Files */,
+				419EC3DE17842D2100C514F7 /* UIColor+Deja.h */,
+				419EC3DD17842D2000C514F7 /* UIColor+Deja.m */,
 				4185E07116A11B9A000FDFFB /* UIImage+Utility.h */,
 				4185E07216A11B9A000FDFFB /* UIImage+Utility.m */,
 				4185E0A816A131D9000FDFFB /* UILabel+Utility.h */,
@@ -218,6 +241,10 @@
 		410F3698169EDF600094D09D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				419EC3D5178411F500C514F7 /* AttachMenuButtonIconLocation.png */,
+				419EC3D6178411F500C514F7 /* AttachMenuButtonIconLocation@2x.png */,
+				419EC3D7178411F500C514F7 /* AttachMenuButtonIconLocationPressed.png */,
+				419EC3D8178411F500C514F7 /* AttachMenuButtonIconLocationPressed@2x.png */,
 				410F3699169EDF600094D09D /* ControlDemo-Info.plist */,
 				410F369A169EDF600094D09D /* InfoPlist.strings */,
 				410F369D169EDF600094D09D /* main.m */,
@@ -376,6 +403,10 @@
 				4185E0CE16A1345F000FDFFB /* NavBarDoneButtonPressed@2x.png in Resources */,
 				4155876716B132A800E4B432 /* MessageBubbleGray.png in Resources */,
 				4155876816B132A800E4B432 /* MessageBubbleGray@2x.png in Resources */,
+				419EC3D9178411F500C514F7 /* AttachMenuButtonIconLocation.png in Resources */,
+				419EC3DA178411F500C514F7 /* AttachMenuButtonIconLocation@2x.png in Resources */,
+				419EC3DB178411F500C514F7 /* AttachMenuButtonIconLocationPressed.png in Resources */,
+				419EC3DC178411F500C514F7 /* AttachMenuButtonIconLocationPressed@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +438,9 @@
 				41373F24174396EA00BB9EA3 /* AFURLConnectionOperation.m in Sources */,
 				41373F25174396EA00BB9EA3 /* AFXMLRequestOperation.m in Sources */,
 				41373F26174396EA00BB9EA3 /* UIImageView+AFNetworking.m in Sources */,
+				419EC3D11783EDD200C514F7 /* MOButton.m in Sources */,
+				419EC3D41783F55F00C514F7 /* MOGradientTestView.m in Sources */,
+				419EC3DF17842D2100C514F7 /* UIColor+Deja.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

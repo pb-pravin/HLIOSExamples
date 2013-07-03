@@ -19,6 +19,7 @@
 		41A84634177936D600EBBE25 /* MOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A84633177936D600EBBE25 /* MOViewController.m */; };
 		41A84637177936D600EBBE25 /* MOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A84635177936D600EBBE25 /* MOViewController.xib */; };
 		41A846461779387500EBBE25 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A846431779387500EBBE25 /* Product.m */; };
+		41A8469A177C2E4900EBBE25 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A84699177C2E4900EBBE25 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		41A84636177936D600EBBE25 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MOViewController.xib; sourceTree = "<group>"; };
 		41A846421779387500EBBE25 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		41A846431779387500EBBE25 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		41A84699177C2E4900EBBE25 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A8469A177C2E4900EBBE25 /* QuartzCore.framework in Frameworks */,
 				41A8461B177936D600EBBE25 /* UIKit.framework in Frameworks */,
 				41A8461D177936D600EBBE25 /* Foundation.framework in Frameworks */,
 				41A8461F177936D600EBBE25 /* CoreGraphics.framework in Frameworks */,
@@ -76,6 +79,7 @@
 		41A84619177936D600EBBE25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41A84699177C2E4900EBBE25 /* QuartzCore.framework */,
 				41A8461A177936D600EBBE25 /* UIKit.framework */,
 				41A8461C177936D600EBBE25 /* Foundation.framework */,
 				41A8461E177936D600EBBE25 /* CoreGraphics.framework */,
@@ -307,6 +311,7 @@
 				41A8463C177936D600EBBE25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

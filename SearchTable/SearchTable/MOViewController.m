@@ -8,9 +8,12 @@
 
 #import "MOViewController.h"
 #import "Product.h"
+#import <QuartzCore/QuartzCore.h>
+#import <QuartzCore/CALayer.h>
 
 @interface MOViewController ()
-
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) CAGradientLayer *shadowLayer;
 @end
 
 @implementation MOViewController
@@ -20,6 +23,23 @@
     [super viewDidLoad];
 	// create a filtered list that will contain products for the search results table.
 	self.filteredListContent = [NSMutableArray arrayWithCapacity:[self.listContent count]];
+	
+	
+	// Shadow layer
+    self.shadowLayer = [CAGradientLayer layer];
+    self.shadowLayer.frame = CGRectMake(0, 60+ CGRectGetMinX(self.tableView.frame) + CGRectGetHeight(self.searchDisplayController.searchBar.frame), CGRectGetWidth(self.view.bounds), 14);
+    self.shadowLayer.colors = [NSArray arrayWithObjects:
+                               (__bridge id)[UIColor colorWithWhite:0.0 alpha:0.3].CGColor,
+                               (__bridge id)[UIColor colorWithWhite:0.0 alpha:0.3].CGColor,
+                               (__bridge id)[UIColor colorWithWhite:0.0 alpha:0.1].CGColor,
+                               (__bridge id)[UIColor colorWithWhite:0.0 alpha:0.0].CGColor, nil];
+    self.shadowLayer.locations = [NSArray arrayWithObjects:
+                                  [NSNumber numberWithDouble:0.0],
+                                  [NSNumber numberWithDouble:1.0 / 14],
+                                  [NSNumber numberWithDouble:1.0 / 14],
+                                  [NSNumber numberWithDouble:1.0], nil];
+	
+    [self.view.layer addSublayer:self.shadowLayer];
 }
 
 - (void)didReceiveMemoryWarning

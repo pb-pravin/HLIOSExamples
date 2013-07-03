@@ -14,6 +14,9 @@ A collection of examples of my IOS code
 8. Another way of automatic ajusta label's height according to its content.
 9. Demo how to handle a UIView object's event. And demo the usage of inputView / firstResponder
 10. Demo how to handle emotion event.
+11. Demo the the relationship between font size and size height.
+13. Demo how to draw gradient fill, including linear and radial.
+14. Demo how to create a customized button by using UIControl.
 
 ### LabelTextFieldCellDemo
 1. LabelTextFieldCell

@@ -88,6 +88,15 @@
 	[label6 sizeToFit];
     [self.view addSubview:label6];
 	
+	
+	// Demo the the relationship between font size and size height.
+	CGFloat fontSize = 8.f;
+	for (int i=0; i<10; i++) {
+		UIFont *font = [UIFont boldSystemFontOfSize:fontSize+i];
+		NSString *text = @"Hello, World!";
+		CGSize textSize = [text sizeWithFont:font];
+		NSLog(@"size %f (%f, %f)", fontSize+i, textSize.width, textSize.height);
+	}
 
 }
 
