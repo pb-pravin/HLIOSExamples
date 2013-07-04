@@ -25,7 +25,7 @@
     // Override point for customization after application launch.
     
     self.navController = [[[UINavigationController alloc] init] autorelease];
-    self.navController.viewControllers = @[[[[MOViewController alloc] initWithNibName:@"MOViewController" bundle:nil] autorelease]];
+    self.navController.viewControllers = @[[[[MOImagePickerViewController alloc] initWithNibName:@"MOViewController" bundle:nil] autorelease]];
 
     self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];

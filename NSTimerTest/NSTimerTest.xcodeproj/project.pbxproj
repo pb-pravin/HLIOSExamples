@@ -16,7 +16,7 @@
 		41A5EEFA16F35442004CB559 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A5EEF916F35442004CB559 /* Default.png */; };
 		41A5EEFC16F35442004CB559 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A5EEFB16F35442004CB559 /* Default@2x.png */; };
 		41A5EEFE16F35442004CB559 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A5EEFD16F35442004CB559 /* Default-568h@2x.png */; };
-		41A5EF0116F35442004CB559 /* MOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A5EF0016F35442004CB559 /* MOViewController.m */; };
+		41A5EF0116F35442004CB559 /* MOImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A5EF0016F35442004CB559 /* MOImagePickerController.m */; };
 		41A5EF0416F35442004CB559 /* MOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A5EF0216F35442004CB559 /* MOViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +34,8 @@
 		41A5EEF916F35442004CB559 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		41A5EEFB16F35442004CB559 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		41A5EEFD16F35442004CB559 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		41A5EEFF16F35442004CB559 /* MOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOViewController.h; sourceTree = "<group>"; };
-		41A5EF0016F35442004CB559 /* MOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOViewController.m; sourceTree = "<group>"; };
+		41A5EEFF16F35442004CB559 /* MOImagePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOImagePickerViewController.h; sourceTree = "<group>"; };
+		41A5EF0016F35442004CB559 /* MOImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOImagePickerController.m; sourceTree = "<group>"; };
 		41A5EF0316F35442004CB559 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MOViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,8 +85,8 @@
 			children = (
 				41A5EEF616F35442004CB559 /* MOAppDelegate.h */,
 				41A5EEF716F35442004CB559 /* MOAppDelegate.m */,
-				41A5EEFF16F35442004CB559 /* MOViewController.h */,
-				41A5EF0016F35442004CB559 /* MOViewController.m */,
+				41A5EEFF16F35442004CB559 /* MOImagePickerViewController.h */,
+				41A5EF0016F35442004CB559 /* MOImagePickerController.m */,
 				41A5EF0216F35442004CB559 /* MOViewController.xib */,
 				41A5EEEE16F35442004CB559 /* Supporting Files */,
 			);
@@ -176,7 +176,7 @@
 			files = (
 				41A5EEF416F35442004CB559 /* main.m in Sources */,
 				41A5EEF816F35442004CB559 /* MOAppDelegate.m in Sources */,
-				41A5EF0116F35442004CB559 /* MOViewController.m in Sources */,
+				41A5EF0116F35442004CB559 /* MOImagePickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +301,7 @@
 				41A5EF0916F35442004CB559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

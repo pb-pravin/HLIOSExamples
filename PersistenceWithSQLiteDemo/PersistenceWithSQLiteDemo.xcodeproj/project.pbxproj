@@ -16,7 +16,7 @@
 		4176F43716DB788F00D001AE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4176F43616DB788F00D001AE /* Default.png */; };
 		4176F43916DB788F00D001AE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4176F43816DB788F00D001AE /* Default@2x.png */; };
 		4176F43B16DB788F00D001AE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4176F43A16DB788F00D001AE /* Default-568h@2x.png */; };
-		4176F43E16DB788F00D001AE /* MOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4176F43D16DB788F00D001AE /* MOViewController.m */; };
+		4176F43E16DB788F00D001AE /* MOImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4176F43D16DB788F00D001AE /* MOImagePickerController.m */; };
 		4176F44116DB788F00D001AE /* MOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4176F43F16DB788F00D001AE /* MOViewController.xib */; };
 		4176F44816DB7AE300D001AE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4176F44716DB7AE300D001AE /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
@@ -35,8 +35,8 @@
 		4176F43616DB788F00D001AE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4176F43816DB788F00D001AE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4176F43A16DB788F00D001AE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4176F43C16DB788F00D001AE /* MOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOViewController.h; sourceTree = "<group>"; };
-		4176F43D16DB788F00D001AE /* MOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOViewController.m; sourceTree = "<group>"; };
+		4176F43C16DB788F00D001AE /* MOImagePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOImagePickerViewController.h; sourceTree = "<group>"; };
+		4176F43D16DB788F00D001AE /* MOImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOImagePickerController.m; sourceTree = "<group>"; };
 		4176F44016DB788F00D001AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MOViewController.xib; sourceTree = "<group>"; };
 		4176F44716DB7AE300D001AE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -89,8 +89,8 @@
 			children = (
 				4176F43316DB788F00D001AE /* MOAppDelegate.h */,
 				4176F43416DB788F00D001AE /* MOAppDelegate.m */,
-				4176F43C16DB788F00D001AE /* MOViewController.h */,
-				4176F43D16DB788F00D001AE /* MOViewController.m */,
+				4176F43C16DB788F00D001AE /* MOImagePickerViewController.h */,
+				4176F43D16DB788F00D001AE /* MOImagePickerController.m */,
 				4176F43F16DB788F00D001AE /* MOViewController.xib */,
 				4176F42B16DB788F00D001AE /* Supporting Files */,
 			);
@@ -180,7 +180,7 @@
 			files = (
 				4176F43116DB788F00D001AE /* main.m in Sources */,
 				4176F43516DB788F00D001AE /* MOAppDelegate.m in Sources */,
-				4176F43E16DB788F00D001AE /* MOViewController.m in Sources */,
+				4176F43E16DB788F00D001AE /* MOImagePickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

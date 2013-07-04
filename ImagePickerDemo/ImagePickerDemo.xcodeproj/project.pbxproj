@@ -16,8 +16,7 @@
 		41D7B46D1713FB48005FD630 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 41D7B46C1713FB48005FD630 /* Default.png */; };
 		41D7B46F1713FB48005FD630 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41D7B46E1713FB48005FD630 /* Default@2x.png */; };
 		41D7B4711713FB48005FD630 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41D7B4701713FB48005FD630 /* Default-568h@2x.png */; };
-		41D7B4741713FB48005FD630 /* MOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D7B4731713FB48005FD630 /* MOViewController.m */; };
-		41D7B4771713FB48005FD630 /* MOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D7B4751713FB48005FD630 /* MOViewController.xib */; };
+		41D7B4741713FB48005FD630 /* MOImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D7B4731713FB48005FD630 /* MOImagePickerController.m */; };
 		41D7B47E1713FE28005FD630 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D7B47D1713FE27005FD630 /* MobileCoreServices.framework */; };
 		41D7B4821714014B005FD630 /* MOFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D7B4801714014B005FD630 /* MOFirstViewController.m */; };
 		41D7B4831714014B005FD630 /* MOFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D7B4811714014B005FD630 /* MOFirstViewController.xib */; };
@@ -37,9 +36,8 @@
 		41D7B46C1713FB48005FD630 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		41D7B46E1713FB48005FD630 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		41D7B4701713FB48005FD630 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		41D7B4721713FB48005FD630 /* MOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOViewController.h; sourceTree = "<group>"; };
-		41D7B4731713FB48005FD630 /* MOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOViewController.m; sourceTree = "<group>"; };
-		41D7B4761713FB48005FD630 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MOViewController.xib; sourceTree = "<group>"; };
+		41D7B4721713FB48005FD630 /* MOImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOImagePickerController.h; sourceTree = "<group>"; };
+		41D7B4731713FB48005FD630 /* MOImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOImagePickerController.m; sourceTree = "<group>"; };
 		41D7B47D1713FE27005FD630 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		41D7B47F1714014B005FD630 /* MOFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOFirstViewController.h; sourceTree = "<group>"; };
 		41D7B4801714014B005FD630 /* MOFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOFirstViewController.m; sourceTree = "<group>"; };
@@ -97,9 +95,8 @@
 				41D7B47F1714014B005FD630 /* MOFirstViewController.h */,
 				41D7B4801714014B005FD630 /* MOFirstViewController.m */,
 				41D7B4811714014B005FD630 /* MOFirstViewController.xib */,
-				41D7B4721713FB48005FD630 /* MOViewController.h */,
-				41D7B4731713FB48005FD630 /* MOViewController.m */,
-				41D7B4751713FB48005FD630 /* MOViewController.xib */,
+				41D7B4721713FB48005FD630 /* MOImagePickerController.h */,
+				41D7B4731713FB48005FD630 /* MOImagePickerController.m */,
 				41D7B4611713FB48005FD630 /* Supporting Files */,
 			);
 			path = ImagePickerDemo;
@@ -175,7 +172,6 @@
 				41D7B46D1713FB48005FD630 /* Default.png in Resources */,
 				41D7B46F1713FB48005FD630 /* Default@2x.png in Resources */,
 				41D7B4711713FB48005FD630 /* Default-568h@2x.png in Resources */,
-				41D7B4771713FB48005FD630 /* MOViewController.xib in Resources */,
 				41D7B4831714014B005FD630 /* MOFirstViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,7 +185,7 @@
 			files = (
 				41D7B4671713FB48005FD630 /* main.m in Sources */,
 				41D7B46B1713FB48005FD630 /* MOAppDelegate.m in Sources */,
-				41D7B4741713FB48005FD630 /* MOViewController.m in Sources */,
+				41D7B4741713FB48005FD630 /* MOImagePickerController.m in Sources */,
 				41D7B4821714014B005FD630 /* MOFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,14 +199,6 @@
 				41D7B4641713FB48005FD630 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		41D7B4751713FB48005FD630 /* MOViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41D7B4761713FB48005FD630 /* en */,
-			);
-			name = MOViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -273,11 +261,13 @@
 		41D7B47B1713FB48005FD630 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lei Lei (JV5Y7A3TGE)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImagePickerDemo/ImagePickerDemo-Prefix.pch";
 				INFOPLIST_FILE = "ImagePickerDemo/ImagePickerDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E021A936-4465-46AD-BA23-0B9D5E168A40";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
