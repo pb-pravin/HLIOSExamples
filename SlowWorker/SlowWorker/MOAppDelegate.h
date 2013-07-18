@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "A.h"
-@class MOViewController;
+@class MOImagePickerController;
 
 @interface MOAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) MOViewController *viewController;
+@property (strong, nonatomic) MOImagePickerController *viewController;
 
 @property (strong, nonatomic) A *a;
 @end

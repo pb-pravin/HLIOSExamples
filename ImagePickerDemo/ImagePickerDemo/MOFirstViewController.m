@@ -7,11 +7,11 @@
 //
 
 #import "MOFirstViewController.h"
-#import "MOViewController.h"
+#import "MOImagePickerController.h"
 
 @interface MOFirstViewController ()
 - (IBAction)showModalView:(id)sender;
-- (IBAction)hideModalView:(id)sender;
+
 @end
 
 @implementation MOFirstViewController
@@ -38,8 +38,12 @@
 }
 
 - (IBAction)showModalView:(id)sender {
-	MOViewController *viewController = [[[MOViewController alloc] initWithNibName:@"MOViewController" bundle:nil] autorelease];
-	[self presentModalViewController:viewController animated:YES];
+	[MOImagePickerController presentImagePickerWithPresentingViewController:self
+																	 sourceType:UIImagePickerControllerSourceTypeCamera
+																	 completion:^(UIImage *image, NSError *error)
+	{
+		 NSLog(@"image %@", image);
+	}];
 }
 
 

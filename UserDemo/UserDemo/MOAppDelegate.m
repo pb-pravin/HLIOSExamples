@@ -23,7 +23,7 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
 
-	MOViewController *viewController = [[[MOViewController alloc] initWithNibName:@"MOViewController" bundle:nil] autorelease];
+	MOImagePickerViewController *viewController = [[[MOImagePickerViewController alloc] initWithNibName:@"MOViewController" bundle:nil] autorelease];
 	self.navController = [[[UINavigationController alloc] initWithRootViewController:viewController] autorelease];
 	self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];

@@ -16,7 +16,7 @@
 		41B5873716C4AA5800145346 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 41B5873616C4AA5800145346 /* Default.png */; };
 		41B5873916C4AA5800145346 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41B5873816C4AA5800145346 /* Default@2x.png */; };
 		41B5873B16C4AA5800145346 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41B5873A16C4AA5800145346 /* Default-568h@2x.png */; };
-		41B5873E16C4AA5800145346 /* MOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B5873D16C4AA5800145346 /* MOViewController.m */; };
+		41B5873E16C4AA5800145346 /* MOImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B5873D16C4AA5800145346 /* MOImagePickerController.m */; };
 		41B5874116C4AA5800145346 /* MOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B5873F16C4AA5800145346 /* MOViewController.xib */; };
 		41B5874A16C4AAD900145346 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B5874916C4AAD900145346 /* MBProgressHUD.m */; };
 		41B5874E16C4ACE400145346 /* MOHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B5874C16C4ACE400145346 /* MOHUDViewController.m */; };
@@ -37,8 +37,8 @@
 		41B5873616C4AA5800145346 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		41B5873816C4AA5800145346 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		41B5873A16C4AA5800145346 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		41B5873C16C4AA5800145346 /* MOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOViewController.h; sourceTree = "<group>"; };
-		41B5873D16C4AA5800145346 /* MOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOViewController.m; sourceTree = "<group>"; };
+		41B5873C16C4AA5800145346 /* MOImagePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOImagePickerViewController.h; sourceTree = "<group>"; };
+		41B5873D16C4AA5800145346 /* MOImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOImagePickerController.m; sourceTree = "<group>"; };
 		41B5874016C4AA5800145346 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MOViewController.xib; sourceTree = "<group>"; };
 		41B5874816C4AAD900145346 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		41B5874916C4AAD900145346 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
@@ -94,8 +94,8 @@
 			children = (
 				41B5873316C4AA5800145346 /* MOAppDelegate.h */,
 				41B5873416C4AA5800145346 /* MOAppDelegate.m */,
-				41B5873C16C4AA5800145346 /* MOViewController.h */,
-				41B5873D16C4AA5800145346 /* MOViewController.m */,
+				41B5873C16C4AA5800145346 /* MOImagePickerViewController.h */,
+				41B5873D16C4AA5800145346 /* MOImagePickerController.m */,
 				41B5873F16C4AA5800145346 /* MOViewController.xib */,
 				41B5874B16C4ACE400145346 /* MOHUDViewController.h */,
 				41B5874C16C4ACE400145346 /* MOHUDViewController.m */,
@@ -198,7 +198,7 @@
 			files = (
 				41B5873116C4AA5800145346 /* main.m in Sources */,
 				41B5873516C4AA5800145346 /* MOAppDelegate.m in Sources */,
-				41B5873E16C4AA5800145346 /* MOViewController.m in Sources */,
+				41B5873E16C4AA5800145346 /* MOImagePickerController.m in Sources */,
 				41B5874A16C4AAD900145346 /* MBProgressHUD.m in Sources */,
 				41B5874E16C4ACE400145346 /* MOHUDViewController.m in Sources */,
 			);
@@ -323,6 +323,7 @@
 				41B5874616C4AA5800145346 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

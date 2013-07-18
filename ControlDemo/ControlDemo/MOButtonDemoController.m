@@ -9,6 +9,8 @@
 #import "MOButtonDemoController.h"
 #import <SDWebImage/UIButton+WebCache.h>
 #import "UIImage+Utility.h"
+#import "MOGradientTestView.h"
+#import "MOButton.h"
 
 @interface MOButtonDemoController ()
 
@@ -182,6 +184,22 @@
     
     [self.view addSubview:button13];
 
+	MOGradientTestView *testVeiw = [[MOGradientTestView alloc] initWithFrame:CGRectMake(button13.frame.origin.x + button13.frame.size.width + 5, button11.frame.origin.y, 100, 100)];
+	[self.view addSubview:testVeiw];
+	
+	// Demo how to create a customized button.
+	MOButton *button14 = [[MOButton alloc] initWithFrame:CGRectMake(10, CGRectGetMaxY(testVeiw.frame) + 5 , 100, 100)];
+	[button14 setTitle:@"Hello"
+				 image:[UIImage imageNamed:@"AttachMenuButtonIconLocation.png"]
+	  highlightedImage:[UIImage imageNamed:@"AttachMenuButtonIconLocationPressed.png"]];
+	[button14 addTarget:self action:@selector(button14Pressed:) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:button14];
+	
+}
+
+- (void)button14Pressed:(id)sender
+{
+	NSLog(@"button14 was pressed.");
 }
 
 - (void)didReceiveMemoryWarning

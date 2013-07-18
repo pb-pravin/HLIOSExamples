@@ -16,7 +16,7 @@
 		4129B63F16E04989000B2A3C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4129B63E16E04989000B2A3C /* Default.png */; };
 		4129B64116E04989000B2A3C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4129B64016E04989000B2A3C /* Default@2x.png */; };
 		4129B64316E04989000B2A3C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4129B64216E04989000B2A3C /* Default-568h@2x.png */; };
-		4129B64616E04989000B2A3C /* MOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4129B64516E04989000B2A3C /* MOViewController.m */; };
+		4129B64616E04989000B2A3C /* MOImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4129B64516E04989000B2A3C /* MOImagePickerController.m */; };
 		4129B64916E04989000B2A3C /* MOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4129B64716E04989000B2A3C /* MOViewController.xib */; };
 		4129B65616E04CA2000B2A3C /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 4129B65516E04CA2000B2A3C /* example.json */; };
 		4169F07416E0525E001F7E32 /* NSDictionary+JSONCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4169F07116E0525E001F7E32 /* NSDictionary+JSONCategories.m */; };
@@ -40,8 +40,8 @@
 		4129B63E16E04989000B2A3C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4129B64016E04989000B2A3C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4129B64216E04989000B2A3C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4129B64416E04989000B2A3C /* MOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOViewController.h; sourceTree = "<group>"; };
-		4129B64516E04989000B2A3C /* MOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOViewController.m; sourceTree = "<group>"; };
+		4129B64416E04989000B2A3C /* MOImagePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOImagePickerViewController.h; sourceTree = "<group>"; };
+		4129B64516E04989000B2A3C /* MOImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOImagePickerController.m; sourceTree = "<group>"; };
 		4129B64816E04989000B2A3C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MOViewController.xib; sourceTree = "<group>"; };
 		4129B65516E04CA2000B2A3C /* example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
 		4169F07016E0525E001F7E32 /* NSDictionary+JSONCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSONCategories.h"; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 			children = (
 				4129B63B16E04989000B2A3C /* MOAppDelegate.h */,
 				4129B63C16E04989000B2A3C /* MOAppDelegate.m */,
-				4129B64416E04989000B2A3C /* MOViewController.h */,
-				4129B64516E04989000B2A3C /* MOViewController.m */,
+				4129B64416E04989000B2A3C /* MOImagePickerViewController.h */,
+				4129B64516E04989000B2A3C /* MOImagePickerController.m */,
 				4129B64716E04989000B2A3C /* MOViewController.xib */,
 				4129B63316E04989000B2A3C /* Supporting Files */,
 			);
@@ -213,7 +213,7 @@
 			files = (
 				4129B63916E04989000B2A3C /* main.m in Sources */,
 				4129B63D16E04989000B2A3C /* MOAppDelegate.m in Sources */,
-				4129B64616E04989000B2A3C /* MOViewController.m in Sources */,
+				4129B64616E04989000B2A3C /* MOImagePickerController.m in Sources */,
 				4169F07416E0525E001F7E32 /* NSDictionary+JSONCategories.m in Sources */,
 				4169F07516E0525E001F7E32 /* NSMutableDictionary+JSONCategories.m in Sources */,
 				41FBEAFF16E08C09001517EC /* UIImage+Utility.m in Sources */,

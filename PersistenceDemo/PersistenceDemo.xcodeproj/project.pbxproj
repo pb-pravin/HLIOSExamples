@@ -16,7 +16,7 @@
 		4157FAB116D761E8003E27A7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4157FAB016D761E8003E27A7 /* Default.png */; };
 		4157FAB316D761E8003E27A7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4157FAB216D761E8003E27A7 /* Default@2x.png */; };
 		4157FAB516D761E8003E27A7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4157FAB416D761E8003E27A7 /* Default-568h@2x.png */; };
-		4157FAB816D761E8003E27A7 /* MOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4157FAB716D761E8003E27A7 /* MOViewController.m */; };
+		4157FAB816D761E8003E27A7 /* MOImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4157FAB716D761E8003E27A7 /* MOImagePickerController.m */; };
 		4157FABB16D761E8003E27A7 /* MOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4157FAB916D761E8003E27A7 /* MOViewController.xib */; };
 		4157FAC316D76278003E27A7 /* FourLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 4157FAC216D76278003E27A7 /* FourLines.m */; };
 /* End PBXBuildFile section */
@@ -35,8 +35,8 @@
 		4157FAB016D761E8003E27A7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4157FAB216D761E8003E27A7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4157FAB416D761E8003E27A7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4157FAB616D761E8003E27A7 /* MOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOViewController.h; sourceTree = "<group>"; };
-		4157FAB716D761E8003E27A7 /* MOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOViewController.m; sourceTree = "<group>"; };
+		4157FAB616D761E8003E27A7 /* MOImagePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOImagePickerViewController.h; sourceTree = "<group>"; };
+		4157FAB716D761E8003E27A7 /* MOImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOImagePickerController.m; sourceTree = "<group>"; };
 		4157FABA16D761E8003E27A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MOViewController.xib; sourceTree = "<group>"; };
 		4157FAC116D76278003E27A7 /* FourLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourLines.h; sourceTree = "<group>"; };
 		4157FAC216D76278003E27A7 /* FourLines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourLines.m; sourceTree = "<group>"; };
@@ -90,8 +90,8 @@
 				4157FAC216D76278003E27A7 /* FourLines.m */,
 				4157FAAD16D761E8003E27A7 /* MOAppDelegate.h */,
 				4157FAAE16D761E8003E27A7 /* MOAppDelegate.m */,
-				4157FAB616D761E8003E27A7 /* MOViewController.h */,
-				4157FAB716D761E8003E27A7 /* MOViewController.m */,
+				4157FAB616D761E8003E27A7 /* MOImagePickerViewController.h */,
+				4157FAB716D761E8003E27A7 /* MOImagePickerController.m */,
 				4157FAB916D761E8003E27A7 /* MOViewController.xib */,
 				4157FAA516D761E8003E27A7 /* Supporting Files */,
 			);
@@ -181,7 +181,7 @@
 			files = (
 				4157FAAB16D761E8003E27A7 /* main.m in Sources */,
 				4157FAAF16D761E8003E27A7 /* MOAppDelegate.m in Sources */,
-				4157FAB816D761E8003E27A7 /* MOViewController.m in Sources */,
+				4157FAB816D761E8003E27A7 /* MOImagePickerController.m in Sources */,
 				4157FAC316D76278003E27A7 /* FourLines.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +305,7 @@
 				4157FAC016D761E8003E27A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

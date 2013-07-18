@@ -16,7 +16,7 @@
 		41550A0E16E76CA3007F1CDF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 41550A0D16E76CA3007F1CDF /* Default.png */; };
 		41550A1016E76CA3007F1CDF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41550A0F16E76CA3007F1CDF /* Default@2x.png */; };
 		41550A1216E76CA3007F1CDF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41550A1116E76CA3007F1CDF /* Default-568h@2x.png */; };
-		41550A1516E76CA3007F1CDF /* MOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41550A1416E76CA3007F1CDF /* MOViewController.m */; };
+		41550A1516E76CA3007F1CDF /* MOImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41550A1416E76CA3007F1CDF /* MOImagePickerController.m */; };
 		41550A1816E76CA3007F1CDF /* MOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41550A1616E76CA3007F1CDF /* MOViewController.xib */; };
 		41550A2016E76CEB007F1CDF /* MOABManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41550A1F16E76CEB007F1CDF /* MOABManager.m */; };
 		41550A2216E76DFD007F1CDF /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41550A2116E76DFD007F1CDF /* AddressBook.framework */; };
@@ -36,8 +36,8 @@
 		41550A0D16E76CA3007F1CDF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		41550A0F16E76CA3007F1CDF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		41550A1116E76CA3007F1CDF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		41550A1316E76CA3007F1CDF /* MOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOViewController.h; sourceTree = "<group>"; };
-		41550A1416E76CA3007F1CDF /* MOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOViewController.m; sourceTree = "<group>"; };
+		41550A1316E76CA3007F1CDF /* MOImagePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOImagePickerViewController.h; sourceTree = "<group>"; };
+		41550A1416E76CA3007F1CDF /* MOImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOImagePickerController.m; sourceTree = "<group>"; };
 		41550A1716E76CA3007F1CDF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MOViewController.xib; sourceTree = "<group>"; };
 		41550A1E16E76CEB007F1CDF /* MOABManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOABManager.h; sourceTree = "<group>"; };
 		41550A1F16E76CEB007F1CDF /* MOABManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOABManager.m; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 			children = (
 				41550A0A16E76CA3007F1CDF /* MOAppDelegate.h */,
 				41550A0B16E76CA3007F1CDF /* MOAppDelegate.m */,
-				41550A1316E76CA3007F1CDF /* MOViewController.h */,
-				41550A1416E76CA3007F1CDF /* MOViewController.m */,
+				41550A1316E76CA3007F1CDF /* MOImagePickerViewController.h */,
+				41550A1416E76CA3007F1CDF /* MOImagePickerController.m */,
 				41550A1616E76CA3007F1CDF /* MOViewController.xib */,
 				41550A1E16E76CEB007F1CDF /* MOABManager.h */,
 				41550A1F16E76CEB007F1CDF /* MOABManager.m */,
@@ -185,7 +185,7 @@
 			files = (
 				41550A0816E76CA3007F1CDF /* main.m in Sources */,
 				41550A0C16E76CA3007F1CDF /* MOAppDelegate.m in Sources */,
-				41550A1516E76CA3007F1CDF /* MOViewController.m in Sources */,
+				41550A1516E76CA3007F1CDF /* MOImagePickerController.m in Sources */,
 				41550A2016E76CEB007F1CDF /* MOABManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

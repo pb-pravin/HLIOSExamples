@@ -31,7 +31,7 @@
 							[Product productWithType:@"Portable" name:@"PowerBook"], nil];
 	
     // Override point for customization after application launch.
-	self.viewController = [[MOViewController alloc] initWithNibName:@"MOViewController" bundle:nil];
+	self.viewController = [[MOImagePickerController alloc] initWithNibName:@"MOViewController" bundle:nil];
 	self.viewController.listContent = listContent;
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];

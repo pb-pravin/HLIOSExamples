@@ -21,7 +21,7 @@
 		41FBEB5516E48351001517EC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 41FBEB5416E48351001517EC /* Default.png */; };
 		41FBEB5716E48351001517EC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41FBEB5616E48351001517EC /* Default@2x.png */; };
 		41FBEB5916E48351001517EC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41FBEB5816E48351001517EC /* Default-568h@2x.png */; };
-		41FBEB5C16E48351001517EC /* MOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBEB5B16E48351001517EC /* MOViewController.m */; };
+		41FBEB5C16E48351001517EC /* MOImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBEB5B16E48351001517EC /* MOImagePickerController.m */; };
 		41FBEB5F16E48351001517EC /* MOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41FBEB5D16E48351001517EC /* MOViewController.xib */; };
 		41FBEB6716E48366001517EC /* UICharCountingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBEB6616E48366001517EC /* UICharCountingTextView.m */; };
 		41FBEB6A16E49CAC001517EC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FBEB6916E49CAC001517EC /* QuartzCore.framework */; };
@@ -48,8 +48,8 @@
 		41FBEB5416E48351001517EC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		41FBEB5616E48351001517EC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		41FBEB5816E48351001517EC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		41FBEB5A16E48351001517EC /* MOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOViewController.h; sourceTree = "<group>"; };
-		41FBEB5B16E48351001517EC /* MOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOViewController.m; sourceTree = "<group>"; };
+		41FBEB5A16E48351001517EC /* MOImagePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOImagePickerViewController.h; sourceTree = "<group>"; };
+		41FBEB5B16E48351001517EC /* MOImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOImagePickerController.m; sourceTree = "<group>"; };
 		41FBEB5E16E48351001517EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MOViewController.xib; sourceTree = "<group>"; };
 		41FBEB6516E48366001517EC /* UICharCountingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICharCountingTextView.h; sourceTree = "<group>"; };
 		41FBEB6616E48366001517EC /* UICharCountingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICharCountingTextView.m; sourceTree = "<group>"; };
@@ -106,8 +106,8 @@
 				41FBEB6616E48366001517EC /* UICharCountingTextView.m */,
 				41FBEB5116E48351001517EC /* MOAppDelegate.h */,
 				41FBEB5216E48351001517EC /* MOAppDelegate.m */,
-				41FBEB5A16E48351001517EC /* MOViewController.h */,
-				41FBEB5B16E48351001517EC /* MOViewController.m */,
+				41FBEB5A16E48351001517EC /* MOImagePickerViewController.h */,
+				41FBEB5B16E48351001517EC /* MOImagePickerController.m */,
 				41FBEB5D16E48351001517EC /* MOViewController.xib */,
 				41550A6916E89DE1007F1CDF /* MOBadgeView.h */,
 				41550A6A16E89DE1007F1CDF /* MOBadgeView.m */,
@@ -208,7 +208,7 @@
 			files = (
 				41FBEB4F16E48351001517EC /* main.m in Sources */,
 				41FBEB5316E48351001517EC /* MOAppDelegate.m in Sources */,
-				41FBEB5C16E48351001517EC /* MOViewController.m in Sources */,
+				41FBEB5C16E48351001517EC /* MOImagePickerController.m in Sources */,
 				41FBEB6716E48366001517EC /* UICharCountingTextView.m in Sources */,
 				41550A6B16E89DE1007F1CDF /* MOBadgeView.m in Sources */,
 				417F54FB175C848900268AAE /* MOBadgeViewController.m in Sources */,
