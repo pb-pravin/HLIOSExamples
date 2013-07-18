@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "41F51B1217755E7D0089F7A5"
-               BuildableName = "WordsGuess.app"
-               BlueprintName = "WordsGuess"
+               BuildableName = "wordGuess.app"
+               BlueprintName = "wordGuess"
                ReferencedContainer = "container:WordsGuess.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41F51B1217755E7D0089F7A5"
-            BuildableName = "WordsGuess.app"
-            BlueprintName = "WordsGuess"
+            BuildableName = "wordGuess.app"
+            BlueprintName = "wordGuess"
             ReferencedContainer = "container:WordsGuess.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -52,8 +52,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41F51B1217755E7D0089F7A5"
-            BuildableName = "WordsGuess.app"
-            BlueprintName = "WordsGuess"
+            BuildableName = "wordGuess.app"
+            BlueprintName = "wordGuess"
             ReferencedContainer = "container:WordsGuess.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -70,8 +70,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41F51B1217755E7D0089F7A5"
-            BuildableName = "WordsGuess.app"
-            BlueprintName = "WordsGuess"
+            BuildableName = "wordGuess.app"
+            BlueprintName = "wordGuess"
             ReferencedContainer = "container:WordsGuess.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
