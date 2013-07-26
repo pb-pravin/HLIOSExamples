@@ -10,8 +10,16 @@
 
 @interface ClassA : NSObject
 
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, assign) NSInteger age;
+
 - (void)methodInA;
 - (void)f;
 
 + (NSString *)shared;
+@end
+
+
+@interface ClassA (Test)
+@property (nonatomic, retain) NSString *height;
 @end

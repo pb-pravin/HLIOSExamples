@@ -12,7 +12,7 @@
 #import "MOUser.h"
 #import "SPDeepCopy.h"
 #import "HLUser.h"
-
+#import "NSObject+Util.h"
 
 @implementation HLAppDelegate
 
@@ -380,13 +380,13 @@
 	
 	/**
 	 Demo ceil funtion
-	 */
-	
 	NSLog(@"ceil(4.1/2) %f", ceil(4.1/2));
 	NSLog(@"ceil(4/2) %f", ceil((double)4/2));
 	
 	NSLog(@"floor(5/2) %f", floor((double)5/2));
 	NSLog(@"floor(4/2) %f", floor((double)4/2));
+	 */
+	NSLog(@"ClassA properties: %@", [ClassA propertyList]);
 	
     return YES;
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4107CE3117A28CA700F017F8 /* NSObject+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107CE3017A28CA700F017F8 /* NSObject+Util.m */; };
 		4151EA1E168E8EAA002DBAAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4151EA1D168E8EAA002DBAAE /* UIKit.framework */; };
 		4151EA20168E8EAA002DBAAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4151EA1F168E8EAA002DBAAE /* Foundation.framework */; };
 		4151EA22168E8EAA002DBAAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4151EA21168E8EAA002DBAAE /* CoreGraphics.framework */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4107CE2F17A28CA700F017F8 /* NSObject+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Util.h"; sourceTree = "<group>"; };
+		4107CE3017A28CA700F017F8 /* NSObject+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Util.m"; sourceTree = "<group>"; };
 		4151EA19168E8EAA002DBAAE /* ObjcTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4151EA1D168E8EAA002DBAAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4151EA1F168E8EAA002DBAAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 				416C22D816A81E0C00BCC987 /* SPDeepCopy.m */,
 				41B5ED3A173CA44400CD88FB /* HLUser.h */,
 				41B5ED3B173CA44400CD88FB /* HLUser.m */,
+				4107CE2F17A28CA700F017F8 /* NSObject+Util.h */,
+				4107CE3017A28CA700F017F8 /* NSObject+Util.m */,
 			);
 			path = ObjcTest;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 				4196FDD416A6C796009396DD /* MOUser.m in Sources */,
 				416C22D916A81E0C00BCC987 /* SPDeepCopy.m in Sources */,
 				41B5ED3C173CA44400CD88FB /* HLUser.m in Sources */,
+				4107CE3117A28CA700F017F8 /* NSObject+Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

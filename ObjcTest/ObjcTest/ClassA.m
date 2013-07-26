@@ -48,3 +48,7 @@
 }
 
 @end
+
+@implementation ClassA (Test)
+@dynamic height;
+@end

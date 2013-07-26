@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4107CE2E17A2888600F017F8 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107CE2D17A2888600F017F8 /* ClassA.m */; };
 		4144564217982D1C00BBB69C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4144564117982D1C00BBB69C /* Foundation.framework */; };
 		4144564517982D1C00BBB69C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4144564417982D1C00BBB69C /* main.m */; };
 		4144564917982D1C00BBB69C /* OCTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4144564817982D1C00BBB69C /* OCTest.1 */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4107CE2C17A2888600F017F8 /* ClassA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
+		4107CE2D17A2888600F017F8 /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
 		4144563E17982D1C00BBB69C /* OCTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OCTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4144564117982D1C00BBB69C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4144564417982D1C00BBB69C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 				4144564417982D1C00BBB69C /* main.m */,
 				4144564817982D1C00BBB69C /* OCTest.1 */,
 				4144564617982D1C00BBB69C /* Supporting Files */,
+				4107CE2C17A2888600F017F8 /* ClassA.h */,
+				4107CE2D17A2888600F017F8 /* ClassA.m */,
 			);
 			path = OCTest;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4144564517982D1C00BBB69C /* main.m in Sources */,
+				4107CE2E17A2888600F017F8 /* ClassA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +246,7 @@
 				4144564E17982D1C00BBB69C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
