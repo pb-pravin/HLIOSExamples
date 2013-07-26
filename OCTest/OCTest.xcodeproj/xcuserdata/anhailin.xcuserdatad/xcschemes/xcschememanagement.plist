@@ -4,20 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>WordsGuess.xcscheme</key>
+		<key>OCTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>39</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>41638642178B0D5F0033F4E0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>41F51B1217755E7D0089F7A5</key>
+		<key>4144563D17982D1C00BBB69C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -15,14 +15,11 @@
 @property (nonatomic, assign) NSUInteger itemIndex;
 @property (strong, nonatomic) IBOutlet UILabel *questionLabel;
 @property (strong, nonatomic) IBOutlet UILabel *noteLabel;
-@property (strong, nonatomic) IBOutlet UITextField *inputField;
-@property (strong, nonatomic) IBOutlet UIButton *guessButton;
-- (IBAction)guess:(id)sender;
-- (IBAction)loadPreviousWordGuess:(id)sender;
-- (IBAction)loadNextWordGuess:(id)sender;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *countItem;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *preButtonItem;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *nextButtonItem;
+- (IBAction)loadPreviousWordGuess:(id)sender;
+- (IBAction)loadNextWordGuess:(id)sender;
 @end
 
 @implementation HLDetailViewController
@@ -42,14 +39,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.inputField addTarget:self
-                        action:@selector(inputTextChanged:)
-              forControlEvents:UIControlEventEditingChanged];
+    
+    self.preButtonItem.title = NSLocalizedString(@"Previous", nil);
+    self.nextButtonItem.title = NSLocalizedString(@"Next", nil);
     
     [self addObserver:self forKeyPath:kItemIndexPath
               options:NSKeyValueObservingOptionNew
               context:NULL];
     self.itemIndex = self.itemIndex;
+    
+    UIBarButtonItem *answerBtn = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"answer", nil)
+                                                                  style:UIBarButtonItemStylePlain
+                                                                 target:self
+                                                                 action:@selector(showAnswer:)];
+    self.navigationItem.rightBarButtonItem = answerBtn;
+    
+}
+
+- (void)showAnswer:(id)sender
+{
+    NSDictionary *wordGuessInfo = self.items[self.itemIndex];
+    NSString *answer = wordGuessInfo[kWordGuessKeyAnswer];
+    [[[UIAlertView alloc] initWithTitle:nil
+                                message:answer
+                               delegate:nil
+                      cancelButtonTitle:nil
+                      otherButtonTitles:NSLocalizedString(@"OK", nil), nil] show];
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,8 +76,6 @@
 {
     [self setQuestionLabel:nil];
     [self setNoteLabel:nil];
-    [self setInputField:nil];
-    [self setGuessButton:nil];
     [self setCountItem:nil];
     [self setPreButtonItem:nil];
     [self setNextButtonItem:nil];
@@ -84,30 +97,9 @@
         self.countItem.title = [NSString stringWithFormat:@"%d/%d", self.itemIndex + 1, self.items.count];
         
         NSDictionary *wordGuessInfo = self.items[self.itemIndex];
-        self.questionLabel.text = wordGuessInfo[kWordGuessKeyQuestion];
+        self.questionLabel.text = self.title = wordGuessInfo[kWordGuessKeyQuestion];
         self.noteLabel.text = wordGuessInfo[kWordGuessKeyNote];
     }
-}
-
-- (void)inputTextChanged:(id)sender
-{
-    NSString *text = [self.inputField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    self.guessButton.enabled = text.length > 0;
-}
-
-- (IBAction)guess:(id)sender
-{
-    [self.inputField resignFirstResponder];
-    NSString *answer = [self.inputField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    NSDictionary *wordGuessInfo = self.items[self.itemIndex];
-    
-    NSString *mesage = [answer isEqualToString:wordGuessInfo[kWordGuessKeyAnswer]] ? @"You answer is correct!" : @"Sorry, your answer is wrong, please try again!";
-    [[[UIAlertView alloc] initWithTitle:nil
-                                message:mesage
-                               delegate:nil
-                      cancelButtonTitle:nil
-                      otherButtonTitles:NSLocalizedString(@"OK", nil), nil] show];
-    self.inputField.text = nil;
 }
 
 - (IBAction)loadPreviousWordGuess:(id)sender

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411B063117885F3D00F748D9 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 411B062717885F3D00F748D9 /* Icon-72.png */; };
+		411B063217885F3D00F748D9 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 411B062817885F3D00F748D9 /* Icon-72@2x.png */; };
+		411B063317885F3D00F748D9 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 411B062917885F3D00F748D9 /* Icon-Small-50.png */; };
+		411B063417885F3D00F748D9 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 411B062A17885F3D00F748D9 /* Icon-Small-50@2x.png */; };
+		411B063517885F3D00F748D9 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 411B062B17885F3D00F748D9 /* Icon-Small.png */; };
+		411B063617885F3D00F748D9 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 411B062C17885F3D00F748D9 /* Icon-Small@2x.png */; };
+		411B063717885F3D00F748D9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 411B062D17885F3D00F748D9 /* Icon.png */; };
+		411B063817885F3D00F748D9 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 411B062E17885F3D00F748D9 /* Icon@2x.png */; };
+		411B063917885F3D00F748D9 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 411B062F17885F3D00F748D9 /* iTunesArtwork.png */; };
+		411B063A17885F3D00F748D9 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 411B063017885F3D00F748D9 /* iTunesArtwork@2x.png */; };
+		41A43571178866B700F1A396 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41A4356F178866B700F1A396 /* Localizable.strings */; };
 		41F51B1717755E7D0089F7A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F51B1617755E7D0089F7A5 /* UIKit.framework */; };
 		41F51B1917755E7D0089F7A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F51B1817755E7D0089F7A5 /* Foundation.framework */; };
 		41F51B1B17755E7D0089F7A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F51B1A17755E7D0089F7A5 /* CoreGraphics.framework */; };
@@ -25,7 +36,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		41F51B1317755E7D0089F7A5 /* WordsGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		411B062717885F3D00F748D9 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		411B062817885F3D00F748D9 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		411B062917885F3D00F748D9 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		411B062A17885F3D00F748D9 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		411B062B17885F3D00F748D9 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		411B062C17885F3D00F748D9 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		411B062D17885F3D00F748D9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		411B062E17885F3D00F748D9 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		411B062F17885F3D00F748D9 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		411B063017885F3D00F748D9 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		41638664178B0D5F0033F4E0 /* WordsGuess copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WordsGuess copy-Info.plist"; path = "/Users/anhailin/Documents/HLIOSExamples/WordsGuess/WordsGuess copy-Info.plist"; sourceTree = "<absolute>"; };
+		41A43570178866B700F1A396 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		41F51B1317755E7D0089F7A5 /* wordGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wordGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F51B1617755E7D0089F7A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		41F51B1817755E7D0089F7A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41F51B1A17755E7D0089F7A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,13 +91,14 @@
 				41F51B1C17755E7D0089F7A5 /* WordsGuess */,
 				41F51B1517755E7D0089F7A5 /* Frameworks */,
 				41F51B1417755E7D0089F7A5 /* Products */,
+				41638664178B0D5F0033F4E0 /* WordsGuess copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		41F51B1417755E7D0089F7A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41F51B1317755E7D0089F7A5 /* WordsGuess.app */,
+				41F51B1317755E7D0089F7A5 /* wordGuess.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +132,17 @@
 		41F51B1D17755E7D0089F7A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				41A4356F178866B700F1A396 /* Localizable.strings */,
+				411B062717885F3D00F748D9 /* Icon-72.png */,
+				411B062817885F3D00F748D9 /* Icon-72@2x.png */,
+				411B062917885F3D00F748D9 /* Icon-Small-50.png */,
+				411B062A17885F3D00F748D9 /* Icon-Small-50@2x.png */,
+				411B062B17885F3D00F748D9 /* Icon-Small.png */,
+				411B062C17885F3D00F748D9 /* Icon-Small@2x.png */,
+				411B062D17885F3D00F748D9 /* Icon.png */,
+				411B062E17885F3D00F748D9 /* Icon@2x.png */,
+				411B062F17885F3D00F748D9 /* iTunesArtwork.png */,
+				411B063017885F3D00F748D9 /* iTunesArtwork@2x.png */,
 				41F51B3917755EE10089F7A5 /* words_guess.json */,
 				41F51B1E17755E7D0089F7A5 /* WordsGuess-Info.plist */,
 				41F51B1F17755E7D0089F7A5 /* InfoPlist.strings */,
@@ -124,9 +159,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		41F51B1217755E7D0089F7A5 /* WordsGuess */ = {
+		41F51B1217755E7D0089F7A5 /* wordGuess */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41F51B3617755E7D0089F7A5 /* Build configuration list for PBXNativeTarget "WordsGuess" */;
+			buildConfigurationList = 41F51B3617755E7D0089F7A5 /* Build configuration list for PBXNativeTarget "wordGuess" */;
 			buildPhases = (
 				41F51B0F17755E7D0089F7A5 /* Sources */,
 				41F51B1017755E7D0089F7A5 /* Frameworks */,
@@ -136,9 +171,9 @@
 			);
 			dependencies = (
 			);
-			name = WordsGuess;
+			name = wordGuess;
 			productName = WordsGuess;
-			productReference = 41F51B1317755E7D0089F7A5 /* WordsGuess.app */;
+			productReference = 41F51B1317755E7D0089F7A5 /* wordGuess.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +198,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41F51B1217755E7D0089F7A5 /* WordsGuess */,
+				41F51B1217755E7D0089F7A5 /* wordGuess */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +216,17 @@
 				41F51B3A17755EE10089F7A5 /* words_guess.json in Resources */,
 				41F51B3C177566030089F7A5 /* Application.xib in Resources */,
 				41F51B41177567420089F7A5 /* HLDetailViewController.xib in Resources */,
+				411B063117885F3D00F748D9 /* Icon-72.png in Resources */,
+				411B063217885F3D00F748D9 /* Icon-72@2x.png in Resources */,
+				411B063317885F3D00F748D9 /* Icon-Small-50.png in Resources */,
+				411B063417885F3D00F748D9 /* Icon-Small-50@2x.png in Resources */,
+				411B063517885F3D00F748D9 /* Icon-Small.png in Resources */,
+				411B063617885F3D00F748D9 /* Icon-Small@2x.png in Resources */,
+				411B063717885F3D00F748D9 /* Icon.png in Resources */,
+				411B063817885F3D00F748D9 /* Icon@2x.png in Resources */,
+				411B063917885F3D00F748D9 /* iTunesArtwork.png in Resources */,
+				411B063A17885F3D00F748D9 /* iTunesArtwork@2x.png in Resources */,
+				41A43571178866B700F1A396 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +247,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		41A4356F178866B700F1A396 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41A43570178866B700F1A396 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		41F51B1F17755E7D0089F7A5 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,13 +334,13 @@
 		41F51B3717755E7D0089F7A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lei Lei (JV5Y7A3TGE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hailin An (RK2T9J8K99)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WordsGuess/WordsGuess-Prefix.pch";
 				INFOPLIST_FILE = "WordsGuess/WordsGuess-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7FA3C613-6613-4EC5-BBA5-AD6E3BFBDCD0";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -294,11 +348,13 @@
 		41F51B3817755E7D0089F7A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hailin An (5J7KZ978F6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WordsGuess/WordsGuess-Prefix.pch";
 				INFOPLIST_FILE = "WordsGuess/WordsGuess-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "B9792B32-DA50-438F-9A9B-28E60B98244D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -315,7 +371,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41F51B3617755E7D0089F7A5 /* Build configuration list for PBXNativeTarget "WordsGuess" */ = {
+		41F51B3617755E7D0089F7A5 /* Build configuration list for PBXNativeTarget "wordGuess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41F51B3717755E7D0089F7A5 /* Debug */,

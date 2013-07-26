@@ -231,7 +231,7 @@
      %lld long long 
      %llu unsigned long long 
      %Lf long double
-    NSLog(@"%s\t%s\t0x%08x", "hex", "value", 0x1243);
+    NSLog(@"%s\t%s\t0x%08x\t%05d", "hex", "value", 0x1243, 0x20);
      */
     
 	/** Demo the usage of @encode

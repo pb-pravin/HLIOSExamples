@@ -20,6 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = NSLocalizedString(@"Word Guess", nil);
     NSString *path = [[NSBundle mainBundle] pathForResource:@"words_guess" ofType:@"json"];
     NSData *jsonData = [NSData dataWithContentsOfFile:path];
     NSError *error;
@@ -27,9 +28,16 @@
                                                          options:kNilOptions
                                                            error:&error];
     NSAssert(error == nil, error.localizedDescription);
-    self.items = dict[kWordGuessKey];
+    if (error)
+    {
+        self.items = [NSArray array];
+    }
+    else
+    {
+        self.items = dict[kWordGuessKey];
+    }
     
-    /* Remove the repaat guesses.
+    /* Remove the repaat guesses. Don't need anymore.
     NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:self.items];
     NSMutableIndexSet *toRemoveIdx = [NSMutableIndexSet indexSet];
     NSMutableSet *questions = [NSMutableSet set];
@@ -62,17 +70,17 @@
     
 }
 
-- (BOOL)contains:(NSSet *)set string:(NSString *)s
-{
-    for (NSString *str in set)
-    {
-        if ([str isEqualToString:s])
-        {
-            return YES;
-        }
-    }
-    return NO;
-}
+//- (BOOL)contains:(NSSet *)set string:(NSString *)s
+//{
+//    for (NSString *str in set)
+//    {
+//        if ([str isEqualToString:s])
+//        {
+//            return YES;
+//        }
+//    }
+//    return NO;
+//}
 
 - (void)didReceiveMemoryWarning
 {
