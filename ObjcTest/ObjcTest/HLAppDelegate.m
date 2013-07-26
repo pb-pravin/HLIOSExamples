@@ -353,7 +353,6 @@
      Demo how to use enumerateObjectsUsingBlock method of NSArray
      // Here are some tips for when to use this method instead of fast-enumeration.
      // http://stackoverflow.com/questions/4486622/when-to-use-enumerateobjectsusingblock-vs-for/4487012#4487012
-     */
     NSArray *array = [NSArray arrayWithObjects:@"a", @"b", @"c", @"d", @"e", nil];
     [array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         NSLog(@"idx: %d obj:%@", idx, obj);
@@ -362,6 +361,33 @@
             *stop = YES;
         }
     }];
+     */
+	
+	/**
+	 * Demo arrya loop
+	NSMutableArray *a1 = [NSMutableArray array];
+	NSMutableArray *a2 = [NSMutableArray array];
+	[a1 addObject:a2];
+	[a2 addObject:a1];
+	
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(
+														 NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *path = [documentsDirectory stringByAppendingPathComponent:@"test"];
+	
+	[a2 writeToFile:path atomically:YES];
+	 */
+	
+	/**
+	 Demo ceil funtion
+	 */
+	
+	NSLog(@"ceil(4.1/2) %f", ceil(4.1/2));
+	NSLog(@"ceil(4/2) %f", ceil((double)4/2));
+	
+	NSLog(@"floor(5/2) %f", floor((double)5/2));
+	NSLog(@"floor(4/2) %f", floor((double)4/2));
+	
     return YES;
 }
 
