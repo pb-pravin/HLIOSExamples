@@ -267,6 +267,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Downloads\"",
 					"\"$(SRCROOT)\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SearchTable2/SearchTable2-Prefix.pch";
@@ -284,6 +285,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Downloads\"",
 					"\"$(SRCROOT)\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SearchTable2/SearchTable2-Prefix.pch";
