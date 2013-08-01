@@ -45,6 +45,7 @@
  
  */
 
+
 @interface Product : NSObject {
 	NSString *type;
 	NSString *name;
