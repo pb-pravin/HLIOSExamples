@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:HLUtilities/HLUtilities.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PhotoBrowser/PhotoBrowser.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:OCTest/OCTest.xcodeproj">
    </FileRef>
    <FileRef

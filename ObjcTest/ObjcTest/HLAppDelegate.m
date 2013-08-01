@@ -385,9 +385,42 @@
 	
 	NSLog(@"floor(5/2) %f", floor((double)5/2));
 	NSLog(@"floor(4/2) %f", floor((double)4/2));
-	 */
 	NSLog(@"ClassA properties: %@", [ClassA propertyList]);
-	
+    NSLog(@"UIView properties: %@", [NSArray propertyList]);
+	 */
+    /**
+     Demo string bytes.
+     */
+    NSString *s1 = @"hello";
+    NSString *s2 = @"我爱你";
+    NSLog(@"s1 %@ s2 %@", s1, s2);
+    // Print out the count of character, not the count of bytes.
+    NSLog(@"s1 length: %d s2 length %d", s1.length, s2.length); //s1 length: 5 s2 length 3
+    
+    // Converted to c string
+    const char *cs1 = [s1 cStringUsingEncoding:NSUTF8StringEncoding];
+    const char *cs2 = [s2 cStringUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"cs1: %s cs2 %s", cs1, cs2);
+    // Print out the count of bytes.
+    NSLog(@"cs1 length: %zd cs2 length %zd", strlen(cs1), strlen(cs2)); //cs1 length: 5 cs2 length 9
+    
+    // Converted to data.
+    NSData *data1 = [s1 dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *data2 = [s2 dataUsingEncoding:NSUTF8StringEncoding];
+	NSLog(@"data1 %@ data2 %@", data1, data2);  // data1 <68656c6c 6f> data2 <e68891e7 88b1e4bd a0>
+    NSLog(@"data1 length: %d data2 length: %d", data1.length, data2.length);    // data1 length: 5 data2 length: 9
+    
+    // Converted from c string
+    NSString *convertedS1 = [NSString stringWithUTF8String:cs1];
+    NSString *convertedS2 = [NSString stringWithUTF8String:cs2];
+    NSLog(@"converted s1 %@ converted s2 %@", convertedS1, convertedS2);    // converted s1 hello converted s2 我爱你
+    
+    // Converted from data
+    convertedS1 = [[NSString alloc] initWithBytes:data1.bytes length:data1.length encoding:NSUTF8StringEncoding];
+    convertedS2 = [[NSString alloc] initWithBytes:data2.bytes length:data2.length encoding:NSUTF8StringEncoding];
+    NSLog(@"converted s1 %@ converted s2 %@", convertedS1, convertedS2);    // converted s1 hello converted s2 我爱你
+    
+    
     return YES;
 }
 

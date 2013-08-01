@@ -14,6 +14,7 @@
 + (NSArray *)propertyList
 {
 	NSMutableArray *array = [NSMutableArray array];
+    
 	unsigned int outCount;
 	objc_property_t *properties = class_copyPropertyList(self, &outCount);
 	for (int i=0; i<outCount; i++)

@@ -1,0 +1,271 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41162FEF17A7EF81007260E4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41162FEE17A7EF81007260E4 /* CoreFoundation.framework */; };
+		41162FF517A7EF81007260E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41162FF317A7EF81007260E4 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		41162FEB17A7EF81007260E4 /* HLUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41162FEE17A7EF81007260E4 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		41162FF217A7EF81007260E4 /* HLUtilities-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HLUtilities-Info.plist"; sourceTree = "<group>"; };
+		41162FF417A7EF81007260E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		41162FF617A7EF81007260E4 /* HLUtilities-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HLUtilities-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41162FE817A7EF81007260E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41162FEF17A7EF81007260E4 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41162FE217A7EF80007260E4 = {
+			isa = PBXGroup;
+			children = (
+				41162FF017A7EF81007260E4 /* HLUtilities */,
+				41162FED17A7EF81007260E4 /* Frameworks */,
+				41162FEC17A7EF81007260E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41162FEC17A7EF81007260E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41162FEB17A7EF81007260E4 /* HLUtilities.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41162FED17A7EF81007260E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41162FEE17A7EF81007260E4 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41162FF017A7EF81007260E4 /* HLUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				41162FF117A7EF81007260E4 /* Supporting Files */,
+			);
+			path = HLUtilities;
+			sourceTree = "<group>";
+		};
+		41162FF117A7EF81007260E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41162FF217A7EF81007260E4 /* HLUtilities-Info.plist */,
+				41162FF317A7EF81007260E4 /* InfoPlist.strings */,
+				41162FF617A7EF81007260E4 /* HLUtilities-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41162FEA17A7EF81007260E4 /* HLUtilities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41162FF917A7EF81007260E4 /* Build configuration list for PBXNativeTarget "HLUtilities" */;
+			buildPhases = (
+				41162FE717A7EF81007260E4 /* Sources */,
+				41162FE817A7EF81007260E4 /* Frameworks */,
+				41162FE917A7EF81007260E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HLUtilities;
+			productName = HLUtilities;
+			productReference = 41162FEB17A7EF81007260E4 /* HLUtilities.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41162FE317A7EF80007260E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = mozat;
+			};
+			buildConfigurationList = 41162FE617A7EF80007260E4 /* Build configuration list for PBXProject "HLUtilities" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 41162FE217A7EF80007260E4;
+			productRefGroup = 41162FEC17A7EF81007260E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41162FEA17A7EF81007260E4 /* HLUtilities */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41162FE917A7EF81007260E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41162FF517A7EF81007260E4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41162FE717A7EF81007260E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		41162FF317A7EF81007260E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41162FF417A7EF81007260E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41162FF717A7EF81007260E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+			};
+			name = Debug;
+		};
+		41162FF817A7EF81007260E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+			};
+			name = Release;
+		};
+		41162FFA17A7EF81007260E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HLUtilities/HLUtilities-Prefix.pch";
+				INFOPLIST_FILE = "HLUtilities/HLUtilities-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		41162FFB17A7EF81007260E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HLUtilities/HLUtilities-Prefix.pch";
+				INFOPLIST_FILE = "HLUtilities/HLUtilities-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41162FE617A7EF80007260E4 /* Build configuration list for PBXProject "HLUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41162FF717A7EF81007260E4 /* Debug */,
+				41162FF817A7EF81007260E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41162FF917A7EF81007260E4 /* Build configuration list for PBXNativeTarget "HLUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41162FFA17A7EF81007260E4 /* Debug */,
+				41162FFB17A7EF81007260E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41162FE317A7EF80007260E4 /* Project object */;
+}
