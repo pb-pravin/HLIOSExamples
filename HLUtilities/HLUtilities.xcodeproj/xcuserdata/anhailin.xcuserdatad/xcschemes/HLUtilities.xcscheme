@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "41162FEA17A7EF81007260E4"
-               BuildableName = "HLUtilities.bundle"
+               BuildableName = "HLUtilities.framework"
                BlueprintName = "HLUtilities"
                ReferencedContainer = "container:HLUtilities.xcodeproj">
             </BuildableReference>

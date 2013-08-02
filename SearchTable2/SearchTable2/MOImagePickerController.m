@@ -8,6 +8,7 @@
 
 #import "MOImagePickerController.h"
 #import "Product.h"
+#import "SDWebImage/UIImageView+WebCache.h"
 @interface MOImagePickerController ()
 {
 	__strong UISearchDisplayController *_searchController;
@@ -45,7 +46,12 @@
 	NSLog(@"search results delegate: %@", self.searchDisplayController.searchResultsDelegate);
 	NSLog(@"search controller delegate: %@", self.searchDisplayController.delegate);
 	NSLog(@"search display controller search bar: %@", self.searchDisplayController.searchBar);
-
+	
+	
+	UIImageView *test = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
+	[test setImageWithURL:[NSURL URLWithString:@"http://t1.gstatic.com/images?q=tbn:ANd9GcQJNw5UrcbbAJ1C_h4s1Yc_nBKBw0mYrJuQaTvXbA81bm8wkkAY"]];
+	
+	[self.tableView addSubview:test];
 }
 
 - (void)didReceiveMemoryWarning
