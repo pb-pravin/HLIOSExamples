@@ -132,3 +132,7 @@ please refer to http://stackoverflow.com/questions/9349381/mfmessagecomposeviewc
 ### SearchTable
 1. Demo how to use UISearchDisplayController.
 
+### iLikeIt
+1. Demo the process of localization.
+2. Demo the .strings file (how to write files of this type)
+

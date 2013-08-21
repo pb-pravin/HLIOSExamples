@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  iLikeIt
+
+  Created by an hailin on 21/8/13.
+  Copyright (c) 2013 Regular Berry Software LLC. All rights reserved.
+*/
+"Hello!" = "How are you?";
+"Oh %d push %d" = "Oh %2$d push %1$d";
+"I am \"thomasan\"" = "I\U0020am \"thomasan\"";

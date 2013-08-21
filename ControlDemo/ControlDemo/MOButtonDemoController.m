@@ -88,7 +88,7 @@
     button7.frame = CGRectMake(10, button2.frame.origin.y + button2.frame.size.height + 5, 80, 80);
     button7.backgroundColor = [UIColor redColor];
     [button7 setImage:[UIImage imageNamed:@"50.jpg"] forState:UIControlStateNormal];
-    button7.imageView.layer.cornerRadius = 7;
+    //button7.imageView.layer.cornerRadius = 7;
     //button7.imageView.frame = CGRectMake(5, 5, 30, 30);
     [self.view addSubview:button7];
     
