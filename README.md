@@ -3,6 +3,9 @@ HLIOSExamples
 
 A collection of examples of my IOS code
 
+### LocaleDemo
+1. Demo the usage of NSLocale class.
+
 ### ControlDemo (ARC project)
 1. Demo how to use corner radius.
 2. Demo how to use SDWebImage library.

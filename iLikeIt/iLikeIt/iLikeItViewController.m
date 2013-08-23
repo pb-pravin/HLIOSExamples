@@ -29,14 +29,18 @@
 
 #pragma mark - View lifecycle
 
-
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.titleLabel.text = NSLocalizedString(@"I am \"thomasan\"", nil);//[NSString stringWithFormat:NSLocalizedString(@"Oh %d push %d", nil), 1, 2];
-}
+    self.titleLabel.text = NSLocalizedString(@"I am \"thomasan\"", nil);
+	
+	// Although the following code has been commented out, 'genStrings' command will create an entry
+	// for these lines in Localizable.strings file.
+	//[NSString stringWithFormat:NSLocalizedString(@"Oh %d push %d", nil), 1, 2];
+	//[NSString stringWithFormat:NSLocalizedString(@"Oh %d pull %d", nil), 1, 2];
 
+}
 
 - (void)viewDidUnload
 {
