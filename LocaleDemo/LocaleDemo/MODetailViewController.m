@@ -151,7 +151,7 @@
 		NSString *language = [[NSLocale currentLocale] displayNameForKey:NSLocaleLanguageCode value:[locale objectForKey:NSLocaleLanguageCode]];
 		NSString *currency = [[NSLocale currentLocale] displayNameForKey:NSLocaleCurrencyCode value:[locale objectForKey:NSLocaleCurrencyCode]];
 		NSString *decimalSeparator = [locale objectForKey:NSLocaleDecimalSeparator];
-		
+		// Print out the log
 		NSLog(@"country: %@ language: %@ currency: %@ decimalSeparator: %@", country, language, currency, decimalSeparator);
 	}
 	
